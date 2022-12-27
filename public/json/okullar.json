@@ -1,0 +1,161 @@
+{
+    "ADANA":[{
+        "İlkokul":[
+            {
+                "OKULADI": " Boztahta İlkokulu "
+            },
+            {                
+                "OKULADI": " Büyüksofulu İlkokulu "
+            },
+            {
+                "OKULADI": " Ceritler Necati Özsirkinti İlkokulu "
+            },
+            {
+                "OKULADI": " Kızıldam İlkokulu "
+            },
+            {
+                "OKULADI": " Köprücük Mengez İlkokulu "
+            },
+            {
+                "OKULADI": " Sinanpasa İlkokulu "
+            },
+            {
+                "OKULADI": " Akören İlkokulu "
+            },
+            {
+                "OKULADI": " Atatürk İlkokulu "
+            },
+            {
+                "OKULADI": " Karatepe İlkokulu "
+            },
+            {
+                "OKULADI": " Kislak İlkokulu "
+            },
+            {
+                "OKULADI": " Gerdibi Sivisli İlkokulu "
+            }
+        ],
+        "Ortaokul":[
+            {
+                "OKULADI": "Akören Ortaokulu"
+            },
+            {
+                "OKULADI": "Boztahta Ortaokulu"
+            },
+            {
+                "OKULADI": "Atatürk Ortaokulu"
+            },
+            {
+                "OKULADI": "Gerdibi Ortaokulu"
+            }
+        ],
+        "Lise":[
+            {
+                "OKULADI": " Pınar Madencilik Anadolu Lisesi "
+            },
+            {
+                "OKULADI": " Akören Çok Programli Anadolu Lisesi "
+            }
+        ]
+    }],
+    "ADIYAMAN":[{
+        "İlkokul":[
+            {
+                "OKULADI": " Aşağısöğütlü İlkokulu "
+            },
+            {
+                "OKULADI": " Çakırhöyük İlkokulu "
+            },
+            {
+                "OKULADI": " Dikilitaş Halil Agar İlkokulu "
+            },
+            {
+                "OKULADI": " İznik İlkokulu "
+            },
+            {
+                "OKULADI": " Köşeceli İlkokulu "
+            }
+        ],
+        "Ortaokul":[
+            {
+                "OKULADI": " Şehit Er Serdar Küpeli Ortaokulu "
+            },
+            {
+                "OKULADI": " Köşeceli Ortaokulu "
+            },
+            {
+                "OKULADI": " Oyratli Ortaokulu "
+            }
+        ],
+        "Lise":[
+            {
+                "OKULADI": " Mehmet Akif Ersoy Fen Lisesi "
+            },
+            {
+                "OKULADI": " Besni Mustafa Erdemoglu Anadolu Lisesi "
+            },
+            {
+                "OKULADI": " Sehit Mehmet Yagmur Anadolu Imam Hatip Lisesi "
+            },
+            {
+                "OKULADI": " Besni Osman Isot Mesleki ve Teknik Anadolu Lisesi "
+            },
+            {
+                "OKULADI": " Besni Sehit Eren Kupal Mesleki ve Teknik Anadolu Lisesi "
+            },
+            { 
+                "OKULADI": " Besni Anadolu İmam Hatip Lisesi "
+            }
+        ]
+    }],
+    "AFYONKARAHİSAR":[{
+        "İlkokul":[
+            {
+                "OKULADI": " Akpınar İlkokulu "
+            },
+            {
+                "OKULADI": " Alparslan İlkokulu "
+            },
+            {
+                "OKULADI": " Atatürk Ilkokulu "
+            },
+            {
+                "OKULADI": " Kınık Ilkokulu "
+            }
+        ],
+        "Ortaokul":[
+            {
+                "OKULADI": " İmrallı Ortaokulu "
+            },
+            {
+                "OKULADI": " Derekarabağ Ortaokulu "
+            },
+            {
+                "OKULADI": " Boyalı Şöhret Hanım Ortaokulu "
+            },
+            { 
+                "OKULADI": " Atatürk Ortaokulu "
+            },
+            {
+                "OKULADI": " Kınık Ortaokulu "
+            }
+        ],
+        "Lise":[
+            {
+                "OKULADI": " Bolvadin Bahçelievler Mesleki ve Teknik Anadolu Lisesi "
+            },
+            {
+                "OKULADI": " Bolvadin Anadolu Lisesi "
+            },
+            {
+                "OKULADI": " Bolvadin Siddika Metin Mesleki ve Teknik Anadolu Lisesi "
+            },
+            {
+                "OKULADI": " Bolvadin Mesleki ve Teknik Anadolu Lisesi "
+            },
+            {
+                "OKULADI": " Bolvadin  Selçuklu Mesleki ve Teknik Anadolu Lisesi "
+            }
+        ]
+    }]
+}

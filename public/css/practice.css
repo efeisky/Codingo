@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #cbcbcb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.header .logo {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.Text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #3ACD7E;
+  letter-spacing: 1px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.TextSubject {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .Text {
+    font-size: 18px;
+  }
+  .TextSubject {
+    font-size: 18px;
+  }
+  #homeIcon {
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 401px) {
+  .Text {
+    font-size: 22px;
+  }
+  .TextSubject {
+    font-size: 22px;
+  }
+  #homeIcon {
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 1920px) and (min-width: 767px) {
+  .Text {
+    font-size: 24px;
+  }
+  .TextSubject {
+    font-size: 24px;
+  }
+  #homeIcon {
+    width: 24px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .Text {
+    font-size: 26px;
+  }
+  .TextSubject {
+    font-size: 26px;
+  }
+  #homeIcon {
+    width: 32px;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  .Text {
+    font-size: 32px;
+  }
+  .TextSubject {
+    font-size: 28px;
+  }
+  #homeIcon {
+    width: 35px;
+  }
+  .header div {
+    width: 200px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=practice.css.map */

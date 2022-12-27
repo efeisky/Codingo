@@ -1,0 +1,7 @@
+#RewriteEngine On
+
+ErrorDocument 404 /Codingo/public/php/404.html
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$ $1.php

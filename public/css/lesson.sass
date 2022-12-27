@@ -1,0 +1,1123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
+.video
+    text-align: center
+.infoText
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    text-align: start
+.button
+    margin-top: 20px
+    text-align: center
+.infoHeader
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    text-align: center
+    color: #6C63FF
+.header
+    width: 100%
+    height: 100px
+    border-bottom: 1px solid #cbcbcb
+    display: flex
+    align-items: center
+    justify-content: space-around
+    flex-wrap: wrap
+
+.Text
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    color: #3ACD7E
+    letter-spacing: 1px
+.logo
+    display: flex
+    gap: 10px
+    align-items: center
+    cursor: pointer
+.TextSubject
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    color: #000
+    user-select: none
+.questSandQ
+    margin-top: 30px
+    display: flex
+    gap: 5px
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    margin-bottom: 50px
+    .speaker:hover
+        cursor: pointer
+.images
+    width: 100%
+    height: auto
+    text-align: center
+    margin-bottom: 25px
+    #image
+        max-height: 400px
+
+#YourAnswer
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    text-align: start
+    color: #4285F4
+    font-size: 16px
+@media only screen and (max-width: 400px)
+    .info
+        margin-top: 50px 
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+        #infoVideo
+            width: 100%
+            height: 250px
+        .area
+            width: 80%
+            height: 100%
+        #closeInfo
+            width: 200px
+            height: 80px
+            background-color: rgb(108, 99, 255,.2)
+            border: 1px solid #6C63FF
+            border-radius: 20px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            color: #6C63FF
+            font-size: 22px
+            cursor: pointer
+            transition: .3s all
+            margin-bottom: 100px
+        #closeInfo:hover
+            background-color: #6C63FF
+            color: #FFFFFF
+        .infoText
+            padding-top: 30px
+            font-size: 16px 
+        .infoHeader
+            padding-top: 20px
+            font-size: 18px
+    .textArea
+        width: 100%
+        height: 300px
+        position: relative
+        .textDiv
+            position: absolute
+            width: 300px
+            height: 210px
+            left: calc( 50% - 150px )
+            border: 1px solid #DBDBDB
+            border-radius: 20px
+            padding: 20px 20px 0 20px
+            display: flex
+            flex-direction: column
+            .textAreaCompArea
+                padding-top: 5px
+                textarea
+                    background: none
+                    border: none
+                    width: 100%
+                    height: 120px
+                    outline: none
+                    font-size: 18px
+            .sendText
+                position: absolute
+                right: 20px
+                bottom: 20px
+                cursor: pointer
+
+    .rowsABCD
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 50px
+        margin-bottom: 200px
+        .row-AB 
+            display: flex
+            flex-direction: column
+            gap: 50px
+        .row-CD
+            display: flex
+            flex-direction: column
+            gap: 50px
+    
+    .answerPut
+        width: 300px
+        height: 80px
+        border: 1px solid #F2F2F2
+        border-radius: 5px
+        cursor: pointer
+        position: relative
+        transition: .5s all
+        #choice
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 18px
+            color: #4285F4
+            line-height: 80px
+            position: absolute
+            left: 30px
+        .questionAnswerInfos
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 16px
+            color: #000
+            line-height: 80px
+            text-align: center
+        &:hover
+            border-color: #4285F4
+
+    .rightAnswer
+        width: 100%
+        height: 150px
+        background-color: rgb(58,205 ,126,.1 )
+        position: fixed
+        bottom: 0px
+        right: 0px
+        .scos
+            position: absolute
+            display: flex
+            gap: 25px
+            top: 5px
+            left: 5px
+            align-items: center
+            .message
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: #3ACD7E
+        #nextQstnTrue
+            position: absolute
+            right: 30px
+            bottom: 30px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 16px
+            color: #3ACD7E
+            background: none
+            border: none
+            cursor: pointer
+    .falseAnswer
+        width: 100%
+        height: 150px
+        background-color: rgb(234,67 ,53,.1 )
+        position: fixed
+        bottom: 0px
+        right: 0px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .scos
+            position: absolute
+            display: flex
+            gap: 25px
+            top: 5px
+            left: 5px
+            align-items: center
+            .message
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 16px
+                color: #EA4335
+        #nextQstnFalse
+            position: absolute
+            right: 30px
+            bottom: 30px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 18px
+            color: #EA4335
+            background: none
+            border: none
+            cursor: pointer
+
+    .mobile-Note
+        width: 95%
+        padding-top: 20px 
+        text-align: end
+    .newNote
+        position: fixed
+        flex-direction: column
+        align-items: center
+        gap: 50px
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background-color: #FFF
+        border-left: 1px solid #CBCBCB
+        border-bottom: 1px solid #CBCBCB
+        .noteCount
+                font-size: 18px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                #count
+                    font-weight: 600
+        .head
+            width: 100%
+            text-align: center
+            padding-top: 25px 
+            .close-Popup
+                cursor: pointer
+                justify-self: start
+                position: absolute
+                top: 25px
+                left: 25px
+            .content
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #000
+                user-select: none
+                font-size: 26px
+        .notSend
+            width: 80%
+            height: 150px
+            border: 1px solid #CBCBCB
+            border-radius: 10px
+            padding: 5px
+            position: relative
+            textarea
+                width: 100%
+                height: 80%
+                border: none
+                outline: none
+                font-size: 16px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                resize: none
+            #sendNote
+                cursor: pointer
+                position: absolute
+                right: 5px
+                bottom: 5px
+        .myNote
+            width: 80%
+            height: 300px
+            overflow: auto
+            display: flex
+            align-items: stretch
+            flex-direction: column
+            gap: 20px
+            .note
+                display: flex
+                align-items: center
+                gap: 10px
+                .LessonNote
+                    font-size: 16px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    max-width: 100%
+                    word-break: break-all
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #DDDDDD
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #cbcbcb
+
+    .Text
+        font-size: 18px
+    .TextSubject
+        font-size: 18px
+    
+@media only screen and (max-width: 767px) and (min-width: 401px)
+    .info
+        margin-top: 100px 
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+        #infoVideo
+            width: 100%
+            height: 290px
+        .area
+            width: 60%
+            height: 100%
+        #closeInfo
+            width: 250px
+            height: 70px
+            background-color: rgb(108, 99, 255,.2)
+            border: 1px solid #6C63FF
+            border-radius: 20px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            color: #6C63FF
+            font-size: 28px
+            cursor: pointer
+            transition: .3s all
+            margin-bottom: 100px
+        #closeInfo:hover
+            background-color: #6C63FF
+            color: #FFFFFF
+        .infoText
+            padding-top: 30px
+            font-size: 18px 
+        .infoHeader
+            padding-top: 20px
+            font-size: 20px
+    .textArea
+        width: 100%
+        height: 300px
+        position: relative
+        .textDiv
+            position: absolute
+            width: 300px
+            height: 210px
+            left: calc( 50% - 150px )
+            border: 1px solid #DBDBDB
+            border-radius: 20px
+            padding: 20px 20px 0 20px
+            display: flex
+            flex-direction: column
+            .textAreaCompArea
+                padding-top: 5px
+                textarea
+                    background: none
+                    border: none
+                    width: 100%
+                    height: 120px
+                    outline: none
+                    font-size: 18px
+            .sendText
+                position: absolute
+                right: 20px
+                bottom: 20px
+                cursor: pointer
+                
+    .rowsABCD
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 50px
+        margin-bottom: 200px
+        .row-AB 
+            display: flex
+            flex-direction: column
+            gap: 50px
+        .row-CD
+            display: flex
+            flex-direction: column
+            gap: 50px
+    
+    .answerPut
+        width: 300px
+        height: 80px
+        border: 1px solid #F2F2F2
+        border-radius: 5px
+        cursor: pointer
+        position: relative
+        transition: .5s all
+        #choice
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 18px
+            color: #4285F4
+            line-height: 80px
+            position: absolute
+            left: 30px
+        .questionAnswerInfos
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 16px
+            color: #000
+            line-height: 80px
+            text-align: center
+        &:hover
+            border-color: #4285F4
+
+    .rightAnswer
+        width: 100%
+        height: 150px
+        background-color: rgb(58,205 ,126,.1 )
+        position: fixed
+        bottom: 0px
+        right: 0px
+        .scos
+            position: absolute
+            display: flex
+            gap: 25px
+            top: 5px
+            left: 5px
+            align-items: center
+            .message
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: #3ACD7E
+        #nextQstnTrue
+            position: absolute
+            right: 30px
+            bottom: 30px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 18px
+            color: #3ACD7E
+            background: none
+            border: none
+            cursor: pointer
+    .falseAnswer
+        width: 100%
+        height: 150px
+        background-color: rgb(234,67 ,53,.1 )
+        position: fixed
+        bottom: 0px
+        right: 0px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .scos
+            position: absolute
+            display: flex
+            gap: 25px
+            top: 5px
+            left: 5px
+            align-items: center
+            .message
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 22px
+                color: #EA4335
+        #nextQstnFalse
+            position: absolute
+            right: 30px
+            bottom: 30px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 18px
+            color: #EA4335
+            background: none
+            border: none
+            cursor: pointer
+    .openNote
+        position: absolute
+        right: 25px
+        top: 25%
+        svg
+            cursor: pointer
+    .newNote
+        position: fixed
+        flex-direction: column
+        align-items: center
+        gap: 50px
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background-color: #FFF
+        border-left: 1px solid #CBCBCB
+        border-bottom: 1px solid #CBCBCB
+        .noteCount
+                font-size: 18px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                #count
+                    font-weight: 600
+        .head
+            width: 100%
+            text-align: center
+            padding-top: 25px 
+            .close-Popup
+                cursor: pointer
+                justify-self: start
+                position: absolute
+                top: 25px
+                left: 25px
+            .content
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #000
+                user-select: none
+                font-size: 26px
+        .notSend
+            width: 80%
+            height: 150px
+            border: 1px solid #CBCBCB
+            border-radius: 10px
+            padding: 5px
+            position: relative
+            textarea
+                width: 100%
+                height: 80%
+                border: none
+                outline: none
+                font-size: 16px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                resize: none
+            #sendNote
+                cursor: pointer
+                position: absolute
+                right: 5px
+                bottom: 5px
+        .myNote
+            width: 80%
+            height: 300px
+            overflow: auto
+            display: flex
+            align-items: stretch
+            flex-direction: column
+            gap: 20px
+            .note
+                display: flex
+                align-items: center
+                gap: 10px
+                .LessonNote
+                    font-size: 16px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    max-width: 100%
+                    word-break: break-all
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #DDDDDD
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #cbcbcb
+    .Text
+        font-size: 22px
+    .TextSubject
+        font-size: 22px
+@media only screen and (max-width: 1920px) and (min-width: 767px) 
+    .info
+        margin-top: 100px 
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+        #infoVideo
+            width: 100%
+            height: 370px
+        .area
+            width: 60%
+            height: 100%
+        #closeInfo
+            width: 300px
+            height: 80px
+            background-color: rgb(108, 99, 255,.2)
+            border: 1px solid #6C63FF
+            border-radius: 20px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            color: #6C63FF
+            font-size: 28px
+            cursor: pointer
+            transition: .3s all
+        #closeInfo:hover
+            background-color: #6C63FF
+            color: #FFFFFF
+        .infoText
+            padding-top: 30px
+            font-size: 18px 
+        .infoHeader
+            padding-top: 20px
+            font-size: 20px
+    .rowsABCD
+        display: flex
+        flex-direction: column
+        gap: 50px
+        margin-bottom: 200px
+        .row-AB 
+            display: flex
+            flex-direction: row
+            justify-content: center
+            gap: 50px
+        .row-CD
+            display: flex
+            flex-direction: row
+            justify-content: center
+            gap: 50px
+    .answerPut
+        width: 300px
+        height: 80px
+        border: 1px solid #F2F2F2
+        border-radius: 5px
+        cursor: pointer
+        position: relative
+        transition: .5s all
+        #choice
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 18px
+            color: #4285F4
+            line-height: 80px
+            position: absolute
+            left: 30px
+        .questionAnswerInfos
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 16px
+            color: #000
+            line-height: 80px
+            text-align: center
+        &:hover
+            border-color: #4285F4
+    .textArea
+        width: 100%
+        height: 300px
+        position: relative
+        .textDiv
+            position: absolute
+            width: 700px
+            height: 210px
+            left: calc( 50% - 350px )
+            border: 1px solid #DBDBDB
+            border-radius: 20px
+            padding: 20px 20px 0 20px
+            display: flex
+            flex-direction: column
+            .textAreaCompArea
+                padding-top: 5px
+                textarea
+                    background: none
+                    border: none
+                    width: 100%
+                    height: 120px
+                    outline: none
+                    font-size: 18px
+            .sendText
+                position: absolute
+                right: 20px
+                bottom: 20px
+                cursor: pointer
+    
+    .rightAnswer
+        width: 100%
+        height: 150px
+        background-color: rgb(58,205 ,126,.1 )
+        position: fixed
+        bottom: 0px
+        right: 0px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .scos
+            display: flex
+            gap: 100px
+            align-items: center
+            .message
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 22px
+                color: #3ACD7E
+        #nextQstnTrue
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 22px
+            color: #3ACD7E
+            background: none
+            border: none
+            cursor: pointer
+    .falseAnswer
+        width: 100%
+        height: 150px
+        background-color: rgb(234,67 ,53,.1 )
+        position: fixed
+        bottom: 0px
+        right: 0px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .scos
+            display: flex
+            gap: 100px
+            align-items: center
+            .message
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 22px
+                color: #EA4335
+        #nextQstnFalse
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 22px
+            color: #EA4335
+            background: none
+            border: none
+            cursor: pointer
+    
+    .openNote
+        position: fixed
+        right: 120px
+        top: 20%
+        svg
+            cursor: pointer
+    .newNote
+        position: fixed
+        flex-direction: column
+        align-items: center
+        gap: 50px
+        background-color: #FFF 
+        width: 425px
+        height: 500px
+        right: 0
+        top: 100px
+        border-left: 1px solid #CBCBCB
+        border-bottom: 1px solid #CBCBCB
+        .head
+            width: 100%
+            text-align: center
+            padding-top: 25px 
+            .close-Popup
+                cursor: pointer
+                justify-self: start
+                position: absolute
+                top: 25px
+                left: 25px
+            .content
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #000
+                user-select: none
+                font-size: 26px
+        .notSend
+            width: 80%
+            height: 150px
+            border: 1px solid #CBCBCB
+            border-radius: 10px
+            padding: 5px
+            position: relative
+            textarea
+                width: 100%
+                height: 80%
+                border: none
+                outline: none
+                font-size: 16px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                resize: none
+            #sendNote
+                cursor: pointer
+                position: absolute
+                right: 5px
+                bottom: 5px
+        .myNote
+            width: 80%
+            height: 150px
+            overflow: auto
+            display: flex
+            align-items: stretch
+            flex-direction: column
+            gap: 20px
+            .noteCount
+                font-size: 16px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                #count
+                    font-weight: 600
+            .note
+                display: flex
+                align-items: center
+                gap: 10px
+                .LessonNote
+                    font-size: 16px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    max-width:  100%
+                    word-break: break-all
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #DDDDDD
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #cbcbcb
+    
+    .Text
+        font-size: 24px
+    .TextSubject
+        font-size: 24px
+@media only screen and (min-width: 1920px)  
+    .info
+        margin-top: 100px 
+        display: flex
+        flex-direction: row
+        justify-content: center
+        #infoVideo
+            width: 900px
+            height: 450px
+        .area
+            width: 900px
+        #closeInfo
+            width: 300px
+            height: 80px
+            background-color: rgb(108, 99, 255,.2)
+            border: 1px solid #6C63FF
+            border-radius: 20px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            color: #6C63FF
+            font-size: 26px
+            cursor: pointer
+            transition: .3s all
+        #closeInfo:hover
+            background-color: #6C63FF
+            color: #FFFFFF
+    .infoText
+        padding-top: 30px
+        font-size: 18px 
+    .infoHeader
+        padding-top: 20px
+        font-size: 20px
+    .Text
+        font-size: 26px
+    .TextSubject
+        font-size: 26px
+    .rowsABCD
+        display: flex
+        flex-direction: column
+        gap: 50px
+        margin-bottom: 200px
+        .row-AB 
+            display: flex
+            flex-direction: row
+            justify-content: center
+            gap: 50px
+        .row-CD
+            display: flex
+            flex-direction: row
+            justify-content: center
+            gap: 50px
+    .answerPut
+        width: 300px
+        height: 80px
+        border: 1px solid #F2F2F2
+        border-radius: 5px
+        cursor: pointer
+        position: relative
+        transition: .5s all
+        #choice
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 18px
+            color: #4285F4
+            line-height: 80px
+            position: absolute
+            left: 30px
+        .questionAnswerInfos
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 16px
+            color: #000
+            line-height: 80px
+            text-align: center
+        &:hover
+            border-color: #4285F4
+    .textArea
+        width: 100%
+        height: 300px
+        position: relative
+        .textDiv
+            position: absolute
+            width: 700px
+            height: 210px
+            left: calc( 50% - 350px )
+            border: 1px solid #DBDBDB
+            border-radius: 20px
+            padding: 20px 20px 0 20px
+            display: flex
+            flex-direction: column
+            .textAreaCompArea
+                padding-top: 5px
+                textarea
+                    background: none
+                    border: none
+                    width: 100%
+                    height: 120px
+                    outline: none
+                    font-size: 18px
+            .sendText
+                position: absolute
+                right: 20px
+                bottom: 20px
+                cursor: pointer
+    
+    .rightAnswer
+        width: 100%
+        height: 150px
+        background-color: rgb(58,205 ,126,.1 )
+        position: fixed
+        bottom: 0px
+        right: 0px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .scos
+            display: flex
+            gap: 100px
+            align-items: center
+            .message
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 22px
+                color: #3ACD7E
+        #nextQstnTrue
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 22px
+            color: #3ACD7E
+            background: none
+            border: none
+            cursor: pointer
+    .falseAnswer
+        width: 100%
+        height: 150px
+        background-color: rgb(234,67 ,53,.1 )
+        position: fixed
+        bottom: 0px
+        right: 0px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .scos
+            display: flex
+            gap: 100px
+            align-items: center
+            .message
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 22px
+                color: #EA4335
+        #nextQstnFalse
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 22px
+            color: #EA4335
+            background: none
+            border: none
+            cursor: pointer
+    .openNote
+        position: fixed
+        right: 120px
+        top: 50%
+        svg
+            cursor: pointer
+    .newNote
+        position: fixed
+        flex-direction: column
+        align-items: center
+        gap: 50px
+        width: 475px
+        height: 650px
+        right: 0
+        top: 100px
+        border-left: 1px solid #CBCBCB
+        border-bottom: 1px solid #CBCBCB
+        .noteCount
+                font-size: 18px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                #count
+                    font-weight: 600
+        .head
+            width: 100%
+            text-align: center
+            padding-top: 25px 
+            .close-Popup
+                cursor: pointer
+                justify-self: start
+                position: absolute
+                top: 25px
+                left: 25px
+            .content
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #000
+                user-select: none
+                font-size: 26px
+        .notSend
+            width: 80%
+            height: 150px
+            border: 1px solid #CBCBCB
+            border-radius: 10px
+            padding: 5px
+            position: relative
+            textarea
+                width: 100%
+                height: 80%
+                border: none
+                outline: none
+                font-size: 16px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                resize: none
+            #sendNote
+                cursor: pointer
+                position: absolute
+                right: 5px
+                bottom: 5px
+        .myNote
+            width: 80%
+            height: 300px
+            overflow: auto
+            display: flex
+            align-items: stretch
+            flex-direction: column
+            gap: 20px
+            .note
+                display: flex
+                align-items: center
+                gap: 10px
+                .LessonNote
+                    font-size: 16px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    max-width: 100%
+                    word-break: break-all
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #DDDDDD
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #cbcbcb
+@media only screen and (min-width: 1921px) 
+    .info
+        margin-top: 100px 
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+        #infoVideo
+            width: 100%
+            height: 500px
+        .area
+            width: 50%
+            height: 100%
+        #closeInfo
+            width: 400px
+            height: 100px
+            background-color: rgb(108, 99, 255,.2)
+            border: 1px solid #6C63FF
+            border-radius: 20px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            color: #6C63FF
+            font-size: 28px
+            cursor: pointer
+            transition: .3s all
+        #closeInfo:hover
+            background-color: #6C63FF
+            color: #FFFFFF
+        .infoText
+            padding-top: 30px
+            font-size: 22px 
+        .infoHeader
+            padding-top: 20px
+            font-size: 24px
+    .Text
+        font-size: 32px
+    .TextSubject
+        font-size: 28px
+    .header
+        div
+            width: 200px
+            text-align: center

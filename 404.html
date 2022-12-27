@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 ~ Bulunamadı</title>
+    <link rel="shorcut icon" href="public/img/Codingo_Title.png" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+        html{
+            height: 100vh;
+        }
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            box-sizing: border-box;
+        }
+        body {
+            line-height: 1;
+        }
+        .alert{
+            display: none;
+        }
+        .message{
+            font-family: 'Montserrat', sans-serif;
+        }
+        #line400,#line767,#line1920{
+            display: none;
+        }
+        .label{
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+        }
+        .link{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .linkText{
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            color: #3ACD7E;
+            font-weight: 400;
+        }
+        
+        
+        @media only screen and (max-width: 400px){
+            #undefinedLogo{
+                width: 125px;
+            }
+            .message{
+                font-size: 18px;
+            }
+            .label{
+                font-size: 20px;
+                margin-top: 10%;
+                text-align: center;
+            }
+            #homeIcon{
+                width: 16px;
+            }
+            .linkText{
+                font-size: 18px;
+            }
+            .logo{
+                text-align: center;
+                margin-top: 30px;
+            }
+            .link{
+                margin-top: 30px;
+            }
+            .warn{
+                display: flex;
+                height: 100vh;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        @media only screen and (max-width: 767px) and (min-width: 400px){
+            #undefinedLogo{
+                width: 125px;
+            }
+            .message{
+                font-size: 24px;
+                text-align: center;
+            }
+            #line767{
+                margin-top: 4%;
+                display: none;
+            }
+            .label{
+                font-size: 25px;
+                margin-top: 10%;
+                text-align: center;
+            }
+            #homeIcon{
+                width: 20px;
+            }
+            .link{
+                margin-top: 5%
+            }
+            .linkText{
+                font-size: 20px;
+            }
+            .logo{
+                text-align: center;
+                margin-top: 30px;
+            }
+            .warn{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        @media only screen and (max-width: 1920px) and (min-width: 767px) {
+            #undefinedLogo{
+                width: 175px;
+            }
+            .message{
+                font-size: 35px;
+                text-align: center;
+                
+            }
+            #line1920{
+                display: none;
+            }
+            .label{
+                font-size: 35px;
+                margin-top: 10%;
+                text-align: center;
+            }
+            #homeIcon{
+                width: 25px;
+            }
+            .link{
+                margin-top: 5%
+            }
+            .linkText{
+                font-size: 25px;
+            }
+            .logo{
+                text-align: center;
+                margin-top: 75px;
+            }
+            
+        }
+        @media only screen and (min-width: 1920px)  {
+            #undefinedLogo{
+                width: 180px;
+            }
+            .message{
+                font-size: 50px;
+                text-align: center;
+            }
+            #line1920{
+                display: block;
+            }
+            .label{
+                font-size: 40px;
+                margin-top: 100px;
+                text-align: center;
+            }
+            #homeIcon{
+                width: 35px;
+            }
+            .linkText{
+                font-size: 35px;
+            }
+            .logo{
+                text-align: center;
+                margin-top: 75px;
+            }
+        }
+        @media only screen and (min-width: 1921px)  {
+            #line1920{
+                display: none;
+            }
+            .label{
+                font-size: 45px;
+            }
+            .message{
+                margin-top: 3%;
+            }
+            #homeIcon{
+                width: 40px;
+            }
+            .linkText{
+                font-size: 40px;
+            }
+            .link{
+                margin-top: 5%;
+            }
+            .logo{
+                text-align: center;
+                margin-top: 9%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="warn">
+        <div class="cell">
+                <div class="label">Codingo</div>
+            <div class="logo">
+                <svg  viewBox="0 0 180 175" fill="none" xmlns="http://www.w3.org/2000/svg" id="undefinedLogo">
+                    <path d="M2.67531 104.24V95.52L29.0753 60H42.6753L16.8353 95.52L10.5153 93.68H54.5953V104.24H2.67531ZM32.8353 116V104.24L33.2353 93.68V83.2H45.4753V116H32.8353ZM86.4716 116.96C81.8849 116.96 77.7782 115.84 74.1516 113.6C70.5249 111.307 67.6716 108 65.5916 103.68C63.5116 99.36 62.4716 94.1333 62.4716 88C62.4716 81.8667 63.5116 76.64 65.5916 72.32C67.6716 68 70.5249 64.72 74.1516 62.48C77.7782 60.1867 81.8849 59.04 86.4716 59.04C91.1116 59.04 95.2182 60.1867 98.7916 62.48C102.418 64.72 105.272 68 107.352 72.32C109.432 76.64 110.472 81.8667 110.472 88C110.472 94.1333 109.432 99.36 107.352 103.68C105.272 108 102.418 111.307 98.7916 113.6C95.2182 115.84 91.1116 116.96 86.4716 116.96ZM86.4716 106C88.6582 106 90.5516 105.387 92.1516 104.16C93.8049 102.933 95.0849 100.987 95.9916 98.32C96.9516 95.6533 97.4316 92.2133 97.4316 88C97.4316 83.7867 96.9516 80.3467 95.9916 77.68C95.0849 75.0133 93.8049 73.0667 92.1516 71.84C90.5516 70.6133 88.6582 70 86.4716 70C84.3382 70 82.4449 70.6133 80.7916 71.84C79.1916 73.0667 77.9116 75.0133 76.9516 77.68C76.0449 80.3467 75.5916 83.7867 75.5916 88C75.5916 92.2133 76.0449 95.6533 76.9516 98.32C77.9116 100.987 79.1916 102.933 80.7916 104.16C82.4449 105.387 84.3382 106 86.4716 106ZM120.128 104.24V95.52L146.528 60H160.128L134.288 95.52L127.968 93.68H172.048V104.24H120.128ZM150.288 116V104.24L150.688 93.68V83.2H162.928V116H150.288Z" fill="#3ACD7E"/>
+                    <path d="M9.67531 104.24V95.52L36.0753 60H49.6753L23.8353 95.52L17.5153 93.68H61.5953V104.24H9.67531ZM39.8353 116V104.24L40.2353 93.68V83.2H52.4753V116H39.8353ZM93.4716 116.96C88.8849 116.96 84.7782 115.84 81.1516 113.6C77.5249 111.307 74.6716 108 72.5916 103.68C70.5116 99.36 69.4716 94.1333 69.4716 88C69.4716 81.8667 70.5116 76.64 72.5916 72.32C74.6716 68 77.5249 64.72 81.1516 62.48C84.7782 60.1867 88.8849 59.04 93.4716 59.04C98.1116 59.04 102.218 60.1867 105.792 62.48C109.418 64.72 112.272 68 114.352 72.32C116.432 76.64 117.472 81.8667 117.472 88C117.472 94.1333 116.432 99.36 114.352 103.68C112.272 108 109.418 111.307 105.792 113.6C102.218 115.84 98.1116 116.96 93.4716 116.96ZM93.4716 106C95.6582 106 97.5516 105.387 99.1516 104.16C100.805 102.933 102.085 100.987 102.992 98.32C103.952 95.6533 104.432 92.2133 104.432 88C104.432 83.7867 103.952 80.3467 102.992 77.68C102.085 75.0133 100.805 73.0667 99.1516 71.84C97.5516 70.6133 95.6582 70 93.4716 70C91.3382 70 89.4449 70.6133 87.7916 71.84C86.1916 73.0667 84.9116 75.0133 83.9516 77.68C83.0449 80.3467 82.5916 83.7867 82.5916 88C82.5916 92.2133 83.0449 95.6533 83.9516 98.32C84.9116 100.987 86.1916 102.933 87.7916 104.16C89.4449 105.387 91.3382 106 93.4716 106ZM127.128 104.24V95.52L153.528 60H167.128L141.288 95.52L134.968 93.68H179.048V104.24H127.128ZM157.288 116V104.24L157.688 93.68V83.2H169.928V116H157.288Z" fill="#3ACD7E" fill-opacity="0.8"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M89.5 14.5833C129.706 14.5833 162.417 47.2937 162.417 87.5C162.417 127.706 129.706 160.417 89.5 160.417C49.2938 160.417 16.5833 127.706 16.5833 87.5C16.5833 47.2937 49.2938 14.5833 89.5 14.5833ZM89.5 25.5208C55.324 25.5208 27.5208 53.3239 27.5208 87.5C27.5208 121.676 55.324 149.479 89.5 149.479C123.676 149.479 151.479 121.676 151.479 87.5C151.479 53.3239 123.676 25.5208 89.5 25.5208ZM89.5284 107.887C93.5607 107.887 96.8201 111.146 96.8201 115.178C96.8201 119.211 93.5607 122.47 89.5284 122.47C85.4961 122.47 82.2003 119.211 82.2003 115.178C82.2003 111.146 85.4305 107.887 89.4555 107.887H89.5284ZM89.457 54.3521C92.4757 54.3521 94.9257 56.8021 94.9257 59.8208V92.0427C94.9257 95.0614 92.4757 97.5114 89.457 97.5114C86.4382 97.5114 83.9882 95.0614 83.9882 92.0427V59.8208C83.9882 56.8021 86.4382 54.3521 89.457 54.3521Z" fill="#3ACD7E" fill-opacity="0.1"/>
+                </svg>
+            </div>
+            
+            <div class="message">Sayfa Bulunamadı..</div>
+            <img src="public/img/lineVector1920.svg" id="line1920" alt="line1920">
+            <img src="public/img/lineVector767.svg" id="line767" alt="line767">
+            <img src="public/img/lineVector400.svg" id="line400" alt="line400">
+            <div class="link">
+                <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" id="homeIcon">
+                    <path d="M13.3543 30.2916V25.8193C13.3542 24.6818 14.2816 23.7575 15.4306 23.7498H19.6395C20.794 23.7498 21.7299 24.6764 21.7299 25.8193V25.8193V30.3055C21.7296 31.2714 22.5083 32.0607 23.4836 32.0834H26.2895C29.0866 32.0834 31.3542 29.8385 31.3542 27.0694V27.0694V14.3469C31.3392 13.2575 30.8226 12.2345 29.9512 11.569L20.355 3.91608C18.6739 2.58355 16.284 2.58355 14.6029 3.91608L5.04878 11.5829C4.17412 12.2457 3.6566 13.2704 3.64583 14.3608V27.0694C3.64583 29.8385 5.91335 32.0834 8.71049 32.0834H11.5164C12.5159 32.0834 13.3262 31.2812 13.3262 30.2916V30.2916" stroke="#3ACD7E" stroke-opacity="0.98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="linkText">Anasayfaya dön</div>
+        </div>
+        </div>
+        </div>
+    <script>
+        document.querySelector(".link").addEventListener("click",()=>{
+            window.location.href = "public/php/homepage.html"
+        })
+    </script>
+</body>
+</html>

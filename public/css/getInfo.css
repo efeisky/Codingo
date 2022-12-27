@@ -1,0 +1,693 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@media only screen and (max-width: 400px) {
+  .getDiv {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .getDiv .headText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .getDiv .personalInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .getDiv .personalInfo .dropdown-education {
+    width: 90%;
+    height: 80px;
+    position: relative;
+  }
+  .getDiv .personalInfo .dropdown-education .select {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .getDiv .personalInfo .dropdown-education .select .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .getDiv .personalInfo .dropdown-education .select .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #A0A0A0;
+  }
+  .getDiv .personalInfo .dropdown-education .select:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .getDiv .personalInfo .dropdown-education .select .caret-rotate {
+    transform: rotate(180deg);
+  }
+  .getDiv .personalInfo .menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .getDiv .personalInfo .menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .getDiv .personalInfo .menu li:hover {
+    background: #F2F2F2;
+  }
+  .getDiv .personalInfo .menu .active {
+    background-color: #fff;
+  }
+  .getDiv .personalInfo .menu-open {
+    display: block;
+    opacity: 1;
+  }
+  .getDiv .personalInfo #startLesson {
+    width: 90%;
+    height: 80px;
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+    cursor: pointer;
+    color: #4285F4;
+    font-size: 26px;
+    border-radius: 20px;
+  }
+  .getDiv .personalInfo #startLesson.noActive {
+    background-color: #c4c4c4;
+    border: 1px solid #9C9C9C;
+    cursor: default;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: #9C9C9C;
+    font-size: 26px;
+    border-radius: 20px;
+  }
+  .getDiv .personalInfo .py-level {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  .getDiv .personalInfo .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  .getDiv .personalInfo .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .getDiv .personalInfo .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .getDiv .personalInfo .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .getDiv .personalInfo .py-level .options input {
+    display: none;
+  }
+  .getDiv .personalInfo .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s all;
+  }
+  .getDiv .personalInfo .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  .getDiv .personalInfo .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 401px) {
+  .getDiv {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .getDiv .headText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .getDiv .personalInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .getDiv .personalInfo .dropdown-education {
+    width: 300px;
+    height: 80px;
+    position: relative;
+  }
+  .getDiv .personalInfo .dropdown-education .select {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .getDiv .personalInfo .dropdown-education .select .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .getDiv .personalInfo .dropdown-education .select .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #A0A0A0;
+  }
+  .getDiv .personalInfo .dropdown-education .select:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .getDiv .personalInfo .dropdown-education .select .caret-rotate {
+    transform: rotate(180deg);
+  }
+  .getDiv .personalInfo .menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .getDiv .personalInfo .menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .getDiv .personalInfo .menu li:hover {
+    background: #F2F2F2;
+  }
+  .getDiv .personalInfo .menu .active {
+    background-color: #fff;
+  }
+  .getDiv .personalInfo .menu-open {
+    display: block;
+    opacity: 1;
+  }
+  .getDiv .personalInfo #startLesson {
+    width: 300px;
+    height: 80px;
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+    cursor: pointer;
+    color: #4285F4;
+    font-size: 26px;
+    border-radius: 20px;
+  }
+  .getDiv .personalInfo #startLesson.noActive {
+    background-color: #c4c4c4;
+    border: 1px solid #9C9C9C;
+    cursor: default;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: #9C9C9C;
+    font-size: 26px;
+    border-radius: 20px;
+  }
+  .getDiv .personalInfo .py-level {
+    width: 350px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .getDiv .personalInfo .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  .getDiv .personalInfo .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .getDiv .personalInfo .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .getDiv .personalInfo .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .getDiv .personalInfo .py-level .options input {
+    display: none;
+  }
+  .getDiv .personalInfo .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s all;
+  }
+  .getDiv .personalInfo .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  .getDiv .personalInfo .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+}
+@media only screen and (max-width: 1920px) and (min-width: 767px) {
+  .getDiv {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .getDiv .headText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .getDiv .personalInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .getDiv .personalInfo .dropdown-education {
+    width: 300px;
+    height: 80px;
+    position: relative;
+  }
+  .getDiv .personalInfo .dropdown-education .select {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .getDiv .personalInfo .dropdown-education .select .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .getDiv .personalInfo .dropdown-education .select .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #A0A0A0;
+  }
+  .getDiv .personalInfo .dropdown-education .select:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .getDiv .personalInfo .dropdown-education .select .caret-rotate {
+    transform: rotate(180deg);
+  }
+  .getDiv .personalInfo .menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+  }
+  .getDiv .personalInfo .menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .getDiv .personalInfo .menu li:hover {
+    background: #F2F2F2;
+  }
+  .getDiv .personalInfo .menu .active {
+    background-color: #fff;
+  }
+  .getDiv .personalInfo .menu-open {
+    display: block;
+    opacity: 1;
+  }
+  .getDiv .personalInfo #startLesson {
+    width: 300px;
+    height: 80px;
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+    cursor: pointer;
+    color: #4285F4;
+    font-size: 26px;
+    border-radius: 20px;
+  }
+  .getDiv .personalInfo #startLesson.noActive {
+    background-color: #c4c4c4;
+    border: 1px solid #9C9C9C;
+    cursor: default;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: #9C9C9C;
+    font-size: 26px;
+    border-radius: 20px;
+  }
+  .getDiv .personalInfo .py-level {
+    width: 350px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .getDiv .personalInfo .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  .getDiv .personalInfo .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .getDiv .personalInfo .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .getDiv .personalInfo .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .getDiv .personalInfo .py-level .options input {
+    display: none;
+  }
+  .getDiv .personalInfo .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .getDiv .personalInfo .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  .getDiv .personalInfo .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  .getDiv .personalInfo .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .getDiv {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .getDiv .headText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .getDiv .personalInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .getDiv .personalInfo .dropdown-education {
+    width: 300px;
+    height: 80px;
+    position: relative;
+  }
+  .getDiv .personalInfo .dropdown-education .select {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .getDiv .personalInfo .dropdown-education .select .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .getDiv .personalInfo .dropdown-education .select .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #A0A0A0;
+  }
+  .getDiv .personalInfo .dropdown-education .select:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .getDiv .personalInfo .dropdown-education .select .caret-rotate {
+    transform: rotate(180deg);
+  }
+  .getDiv .personalInfo .menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+  }
+  .getDiv .personalInfo .menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .getDiv .personalInfo .menu li:hover {
+    background: #F2F2F2;
+  }
+  .getDiv .personalInfo .menu .active {
+    background-color: #fff;
+  }
+  .getDiv .personalInfo .menu-open {
+    display: block;
+    opacity: 1;
+  }
+  .getDiv .personalInfo #startLesson {
+    width: 300px;
+    height: 80px;
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+    cursor: pointer;
+    color: #4285F4;
+    font-size: 26px;
+    border-radius: 20px;
+  }
+  .getDiv .personalInfo #startLesson.noActive {
+    background-color: #c4c4c4;
+    border: 1px solid #9C9C9C;
+    cursor: default;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: #9C9C9C;
+    font-size: 26px;
+    border-radius: 20px;
+  }
+  .getDiv .personalInfo .py-level {
+    width: 350px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .getDiv .personalInfo .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  .getDiv .personalInfo .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .getDiv .personalInfo .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  .getDiv .personalInfo .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .getDiv .personalInfo .py-level .options input {
+    display: none;
+  }
+  .getDiv .personalInfo .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .getDiv .personalInfo .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  .getDiv .personalInfo .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  .getDiv .personalInfo .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+}/*# sourceMappingURL=getInfo.css.map */

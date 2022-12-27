@@ -1,0 +1,938 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
+@media only screen and (max-width: 400px)
+    .subjectArea
+            padding: 100px 0 100px 0
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            gap: 50px
+            align-items: center
+            .bottomPanel
+                width: 90%
+                display: flex
+                justify-content: space-between
+                .Codingo
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 600
+                    font-size: 20px
+                .Wifi
+                    #wifiConnection
+                        
+            .category
+                width: 90%
+                height: 475px
+                background-color: #FFFFFF
+                border: 1px solid #CBCBCB
+                padding: 25px 5px 25px 5px
+                border-radius: 20px
+                position: relative
+                .subjectName
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    text-align: center
+                    font-size: 19px
+                .lessons
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: center
+                    div
+                        width: calc( 100% / 3 )
+                    .startLessonZero
+                        flex-direction: column
+                        gap: 10px
+                        justify-content: center
+                        align-items: center
+                        text-align: center
+                        #arrowStart
+                            width: 80%
+                            height: auto
+                        .textZero
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            width: auto
+                            svg
+                                width: 48px
+                                height: 48px
+                            .textZeroContent
+                                width: auto
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                color: #3ACD7E
+                                font-size: 14px
+                                text-align: center
+                    .finishLesson
+                        display: flex
+                        flex-direction: column
+                        gap: 10px
+                        justify-content: center
+                        align-items: center
+                        #arrowSVG
+                            transform: rotate(180deg)
+                            width: 80%
+                            height: auto
+                        .textZero
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            width: auto
+                            svg
+                                width: 48px
+                                height: 48px
+                            .textZeroContent
+                                width: auto
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                color: #3ACD7E
+                                font-size: 14px
+                                text-align: center
+                    .lesson
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
+                        gap: 10px
+                        
+                        .lastCircleNumber
+                            width: 60px
+                            height: 60px
+                            border-radius: 50%
+                            background-color: rgb(58,205 ,126,.8 )
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            .number
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                text-align: center
+                                font-size: 19px
+                                color: #FFFFFF
+                        .circleNumber
+                            width: 60px
+                            height: 60px
+                            border-radius: 50%
+                            background-color: #EA4335
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            .number
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                text-align: center
+                                font-size: 19px
+                                color: #FFFFFF
+                            
+                        .nextCircleNumber
+                            width: 60px
+                            height: 60px
+                            border-radius: 50%
+                            background-color: rgb(66,133 ,244,.8 )
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            .number
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                text-align: center
+                                font-size: 19px
+                                color: #FFFFFF
+                        .info
+                        
+                            display: none
+                            flex-direction: column
+                            gap: 20px
+                            align-items: center
+                            width: auto
+                            
+                            .subjectLessonActive
+                                width: 100%
+                                text-align: center
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                color: #000
+                            .subjectLessonnoActive
+                                width: 100%
+                                text-align: center
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                color: #A0A0A0
+                                display: none
+                            .status
+                                display: none
+                            button
+                                width: 180px
+                                height: 60px
+                                background-color: rgb(234, 67,53,.3 )
+                                color: #fff
+                                transition: .5s all
+                                border-radius: 10px
+                                cursor: pointer
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 600
+                                font-size: 16px
+                                border: none
+                                &:hover
+                                    background-color: rgb(234, 67,53,.7 )
+                    .finishSomething
+                        width: auto
+                        text-align: center
+                        display: flex
+                        flex-direction: column
+                        #infinity
+                            width: 48px
+                            height: 48px
+                        .textZero
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            width: auto
+                            gap: 10px
+                            .textZeroContent
+                                width: auto
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                color: #3ACD7E
+                                font-size: 19px
+                            .doPracticeMathEnd,.doPracticePyEnd
+                                display: flex
+                                align-items: center
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                width: 100%
+                                justify-content: center
+                                text-align: center
+                                cursor: pointer
+                                gap: 15px
+                                .practiceText
+                                    width: auto
+                                    font-family: 'Montserrat', sans-serif
+                                    font-weight: 500
+                .phone
+                    width: 100%
+                    height: auto
+                    display: flex
+                    justify-content: center
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    text-align: center
+                    .info
+                        display: flex
+                        flex-direction: column
+                        gap: 20px
+                    button
+                        z-index: 1
+                        width: 180px
+                        height: 60px
+                        background-color: rgb(234, 67,53,.3 )
+                        color: #fff
+                        transition: .5s all
+                        border-radius: 10px
+                        cursor: pointer
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 600
+                        font-size: 16px
+                        border: none
+                        &:hover
+                            background-color: rgb(234, 67,53,.7 )
+                .doPracticeMath,.doPracticePy
+                    display: flex
+                    gap: 15px
+                    position: absolute
+                    align-items: center
+                    bottom: 10px
+                    left: 10px
+                    cursor: pointer
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+@media only screen and (max-width: 767px) and (min-width: 401px)
+    .subjectArea
+        padding: 100px 0 100px 0
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        gap: 50px
+        align-items: center
+        .bottomPanel
+            width: 90%
+            display: flex
+            justify-content: space-between
+            .Codingo
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+            .Wifi
+                #wifiConnection
+                    
+        .category
+            width: 90%
+            height: 475px
+            background-color: #FFFFFF
+            border: 1px solid #CBCBCB
+            padding: 25px 5px 25px 5px
+            border-radius: 20px
+            position: relative
+            .subjectName
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+                font-size: 19px
+            .lessons
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: center
+                div
+                    width: calc( 100% / 3 )
+                .startLessonZero
+                    flex-direction: column
+                    gap: 10px
+                    justify-content: center
+                    align-items: center
+                    text-align: center
+                    #arrowStart
+                        width: 80%
+                        height: auto
+                    .textZero
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: auto
+                        svg
+                            width: 48px
+                            height: 48px
+                        .textZeroContent
+                            width: auto
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #3ACD7E
+                            font-size: 14px
+                            text-align: center
+                .finishLesson
+                    display: flex
+                    flex-direction: column
+                    gap: 10px
+                    justify-content: center
+                    align-items: center
+                    #arrowSVG
+                        transform: rotate(180deg)
+                        width: 80%
+                        height: auto
+                    .textZero
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: auto
+                        svg
+                            width: 48px
+                            height: 48px
+                        .textZeroContent
+                            width: auto
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #3ACD7E
+                            font-size: 14px
+                            text-align: center
+                .lesson
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: column
+                    gap: 10px
+                    
+                    .lastCircleNumber
+                        width: 80px
+                        height: 80px
+                        border-radius: 50%
+                        background-color: rgb(58,205 ,126,.8 )
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .number
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            text-align: center
+                            font-size: 19px
+                            color: #FFFFFF
+                    .circleNumber
+                        width: 80px
+                        height: 80px
+                        border-radius: 50%
+                        background-color: #EA4335
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .number
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            text-align: center
+                            font-size: 19px
+                            color: #FFFFFF
+                        
+                    .nextCircleNumber
+                        width: 80px
+                        height: 80px
+                        border-radius: 50%
+                        background-color: rgb(66,133 ,244,.8 )
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .number
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            text-align: center
+                            font-size: 19px
+                            color: #FFFFFF
+                    .info
+                    
+                        display: none
+                        flex-direction: column
+                        gap: 20px
+                        align-items: center
+                        width: auto
+                        
+                        .subjectLessonActive
+                            width: 100%
+                            text-align: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #000
+                        .subjectLessonnoActive
+                            width: 100%
+                            text-align: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #A0A0A0
+                            display: none
+                        .status
+                            display: none
+                        button
+                            width: 180px
+                            height: 60px
+                            background-color: rgb(234, 67,53,.3 )
+                            color: #fff
+                            transition: .5s all
+                            border-radius: 10px
+                            cursor: pointer
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 600
+                            font-size: 16px
+                            border: none
+                            &:hover
+                                background-color: rgb(234, 67,53,.7 )
+                .finishSomething
+                    width: auto
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    #infinity
+                        width: 48px
+                        height: 48px
+                    .textZero
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: auto
+                        gap: 10px
+                        .textZeroContent
+                            width: auto
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #3ACD7E
+                            font-size: 19px
+                        .doPracticeMathEnd,.doPracticePyEnd
+                            display: flex
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            width: 100%
+                            justify-content: center
+                            text-align: center
+                            cursor: pointer
+                            gap: 15px
+                            .practiceText
+                                width: auto
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+            .phone
+                width: 100%
+                height: auto
+                display: flex
+                justify-content: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+                .info
+                    display: flex
+                    flex-direction: column
+                    gap: 20px
+                button
+                    z-index: 1
+                    width: 180px
+                    height: 60px
+                    background-color: rgb(234, 67,53,.3 )
+                    color: #fff
+                    transition: .5s all
+                    border-radius: 10px
+                    cursor: pointer
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 600
+                    font-size: 16px
+                    border: none
+                    &:hover
+                        background-color: rgb(234, 67,53,.7 )
+            .doPracticeMath,.doPracticePy
+                display: flex
+                gap: 15px
+                position: absolute
+                align-items: center
+                bottom: 10px
+                left: 10px
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+@media only screen and (min-width: 768px) and (max-width: 1919px)
+    .subjectArea
+        padding: 100px 0 100px 0
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        gap: 50px
+        align-items: center
+        .bottomPanel
+            width: 90%
+            display: flex
+            justify-content: space-between
+            .Codingo
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+            .Wifi
+                #wifiConnection
+                    
+        .category
+            width: 90%
+            height: 425px
+            background-color: #FFFFFF
+            border: 1px solid #CBCBCB
+            padding: 25px
+            border-radius: 20px
+            position: relative
+            .subjectName
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+                font-size: 19px
+            .lessons
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: center
+                div
+                    width: calc( 100% / 3 )
+                .startLessonZero
+                    display: flex
+                    flex-direction: column
+                    gap: 10px
+                    justify-content: center
+                    align-items: center
+                    #arrowStart
+                        width: 80%
+                        height: auto
+                    .textZero
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: auto
+                        svg
+                            width: 48px
+                            height: 48px
+                        .textZeroContent
+                            width: auto
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #3ACD7E
+                            font-size: 19px
+                            text-align: center
+                .finishLesson
+                    display: flex
+                    flex-direction: column
+                    gap: 10px
+                    justify-content: center
+                    align-items: center
+                    #arrowSVG
+                        transform: rotate(180deg)
+                        width: 80%
+                        height: auto
+                    .textZero
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: auto
+                        svg
+                            width: 48px
+                            height: 48px
+                        .textZeroContent
+                            width: auto
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #3ACD7E
+                            font-size: 19px
+                            text-align: center
+                .lesson
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: column
+                    gap: 10px
+                            
+                    .lastCircleNumber
+                        width: 80px
+                        height: 80px
+                        border-radius: 50%
+                        background-color: rgb(58,205 ,126,.8 )
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .number
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            text-align: center
+                            font-size: 19px
+                            color: #FFFFFF
+                    .circleNumber
+                        width: 80px
+                        height: 80px
+                        border-radius: 50%
+                        background-color: #EA4335
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .number
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            text-align: center
+                            font-size: 19px
+                            color: #FFFFFF
+                    .nextCircleNumber
+                        width: 80px
+                        height: 80px
+                        border-radius: 50%
+                        background-color: rgb(66,133 ,244,.8 )
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .number
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            text-align: center
+                            font-size: 19px
+                            color: #FFFFFF
+                    .info
+                    
+                        display: flex
+                        flex-direction: column
+                        gap: 20px
+                        align-items: center
+                        width: auto
+                        .subjectLessonActive
+                            width: 100%
+                            text-align: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #000
+                        .subjectLessonnoActive
+                            width: 100%
+                            text-align: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #A0A0A0
+                        .status
+                            width: 100%
+                            text-align: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #A0A0A0
+                        button
+                            width: 180px
+                            height: 60px
+                            background-color: rgb(234, 67,53,.3 )
+                            color: #fff
+                            transition: .5s all
+                            border-radius: 10px
+                            cursor: pointer
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 600
+                            font-size: 16px
+                            border: none
+                            &:hover
+                                background-color: rgb(234, 67,53,.7 )
+                .finishSomething
+                    width: auto
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    #infinity
+                        width: 48px
+                        height: 48px
+                    .textZero
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: auto
+                        gap: 10px
+                        .textZeroContent
+                            width: auto
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #3ACD7E
+                            font-size: 19px
+                        .doPracticeMathEnd,.doPracticePyEnd
+                            display: flex
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            width: 100%
+                            justify-content: center
+                            text-align: center
+                            cursor: pointer
+                            gap: 15px
+                            .practiceText
+                                width: auto
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+            .phone
+                display: none
+            .doPracticeMath,.doPracticePy
+                display: flex
+                gap: 15px
+                position: absolute
+                align-items: center
+                bottom: 10px
+                left: 10px
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+@media only screen and (min-width: 1920px)
+    .subjectArea
+        padding: 100px 0 100px 0
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        gap: 50px
+        align-items: center
+        .bottomPanel
+            width: 90%
+            display: flex
+            justify-content: space-between
+            .Codingo
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+            .Wifi
+                #wifiConnection
+                    
+        .category
+            width: 90%
+            height: 425px
+            background-color: #FFFFFF
+            border: 1px solid #CBCBCB
+            padding: 25px
+            border-radius: 20px
+            position: relative
+            .subjectName
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+                font-size: 19px
+            .lessons
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: center
+                div
+                    width: calc( 100% / 3 )
+                .startLessonZero
+                    display: flex
+                    flex-direction: column
+                    gap: 10px
+                    justify-content: center
+                    align-items: center
+                    .textZero
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: auto
+                        svg
+                            width: 48px
+                            height: 48px
+                        .textZeroContent
+                            width: auto
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #3ACD7E
+                            font-size: 19px
+                    #arrowStart
+                        width: 313px
+                        height: 74px
+                .finishLesson
+                    display: flex
+                    flex-direction: column
+                    gap: 10px
+                    justify-content: center
+                    align-items: center
+                    #arrowSVG
+                        transform: rotate(180deg)
+                        width: 313px
+                        height: 74px
+                    .textZero
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: auto
+                        svg
+                            width: 48px
+                            height: 48px
+                        .textZeroContent
+                            width: auto
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #3ACD7E
+                            font-size: 19px
+                .lesson
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: column
+                    gap: 10px
+                            
+                    .lastCircleNumber
+                        width: 105px
+                        height: 105px
+                        border-radius: 50%
+                        background-color: rgb(58,205 ,126,.8 )
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .number
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            text-align: center
+                            font-size: 19px
+                            color: #FFFFFF
+                    .circleNumber
+                        width: 105px
+                        height: 105px
+                        border-radius: 50%
+                        background-color: #EA4335
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .number
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            text-align: center
+                            font-size: 19px
+                            color: #FFFFFF
+                    .nextCircleNumber
+                        width: 105px
+                        height: 105px
+                        border-radius: 50%
+                        background-color: rgb(66,133 ,244,.8 )
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        .number
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            text-align: center
+                            font-size: 19px
+                            color: #FFFFFF
+                    .info
+                    
+                        display: flex
+                        flex-direction: column
+                        gap: 20px
+                        align-items: center
+                        .subjectLessonActive
+                            width: 100%
+                            text-align: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #000
+                        .subjectLessonnoActive
+                            width: 100%
+                            text-align: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #A0A0A0
+                        .status
+                            width: 100%
+                            text-align: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #A0A0A0
+                        button
+                            width: 200px
+                            height: 70px
+                            background-color: rgb(234, 67,53,.3 )
+                            color: #fff
+                            transition: .5s all
+                            border-radius: 10px
+                            cursor: pointer
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 600
+                            font-size: 16px
+                            border: none
+                            &:hover
+                                background-color: rgb(234, 67,53,.7 )
+                .finishSomething
+                    width: auto
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    #infinity
+                        width: 48px
+                        height: 48px
+                    .textZero
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: auto
+                        gap: 10px
+                        .textZeroContent
+                            width: auto
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: #3ACD7E
+                            font-size: 19px
+                        .doPracticeMathEnd,.doPracticePyEnd
+                            display: flex
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            width: 100%
+                            justify-content: center
+                            text-align: center
+                            cursor: pointer
+                            gap: 15px
+                            .practiceText
+                                width: auto
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+            .phone
+                display: none
+            .doPracticeMath,.doPracticePy
+                display: flex
+                gap: 15px
+                position: absolute
+                align-items: center
+                bottom: 10px
+                left: 10px
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
