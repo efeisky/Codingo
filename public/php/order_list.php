@@ -105,7 +105,7 @@ if($user_picture == ""){
     <meta name="Copyright" content="Sitenin tüm telif hakları efeisky'ye aittir.">
     <meta name="rating" content="adult-child" />
     <!--Title Tag-->
-
+    <link rel="shorcut icon" href="../img/Codingo_Title.png" />
     <title>Sıralamam ~ Codingo</title>
     
     <!--Link Tag-->
@@ -198,6 +198,8 @@ if($user_picture == ""){
             </div>
             
     </div>
+    <div class="OrderHeader">Sıralamam</div>
+    
     <div class="orderPanel">
         <div id="subjectOrder"></div>
         <div class="orderSection">
@@ -228,7 +230,7 @@ if($user_picture == ""){
 
             let userOrder = $(`<div id='orderOrder'></div>`)
             let userName = $(`<div id='orderName'></div>`).text(personName)
-            let userPicture = $(`<img src='${personPicture}' id='orderPicture'></img>`).text(personPicture)
+            let userPicture = $(`<img src='${personPicture}' id='orderPicture' alt="PP"></img>`).text(personPicture)
             let userScore = $(`<div id='orderScore'></div>`).text(personScore)
             let userOrderNamePicture = $("<div id='userOrderNamePicture'></div>")
             $(userOrderNamePicture).append(userOrder)

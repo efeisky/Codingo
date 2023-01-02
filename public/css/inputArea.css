@@ -1,0 +1,1659 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@media only screen and (max-width: 400px) {
+  .dropdown-education {
+    width: 90%;
+    height: 75px;
+    position: relative;
+  }
+  .dropdown-education .selectEdu {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-education .selectEdu .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-education .selectEdu .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+  }
+  .dropdown-education .selectEdu:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-education .selectEdu .caret-rotate {
+    transform: rotate(180deg);
+  }
+  .dropdown-education .menuEdu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-education .menuEdu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-education .menuEdu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-education .menuEdu .active {
+    background-color: #fff;
+  }
+  .dropdown-education .menu-open {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown-province {
+    width: 90%;
+    height: 75px;
+    position: relative;
+  }
+  .dropdown-province .selectPro {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-province .selectPro .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-province .selectPro .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+  }
+  .dropdown-province .selectPro:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-province .selectPro .caret-rotate {
+    transition: 0.5s all;
+    transform: rotate(180deg);
+  }
+  .dropdown-province .provinceMenu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    height: 12.5em;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-province .provinceMenu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-province .provinceMenu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-province .provinceMenu .active {
+    background-color: #fff;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar {
+    width: 12px;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dfdfdf;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .dropdown-province .proOpen {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown-school {
+    width: 90%;
+    height: 80px;
+    position: relative;
+  }
+  .dropdown-school .selectSchool {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-school .selectSchool .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-school .selectSchool .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+    max-width: 240px;
+  }
+  .dropdown-school .selectSchool:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-school .selectSchool .caret-rotate {
+    transition: 0.5s all;
+    transform: rotate(180deg);
+  }
+  .dropdown-school .schoolMenu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    height: 12.5em;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-school .schoolMenu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-school .schoolMenu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-school .schoolMenu .active {
+    background-color: #fff;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar {
+    width: 12px;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dfdfdf;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .dropdown-school .schoolOpen {
+    display: block;
+    opacity: 1;
+  }
+  .namePlace {
+    width: 90%;
+    height: 75px;
+    position: relative;
+  }
+  .namePlace .nameWrite {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .namePlace .nameWrite #İnfoName {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .namePlace .nameWrite .name {
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    width: calc(100% - (1.5em + 5px));
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #34A853;
+  }
+  .namePlace .nameWrite:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .EmailPlace {
+    width: 90%;
+    height: 75px;
+    position: relative;
+  }
+  .EmailPlace .EmailWrite {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .EmailPlace .EmailWrite #İnfoEmail {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .EmailPlace .EmailWrite .email {
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    width: calc(100% - (1.5em + 5px));
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: not-allowed;
+    color: #34A853;
+  }
+  .EmailPlace .EmailWrite:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .PassPlace {
+    width: 90%;
+    height: 75px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+  }
+  .PassPlace .PassWrite {
+    width: 85%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 15px;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .PassPlace .PassWrite #infoPass {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 10px;
+  }
+  .PassPlace .PassWrite #infoPass .pass {
+    color: #000;
+  }
+  .PassPlace .PassWrite #infoPass .changePass {
+    color: #A0A0A0;
+    cursor: pointer;
+  }
+  .PassPlace .PassWrite .password {
+    margin-left: 0.5em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #34A853;
+  }
+  .PassPlace .show {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .PassPlace .show svg {
+    cursor: pointer;
+  }
+  .PassPlace:hover {
+    border: 1px solid #9C9C9C;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 401px) {
+  .dropdown-education {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .dropdown-education .selectEdu {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-education .selectEdu .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-education .selectEdu .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+  }
+  .dropdown-education .selectEdu:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-education .selectEdu .caret-rotate {
+    transform: rotate(180deg);
+  }
+  .dropdown-education .menuEdu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-education .menuEdu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-education .menuEdu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-education .menuEdu .active {
+    background-color: #fff;
+  }
+  .dropdown-education .menu-open {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown-province {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .dropdown-province .selectPro {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-province .selectPro .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-province .selectPro .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+  }
+  .dropdown-province .selectPro:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-province .selectPro .caret-rotate {
+    transition: 0.5s all;
+    transform: rotate(180deg);
+  }
+  .dropdown-province .provinceMenu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    height: 12.5em;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-province .provinceMenu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-province .provinceMenu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-province .provinceMenu .active {
+    background-color: #fff;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar {
+    width: 12px;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dfdfdf;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .dropdown-province .proOpen {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown-school {
+    width: 300px;
+    height: 80px;
+    position: relative;
+  }
+  .dropdown-school .selectSchool {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-school .selectSchool .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-school .selectSchool .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+    max-width: 240px;
+  }
+  .dropdown-school .selectSchool:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-school .selectSchool .caret-rotate {
+    transition: 0.5s all;
+    transform: rotate(180deg);
+  }
+  .dropdown-school .schoolMenu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    height: 12.5em;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-school .schoolMenu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-school .schoolMenu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-school .schoolMenu .active {
+    background-color: #fff;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar {
+    width: 12px;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dfdfdf;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .dropdown-school .schoolOpen {
+    display: block;
+    opacity: 1;
+  }
+  .namePlace {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .namePlace .nameWrite {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .namePlace .nameWrite #İnfoName {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .namePlace .nameWrite .name {
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    width: calc(100% - (1.5em + 5px));
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #34A853;
+  }
+  .namePlace .nameWrite:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .EmailPlace {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .EmailPlace .EmailWrite {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .EmailPlace .EmailWrite #İnfoEmail {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .EmailPlace .EmailWrite .email {
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    width: calc(100% - (1.5em + 5px));
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: not-allowed;
+    color: #34A853;
+  }
+  .EmailPlace .EmailWrite:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .PassPlace {
+    width: 300px;
+    height: 75px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+  }
+  .PassPlace .PassWrite {
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 15px;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .PassPlace .PassWrite #infoPass {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 10px;
+  }
+  .PassPlace .PassWrite #infoPass .pass {
+    color: #000;
+  }
+  .PassPlace .PassWrite #infoPass .changePass {
+    color: #A0A0A0;
+    cursor: pointer;
+  }
+  .PassPlace .PassWrite .password {
+    margin-left: 0.5em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #34A853;
+  }
+  .PassPlace .show {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .PassPlace .show svg {
+    cursor: pointer;
+  }
+  .PassPlace:hover {
+    border: 1px solid #9C9C9C;
+  }
+}
+@media only screen and (max-width: 1920px) and (min-width: 767px) {
+  .dropdown-education {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .dropdown-education .selectEdu {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-education .selectEdu .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-education .selectEdu .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+  }
+  .dropdown-education .selectEdu:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-education .selectEdu .caret-rotate {
+    transform: rotate(180deg);
+  }
+  .dropdown-education .menuEdu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-education .menuEdu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-education .menuEdu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-education .menuEdu .active {
+    background-color: #fff;
+  }
+  .dropdown-education .menu-open {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown-province {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .dropdown-province .selectPro {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-province .selectPro .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-province .selectPro .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+  }
+  .dropdown-province .selectPro:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-province .selectPro .caret-rotate {
+    transition: 0.5s all;
+    transform: rotate(180deg);
+  }
+  .dropdown-province .provinceMenu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    height: 12.5em;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-province .provinceMenu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-province .provinceMenu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-province .provinceMenu .active {
+    background-color: #fff;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar {
+    width: 12px;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dfdfdf;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .dropdown-province .proOpen {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown-school {
+    width: 300px;
+    height: 80px;
+    position: relative;
+  }
+  .dropdown-school .selectSchool {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-school .selectSchool .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-school .selectSchool .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+    max-width: 240px;
+  }
+  .dropdown-school .selectSchool:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-school .selectSchool .caret-rotate {
+    transition: 0.5s all;
+    transform: rotate(180deg);
+  }
+  .dropdown-school .schoolMenu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    height: 12.5em;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-school .schoolMenu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-school .schoolMenu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-school .schoolMenu .active {
+    background-color: #fff;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar {
+    width: 12px;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dfdfdf;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .dropdown-school .schoolOpen {
+    display: block;
+    opacity: 1;
+  }
+  .namePlace {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .namePlace .nameWrite {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .namePlace .nameWrite #İnfoName {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .namePlace .nameWrite .name {
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    width: calc(100% - (1.5em + 5px));
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #34A853;
+  }
+  .namePlace .nameWrite:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .EmailPlace {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .EmailPlace .EmailWrite {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .EmailPlace .EmailWrite #İnfoEmail {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .EmailPlace .EmailWrite .email {
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    width: calc(100% - (1.5em + 5px));
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: not-allowed;
+    color: #34A853;
+  }
+  .EmailPlace .EmailWrite:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .PassPlace {
+    width: 300px;
+    height: 75px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+  }
+  .PassPlace .PassWrite {
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 15px;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .PassPlace .PassWrite #infoPass {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 10px;
+  }
+  .PassPlace .PassWrite #infoPass .pass {
+    color: #000;
+  }
+  .PassPlace .PassWrite #infoPass .changePass {
+    color: #A0A0A0;
+    cursor: pointer;
+  }
+  .PassPlace .PassWrite .password {
+    margin-left: 0.5em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #34A853;
+  }
+  .PassPlace .show {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .PassPlace .show svg {
+    cursor: pointer;
+  }
+  .PassPlace:hover {
+    border: 1px solid #9C9C9C;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .dropdown-education {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .dropdown-education .selectEdu {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-education .selectEdu .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-education .selectEdu .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+  }
+  .dropdown-education .selectEdu:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-education .selectEdu .caret-rotate {
+    transform: rotate(180deg);
+  }
+  .dropdown-education .menuEdu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-education .menuEdu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-education .menuEdu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-education .menuEdu .active {
+    background-color: #fff;
+  }
+  .dropdown-education .menu-open {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown-province {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .dropdown-province .selectPro {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-province .selectPro .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-province .selectPro .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+  }
+  .dropdown-province .selectPro:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-province .selectPro .caret-rotate {
+    transition: 0.5s all;
+    transform: rotate(180deg);
+  }
+  .dropdown-province .provinceMenu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    height: 12.5em;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-province .provinceMenu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-province .provinceMenu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-province .provinceMenu .active {
+    background-color: #fff;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar {
+    width: 12px;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dfdfdf;
+  }
+  .dropdown-province .provinceMenu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .dropdown-province .proOpen {
+    display: block;
+    opacity: 1;
+  }
+  .dropdown-school {
+    width: 350px;
+    height: 80px;
+    position: relative;
+  }
+  .dropdown-school .selectSchool {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .dropdown-school .selectSchool .select-texts #infoSelect {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16p;
+  }
+  .dropdown-school .selectSchool .selected {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    letter-spacing: 0.5px;
+    color: #34A853;
+    max-width: 240px;
+  }
+  .dropdown-school .selectSchool:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .dropdown-school .selectSchool .caret-rotate {
+    transition: 0.5s all;
+    transform: rotate(180deg);
+  }
+  .dropdown-school .schoolMenu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #E4E4E4;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 100%;
+    height: 12.5em;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid #cbcbcb;
+    transition: 0.5s all;
+  }
+  .dropdown-school .schoolMenu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: 0.5s all;
+  }
+  .dropdown-school .schoolMenu li:hover {
+    background: #F2F2F2;
+  }
+  .dropdown-school .schoolMenu .active {
+    background-color: #fff;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar {
+    width: 12px;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dfdfdf;
+  }
+  .dropdown-school .schoolMenu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+  }
+  .dropdown-school .schoolOpen {
+    display: block;
+    opacity: 1;
+  }
+  .namePlace {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .namePlace .nameWrite {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .namePlace .nameWrite #İnfoName {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .namePlace .nameWrite .name {
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    width: calc(100% - (1.5em + 5px));
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #34A853;
+  }
+  .namePlace .nameWrite:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .EmailPlace {
+    width: 300px;
+    height: 75px;
+    position: relative;
+  }
+  .EmailPlace .EmailWrite {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .EmailPlace .EmailWrite #İnfoEmail {
+    position: absolute;
+    top: 15px;
+    left: 1em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .EmailPlace .EmailWrite .email {
+    position: absolute;
+    bottom: 15px;
+    left: 1.5em;
+    width: calc(100% - (1.5em + 5px));
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: not-allowed;
+    color: #34A853;
+  }
+  .EmailPlace .EmailWrite:hover {
+    border: 1px solid #9C9C9C;
+  }
+  .PassPlace {
+    width: 300px;
+    height: 75px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+  }
+  .PassPlace .PassWrite {
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 15px;
+    transition: 0.5s all;
+    position: relative;
+  }
+  .PassPlace .PassWrite #infoPass {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 10px;
+  }
+  .PassPlace .PassWrite #infoPass .pass {
+    color: #000;
+  }
+  .PassPlace .PassWrite #infoPass .changePass {
+    color: #A0A0A0;
+    cursor: pointer;
+  }
+  .PassPlace .PassWrite .password {
+    margin-left: 0.5em;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #34A853;
+  }
+  .PassPlace .show {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .PassPlace .show svg {
+    cursor: pointer;
+  }
+  .PassPlace:hover {
+    border: 1px solid #9C9C9C;
+  }
+}/*# sourceMappingURL=inputArea.css.map */

@@ -35,6 +35,11 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .OrderHeader {
+    padding: 10px 0 0 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
   .orderPanel {
     width: 100%;
     padding: 20px 0 0 0;
@@ -85,6 +90,11 @@
   }
 }
 @media only screen and (max-width: 766px) and (min-width: 401px) {
+  .OrderHeader {
+    padding: 20px 0 0 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
   .orderPanel {
     width: 100%;
     padding: 20px 0 0 0;
@@ -135,6 +145,12 @@
   }
 }
 @media only screen and (max-width: 1919px) and (min-width: 767px) {
+  .OrderHeader {
+    padding: 2.5% 0 0 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
   .orderPanel {
     margin: 5% auto 0px auto;
     height: 600px;
@@ -190,6 +206,12 @@
   }
 }
 @media only screen and (min-width: 1920px) {
+  .OrderHeader {
+    padding: 2.5% 0 0 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+  }
   .orderPanel {
     margin: 5% auto 0px auto;
     height: 600px;

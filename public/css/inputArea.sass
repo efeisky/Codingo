@@ -1,0 +1,1474 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
+
+@media only screen and (max-width: 400px)
+    .dropdown-education
+        width: 90%
+        height: 75px
+        position: relative
+        .selectEdu
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transform: rotate(180deg)
+            
+        .menuEdu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+
+        .menu-open
+            display: block
+            opacity: 1
+    
+    .dropdown-province
+        width: 90%
+        height: 75px
+        position: relative
+        .selectPro
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transition: .5s all
+                transform: rotate(180deg)
+            
+        .provinceMenu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            height: 12.5em
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            overflow: auto
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #dfdfdf
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #000
+        .proOpen
+            display: block
+            opacity: 1
+      
+    .dropdown-school
+        width: 90%
+        height: 80px
+        position: relative
+        .selectSchool
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+                max-width: 240px
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transition: .5s all
+                transform: rotate(180deg)
+            
+        .schoolMenu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            height: 12.5em
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            overflow: auto
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #dfdfdf
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #000
+        .schoolOpen
+            display: block
+            opacity: 1
+
+    .namePlace
+        width: 90%
+        height: 75px
+        position: relative
+        .nameWrite
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            #İnfoName
+                position: absolute
+                top: 15px
+                left: 1em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+            .name
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                width: calc(100% - (1.5em + 5px))
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+
+    .EmailPlace
+        width: 90%
+        height: 75px
+        position: relative
+        .EmailWrite
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            transition: .5s all
+            position: relative
+            #İnfoEmail
+                position: absolute
+                top: 15px
+                left: 1em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+            .email
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                width: calc(100% - (1.5em + 5px))
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                cursor: not-allowed
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+
+    .PassPlace
+        width: 90%
+        height: 75px
+        position: relative
+        display: flex
+        flex-direction: row
+        border: 1px solid #cbcbcb
+        border-radius: 10px
+        .PassWrite
+            width: 85%
+            height: 100%
+            border-radius: 10px
+            background: #fff 
+            display: flex
+            gap: 10px
+            flex-direction: column
+            padding: 15px
+            transition: .5s all
+            position: relative
+            #infoPass
+                display: flex
+                align-items: center
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                gap: 10px
+                .pass
+                    color: #000
+                .changePass
+                    color: #A0A0A0
+                    cursor: pointer
+            .password
+                margin-left: .5em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                color: #34A853
+        .show
+            display: flex
+            align-items: center
+            text-align: center
+            svg
+                cursor: pointer
+        &:hover
+            border: 1px solid #9C9C9C
+ 
+@media only screen and (max-width: 767px) and (min-width: 401px)
+    .dropdown-education
+        width: 300px
+        height: 75px
+        position: relative
+        .selectEdu
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transform: rotate(180deg)
+            
+        .menuEdu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+
+        .menu-open
+            display: block
+            opacity: 1
+    
+    .dropdown-province
+        width: 300px
+        height: 75px
+        position: relative
+        .selectPro
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transition: .5s all
+                transform: rotate(180deg)
+            
+        .provinceMenu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            height: 12.5em
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            overflow: auto
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #dfdfdf
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #000
+        .proOpen
+            display: block
+            opacity: 1
+      
+    .dropdown-school
+        width: 300px
+        height: 80px
+        position: relative
+        .selectSchool
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+                max-width: 240px
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transition: .5s all
+                transform: rotate(180deg)
+            
+        .schoolMenu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            height: 12.5em
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            overflow: auto
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #dfdfdf
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #000
+        .schoolOpen
+            display: block
+            opacity: 1
+
+    .namePlace
+        width: 300px
+        height: 75px
+        position: relative
+        .nameWrite
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            #İnfoName
+                position: absolute
+                top: 15px
+                left: 1em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+            .name
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                width: calc(100% - (1.5em + 5px))
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+
+    .EmailPlace
+        width: 300px
+        height: 75px
+        position: relative
+        .EmailWrite
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            transition: .5s all
+            position: relative
+            #İnfoEmail
+                position: absolute
+                top: 15px
+                left: 1em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+            .email
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                width: calc(100% - (1.5em + 5px))
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                cursor: not-allowed
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+
+    .PassPlace
+        width: 300px
+        height: 75px
+        position: relative
+        display: flex
+        flex-direction: row
+        border: 1px solid #cbcbcb
+        border-radius: 10px
+        .PassWrite
+            height: 100%
+            border-radius: 10px
+            background: #fff 
+            display: flex
+            gap: 10px
+            flex-direction: column
+            padding: 15px
+            transition: .5s all
+            position: relative
+            #infoPass
+                display: flex
+                align-items: center
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                gap: 10px
+                .pass
+                    color: #000
+                .changePass
+                    color: #A0A0A0
+                    cursor: pointer
+            .password
+                margin-left: .5em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                color: #34A853
+        .show
+            display: flex
+            align-items: center
+            text-align: center
+            svg
+                cursor: pointer
+        &:hover
+            border: 1px solid #9C9C9C
+
+@media only screen and (max-width: 1920px) and (min-width: 767px)
+    .dropdown-education
+        width: 300px
+        height: 75px
+        position: relative
+        .selectEdu
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transform: rotate(180deg)
+            
+        .menuEdu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+
+        .menu-open
+            display: block
+            opacity: 1
+    
+    .dropdown-province
+        width: 300px
+        height: 75px
+        position: relative
+        .selectPro
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transition: .5s all
+                transform: rotate(180deg)
+            
+        .provinceMenu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            height: 12.5em
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            overflow: auto
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #dfdfdf
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #000
+        .proOpen
+            display: block
+            opacity: 1
+      
+    .dropdown-school
+        width: 300px
+        height: 80px
+        position: relative
+        .selectSchool
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+                max-width: 240px
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transition: .5s all
+                transform: rotate(180deg)
+            
+        .schoolMenu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            height: 12.5em
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            overflow: auto
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #dfdfdf
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #000
+        .schoolOpen
+            display: block
+            opacity: 1
+
+    .namePlace
+        width: 300px
+        height: 75px
+        position: relative
+        .nameWrite
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            #İnfoName
+                position: absolute
+                top: 15px
+                left: 1em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+            .name
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                width: calc(100% - (1.5em + 5px))
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+
+    .EmailPlace
+        width: 300px
+        height: 75px
+        position: relative
+        .EmailWrite
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            transition: .5s all
+            position: relative
+            #İnfoEmail
+                position: absolute
+                top: 15px
+                left: 1em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+            .email
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                width: calc(100% - (1.5em + 5px))
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                cursor: not-allowed
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+
+    .PassPlace
+        width: 300px
+        height: 75px
+        position: relative
+        display: flex
+        flex-direction: row
+        border: 1px solid #cbcbcb
+        border-radius: 10px
+        .PassWrite
+            height: 100%
+            border-radius: 10px
+            background: #fff 
+            display: flex
+            gap: 10px
+            flex-direction: column
+            padding: 15px
+            transition: .5s all
+            position: relative
+            #infoPass
+                display: flex
+                align-items: center
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                gap: 10px
+                .pass
+                    color: #000
+                .changePass
+                    color: #A0A0A0
+                    cursor: pointer
+            .password
+                margin-left: .5em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                color: #34A853
+        .show
+            display: flex
+            align-items: center
+            text-align: center
+            svg
+                cursor: pointer
+        &:hover
+            border: 1px solid #9C9C9C
+@media only screen and (min-width: 1920px)
+    
+    .dropdown-education
+        width: 300px
+        height: 75px
+        position: relative
+        .selectEdu
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transform: rotate(180deg)
+            
+        .menuEdu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+
+        .menu-open
+            display: block
+            opacity: 1
+    
+    .dropdown-province
+        width: 300px
+        height: 75px
+        position: relative
+        .selectPro
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transition: .5s all
+                transform: rotate(180deg)
+            
+        .provinceMenu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            height: 12.5em
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            overflow: auto
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #dfdfdf
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #000
+        .proOpen
+            display: block
+            opacity: 1
+      
+    .dropdown-school
+        width: 350px
+        height: 80px
+        position: relative
+        .selectSchool
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            .select-texts
+                #infoSelect
+                    position: absolute
+                    top: 15px
+                    left: 1em
+                    letter-spacing: .5px
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 16p
+            .selected
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                letter-spacing: .5px
+                color: #34A853
+                max-width: 240px
+            &:hover
+                border: 1px solid #9C9C9C
+            .caret-rotate
+                transition: .5s all
+                transform: rotate(180deg)
+            
+        .schoolMenu
+            list-style: none
+            padding: .2em .5em
+            background: #E4E4E4
+            border: 1px solid #cbcbcb
+            position: absolute
+            top: 90px
+            left: 50%
+            width: 100%
+            height: 12.5em
+            transform: translateX(-50%)
+            opacity: 0
+            display: none
+            transition: .2s
+            overflow: auto
+            z-index: 1
+            border-radius: 10px
+            border: 1px solid #cbcbcb
+            transition: .5s all
+            li
+                padding: .7em .5em
+                margin: .3em 0
+                border-radius: .5em
+                cursor: pointer
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                transition: .5s all
+                &:hover
+                    background: #F2F2F2
+            .active
+                background-color:  #fff
+            &::-webkit-scrollbar
+                width: 12px
+            &::-webkit-scrollbar-track
+                border-radius: 10px
+                background-color: #dfdfdf
+            &::-webkit-scrollbar-thumb
+                border-radius: 10px 
+                background-color: #000
+        .schoolOpen
+            display: block
+            opacity: 1
+
+    .namePlace
+        width: 300px
+        height: 75px
+        position: relative
+        .nameWrite
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            cursor: pointer
+            transition: .5s all
+            position: relative
+            #İnfoName
+                position: absolute
+                top: 15px
+                left: 1em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+            .name
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                width: calc(100% - (1.5em + 5px))
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+
+    .EmailPlace
+        width: 300px
+        height: 75px
+        position: relative
+        .EmailWrite
+            height: 100%
+            background: #fff 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border: 1px solid #cbcbcb
+            border-radius: 10px
+            padding: 15px
+            transition: .5s all
+            position: relative
+            #İnfoEmail
+                position: absolute
+                top: 15px
+                left: 1em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+            .email
+                position: absolute
+                bottom: 15px
+                left: 1.5em
+                width: calc(100% - (1.5em + 5px))
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                cursor: not-allowed
+                color: #34A853
+            &:hover
+                border: 1px solid #9C9C9C
+
+    .PassPlace
+        width: 300px
+        height: 75px
+        position: relative
+        display: flex
+        flex-direction: row
+        border: 1px solid #cbcbcb
+        border-radius: 10px
+        .PassWrite
+            height: 100%
+            border-radius: 10px
+            background: #fff 
+            display: flex
+            gap: 10px
+            flex-direction: column
+            padding: 15px
+            transition: .5s all
+            position: relative
+            #infoPass
+                display: flex
+                align-items: center
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                gap: 10px
+                .pass
+                    color: #000
+                .changePass
+                    color: #A0A0A0
+                    cursor: pointer
+            .password
+                margin-left: .5em
+                letter-spacing: .5px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                border: none
+                outline: none
+                color: #34A853
+        .show
+            display: flex
+            align-items: center
+            text-align: center
+            svg
+                cursor: pointer
+        &:hover
+            border: 1px solid #9C9C9C

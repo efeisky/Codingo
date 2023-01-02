@@ -2,6 +2,8 @@
 
 admin sayfaları en son
 
+şifre giriş sayfası düzenle
+
 Gereken Özellikler
 
 * [ ] Setting İnputların disabled halleri sağlanacak

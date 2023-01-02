@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@media only screen and (min-width: 1920px) {
+  .header {
+    position: relative;
+  }
+  .header .text, .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    text-align: center;
+    top: 70%;
+  }
+  .header .Codingo {
+    top: 40%;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  .logInArea {
+    width: 20%;
+    margin: 5% auto 0 auto;
+    height: 60vh;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 25px;
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+  }
+  .logInArea a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: #000;
+  }
+  .logInArea a #registerText {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  .logInArea .EmailPlace {
+    margin: 0 auto 5% auto;
+  }
+  .logInArea .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #000;
+  }
+  .logInArea .PassPlace {
+    margin: 0 auto 5% auto;
+  }
+  .logInArea .PassPlace .PassWrite .password {
+    color: #000;
+  }
+  .logInArea .rememberMe {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .logInArea .rememberMe label {
+    cursor: pointer;
+  }
+  .logInArea .rememberMe input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  .logInArea .rememberMe input::after {
+    content: url("../img/checkCaret.svg");
+    opacity: 0;
+  }
+  .logInArea .rememberMe input:checked {
+    background-color: rgba(58, 205, 126, 0.1);
+    border-color: rgba(58, 205, 126, 0.2);
+    -webkit-appearance: caret;
+  }
+  .logInArea .rememberMe input:checked::after {
+    opacity: 1;
+  }
+  .logInArea .warn {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EA4335;
+  }
+  .logInArea #setProgress {
+    margin: 0 auto 5% auto;
+    width: 300px;
+    height: 75px;
+    background: rgba(58, 205, 126, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(58, 205, 126);
+    transition: 0.5s all;
+    cursor: pointer;
+    border: none;
+  }
+  .logInArea #setProgress:hover {
+    background: rgba(58, 205, 126, 0.8);
+    color: #fff;
+  }
+  .logInArea #authGoogle {
+    width: 300px;
+    height: 75px;
+    margin: 0 auto 5% auto;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+  .logInArea #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  #logInSvgPgoto {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}/*# sourceMappingURL=loginPage.css.map */
