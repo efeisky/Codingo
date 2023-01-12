@@ -1,16 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
-#notHead {
+html #notHead {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   padding-top: 20px;
   padding-left: 5%;
 }
 
+html[data-theme=dark] #notHead {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-left: 5%;
+  color: #fff;
+}
+
 @media only screen and (max-width: 400px) {
-  #notHead {
-    font-size: 24px;
-  }
-  .myNots {
+  html .myNots {
     gap: 25px;
     padding: 50px;
     display: flex;
@@ -19,41 +24,94 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .myNots #myNote {
+  html .myNots #myNote {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
     overflow: auto;
   }
-  .myNots #myNote::-webkit-scrollbar {
+  html .myNots #myNote::-webkit-scrollbar {
     width: 12px;
   }
-  .myNots #myNote::-webkit-scrollbar-track {
+  html .myNots #myNote::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .myNots #myNote::-webkit-scrollbar-thumb {
+  html .myNots #myNote::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .myNots #myNote .myNoteSection {
+  html .myNots #myNote .myNoteSection {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     padding-left: 5px;
   }
-  .myNots #myNote .myNoteSection .noteSubject {
+  html .myNots #myNote .myNoteSection .noteSubject {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .myNots #myNote #lessonCapiFeminizm {
+  html .myNots #myNote #lessonCapiFeminizm {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #EAAF03;
   }
-  .closedStatus {
+  html .closedStatus {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .myNots {
+    gap: 25px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .myNots #myNote {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    overflow: auto;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] .myNots #myNote .myNoteSection {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding-left: 5px;
+  }
+  html[data-theme=dark] .myNots #myNote .myNoteSection .noteSubject {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .myNots #myNote #lessonCapiFeminizm {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #EAAF03;
+  }
+  html[data-theme=dark] .closedStatus {
     width: 100%;
     height: 150px;
     background-color: #fff;
@@ -62,10 +120,7 @@
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 401px) {
-  #notHead {
-    font-size: 24px;
-  }
-  .myNots {
+  html .myNots {
     gap: 50px;
     padding: 100px;
     display: flex;
@@ -74,56 +129,109 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .myNots #myNote {
+  html .myNots #myNote {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
     overflow: auto;
   }
-  .myNots #myNote::-webkit-scrollbar {
+  html .myNots #myNote::-webkit-scrollbar {
     width: 12px;
   }
-  .myNots #myNote::-webkit-scrollbar-track {
+  html .myNots #myNote::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .myNots #myNote::-webkit-scrollbar-thumb {
+  html .myNots #myNote::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .myNots #myNote .myNoteSection {
+  html .myNots #myNote .myNoteSection {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     padding-left: 5px;
   }
-  .myNots #myNote .myNoteSection .noteSubject {
+  html .myNots #myNote .myNoteSection .noteSubject {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .myNots #myNote #lessonCapiFeminizm {
+  html .myNots #myNote #lessonCapiFeminizm {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #EAAF03;
   }
-  .closedStatus {
+  html .closedStatus {
     width: 320px;
     height: 180px;
     background-color: #fff;
     border: 1px solid #E6E6E6;
     border-radius: 10px;
   }
-  .closedStatus #arrow {
+  html .closedStatus #arrow {
+    width: 36px;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .myNots {
+    gap: 50px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .myNots #myNote {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    overflow: auto;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] .myNots #myNote .myNoteSection {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding-left: 5px;
+  }
+  html[data-theme=dark] .myNots #myNote .myNoteSection .noteSubject {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .myNots #myNote #lessonCapiFeminizm {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #EAAF03;
+  }
+  html[data-theme=dark] .closedStatus {
+    width: 320px;
+    height: 180px;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+  }
+  html[data-theme=dark] .closedStatus #arrow {
     width: 36px;
   }
 }
 @media only screen and (max-width: 1920px) and (min-width: 767px) {
-  #notHead {
-    font-size: 24px;
-  }
-  .myNots {
+  html .myNots {
     gap: 100px;
     padding: 100px;
     display: flex;
@@ -132,41 +240,94 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .myNots #myNote {
+  html .myNots #myNote {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
     overflow: auto;
   }
-  .myNots #myNote::-webkit-scrollbar {
+  html .myNots #myNote::-webkit-scrollbar {
     width: 12px;
   }
-  .myNots #myNote::-webkit-scrollbar-track {
+  html .myNots #myNote::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .myNots #myNote::-webkit-scrollbar-thumb {
+  html .myNots #myNote::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .myNots #myNote .myNoteSection {
+  html .myNots #myNote .myNoteSection {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     padding-left: 5px;
   }
-  .myNots #myNote .myNoteSection .noteSubject {
+  html .myNots #myNote .myNoteSection .noteSubject {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .myNots #myNote #lessonCapiFeminizm {
+  html .myNots #myNote #lessonCapiFeminizm {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #EAAF03;
   }
-  .closedStatus {
+  html .closedStatus {
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .myNots {
+    gap: 100px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .myNots #myNote {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    overflow: auto;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] .myNots #myNote .myNoteSection {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding-left: 5px;
+  }
+  html[data-theme=dark] .myNots #myNote .myNoteSection .noteSubject {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .myNots #myNote #lessonCapiFeminizm {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #EAAF03;
+  }
+  html[data-theme=dark] .closedStatus {
     width: 450px;
     height: 200px;
     background-color: #fff;
@@ -175,7 +336,7 @@
   }
 }
 @media only screen and (min-width: 1920px) {
-  .myNots {
+  html .myNots {
     gap: 150px;
     padding: 100px;
     display: flex;
@@ -187,44 +348,100 @@
     font-weight: 500;
     justify-content: center;
   }
-  .myNots:last-child {
+  html .myNots:last-child {
     justify-content: start;
   }
-  .myNots #myNote {
+  html .myNots #myNote {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
     overflow: auto;
   }
-  .myNots #myNote::-webkit-scrollbar {
+  html .myNots #myNote::-webkit-scrollbar {
     width: 12px;
   }
-  .myNots #myNote::-webkit-scrollbar-track {
+  html .myNots #myNote::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .myNots #myNote::-webkit-scrollbar-thumb {
+  html .myNots #myNote::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .myNots #myNote .myNoteSection {
+  html .myNots #myNote .myNoteSection {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     padding-left: 5px;
   }
-  .myNots #myNote .myNoteSection .noteSubject {
+  html .myNots #myNote .myNoteSection .noteSubject {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .myNots #myNote #lessonCapiFeminizm {
+  html .myNots #myNote #lessonCapiFeminizm {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #EAAF03;
   }
-  .closedStatus {
+  html .closedStatus {
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+  }
+  html[data-theme=dark] .myNots {
+    gap: 150px;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    justify-content: center;
+  }
+  html[data-theme=dark] .myNots:last-child {
+    justify-content: start;
+  }
+  html[data-theme=dark] .myNots #myNote {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    overflow: auto;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .myNots #myNote::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] .myNots #myNote .myNoteSection {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding-left: 5px;
+  }
+  html[data-theme=dark] .myNots #myNote .myNoteSection .noteSubject {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .myNots #myNote #lessonCapiFeminizm {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #EAAF03;
+  }
+  html[data-theme=dark] .closedStatus {
     width: 450px;
     height: 200px;
     background-color: #fff;

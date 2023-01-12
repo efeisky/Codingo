@@ -1,36 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
-@media only screen and (min-width: 1920px) {
-  .header {
+@media only screen and (max-width: 400px) {
+  html .header {
     position: relative;
   }
-  .header .text, .header .Codingo {
+  html .header .text {
     position: absolute;
     width: 100%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #fff;
     letter-spacing: 1.5px;
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
-    top: 70%;
+    top: 60%;
   }
-  .header .Codingo {
-    top: 40%;
-    font-size: 26px;
+  html .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 32.5%;
+    font-size: 20px;
     cursor: pointer;
   }
-  .logInArea {
-    width: 20%;
+  html .logInArea {
+    width: 100%;
     margin: 5% auto 0 auto;
     height: 60vh;
     background-color: #fff;
-    border: 1px solid #E6E6E6;
     border-radius: 25px;
     display: flex;
     padding: 2% 1%;
     flex-direction: column;
   }
-  .logInArea a {
+  html .logInArea a {
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -38,24 +44,24 @@
     margin-bottom: 5%;
     color: #000;
   }
-  .logInArea a #registerText {
+  html .logInArea a #registerText {
     color: #4285F4;
     text-decoration: underline;
   }
-  .logInArea .EmailPlace {
+  html .logInArea .EmailPlace {
     margin: 0 auto 5% auto;
   }
-  .logInArea .EmailPlace .EmailWrite #email {
+  html .logInArea .EmailPlace .EmailWrite #email {
     cursor: text;
     color: #000;
   }
-  .logInArea .PassPlace {
+  html .logInArea .PassPlace {
     margin: 0 auto 5% auto;
   }
-  .logInArea .PassPlace .PassWrite .password {
+  html .logInArea .PassPlace .PassWrite .password {
     color: #000;
   }
-  .logInArea .rememberMe {
+  html .logInArea .rememberMe {
     width: 300px;
     margin: 0 auto 5% auto;
     font-family: "Montserrat", sans-serif;
@@ -64,10 +70,10 @@
     gap: 10px;
     align-items: center;
   }
-  .logInArea .rememberMe label {
+  html .logInArea .rememberMe label {
     cursor: pointer;
   }
-  .logInArea .rememberMe input {
+  html .logInArea .rememberMe input {
     -webkit-appearance: none;
     -moz-appearance: none;
     width: 25px;
@@ -77,19 +83,313 @@
     cursor: pointer;
     transition: 0.3s all;
   }
-  .logInArea .rememberMe input::after {
+  html .logInArea .rememberMe input::after {
     content: url("../img/checkCaret.svg");
     opacity: 0;
   }
-  .logInArea .rememberMe input:checked {
+  html .logInArea .rememberMe input:checked {
     background-color: rgba(58, 205, 126, 0.1);
     border-color: rgba(58, 205, 126, 0.2);
     -webkit-appearance: caret;
   }
-  .logInArea .rememberMe input:checked::after {
+  html .logInArea .rememberMe input:checked::after {
     opacity: 1;
   }
-  .logInArea .warn {
+  html .logInArea .warn {
+    width: 90%;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EA4335;
+  }
+  html .logInArea #setProgress {
+    margin: 0 auto 5% auto;
+    width: 90%;
+    height: 75px;
+    background: rgba(58, 205, 126, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(58, 205, 126);
+    transition: 0.5s all;
+    cursor: pointer;
+    border: none;
+  }
+  html .logInArea #setProgress:hover {
+    background: rgba(58, 205, 126, 0.8);
+    color: #fff;
+  }
+  html .logInArea #authGoogle {
+    width: 90%;
+    height: 75px;
+    margin: 0 auto 5% auto;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+  html .logInArea #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html[data-theme=dark] {
+    background-color: #232323;
+  }
+  html[data-theme=dark] .header {
+    position: relative;
+  }
+  html[data-theme=dark] .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    text-align: center;
+    top: 60%;
+  }
+  html[data-theme=dark] .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 32.5%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .logInArea {
+    width: 100%;
+    margin: 5% auto 0 auto;
+    height: 60vh;
+    background-color: #232323;
+    border-radius: 25px;
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .logInArea a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea a #registerText {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html[data-theme=dark] .logInArea .EmailPlace {
+    margin: 0 auto 5% auto;
+  }
+  html[data-theme=dark] .logInArea .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .PassPlace {
+    margin: 0 auto 5% auto;
+  }
+  html[data-theme=dark] .logInArea .PassPlace .PassWrite .password {
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .rememberMe {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  html[data-theme=dark] .logInArea .rememberMe label {
+    cursor: pointer;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input::after {
+    content: url("../img/checkCaret.svg");
+    opacity: 0;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input:checked {
+    background-color: rgba(58, 205, 126, 0.1);
+    border-color: rgba(58, 205, 126, 0.2);
+    -webkit-appearance: caret;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input:checked::after {
+    opacity: 1;
+  }
+  html[data-theme=dark] .logInArea .warn {
+    width: 90%;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EA4335;
+  }
+  html[data-theme=dark] .logInArea #setProgress {
+    margin: 0 auto 5% auto;
+    width: 90%;
+    height: 75px;
+    background: rgba(58, 205, 126, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(58, 205, 126);
+    transition: 0.5s all;
+    cursor: pointer;
+    border: none;
+  }
+  html[data-theme=dark] .logInArea #setProgress:hover {
+    background: rgba(58, 205, 126, 0.8);
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea #authGoogle {
+    width: 90%;
+    height: 75px;
+    margin: 0 auto 5% auto;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+  html[data-theme=dark] .logInArea #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  #logInSvgPgoto {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 401px) {
+  html .header {
+    position: relative;
+  }
+  html .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    text-align: center;
+    top: 60%;
+  }
+  html .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 32.5%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  html .logInArea {
+    width: 40vh;
+    margin: 5% auto 0 auto;
+    height: 60vh;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 25px;
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+  }
+  html .logInArea a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: #000;
+  }
+  html .logInArea a #registerText {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html .logInArea .EmailPlace {
+    margin: 0 auto 5% auto;
+  }
+  html .logInArea .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #000;
+  }
+  html .logInArea .PassPlace {
+    margin: 0 auto 5% auto;
+  }
+  html .logInArea .PassPlace .PassWrite .password {
+    color: #000;
+  }
+  html .logInArea .rememberMe {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  html .logInArea .rememberMe label {
+    cursor: pointer;
+  }
+  html .logInArea .rememberMe input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  html .logInArea .rememberMe input::after {
+    content: url("../img/checkCaret.svg");
+    opacity: 0;
+  }
+  html .logInArea .rememberMe input:checked {
+    background-color: rgba(58, 205, 126, 0.1);
+    border-color: rgba(58, 205, 126, 0.2);
+    -webkit-appearance: caret;
+  }
+  html .logInArea .rememberMe input:checked::after {
+    opacity: 1;
+  }
+  html .logInArea .warn {
     width: 300px;
     margin: 0 auto 5% auto;
     font-family: "Montserrat", sans-serif;
@@ -100,7 +400,7 @@
     align-items: center;
     color: #EA4335;
   }
-  .logInArea #setProgress {
+  html .logInArea #setProgress {
     margin: 0 auto 5% auto;
     width: 300px;
     height: 75px;
@@ -116,11 +416,11 @@
     cursor: pointer;
     border: none;
   }
-  .logInArea #setProgress:hover {
+  html .logInArea #setProgress:hover {
     background: rgba(58, 205, 126, 0.8);
     color: #fff;
   }
-  .logInArea #authGoogle {
+  html .logInArea #authGoogle {
     width: 300px;
     height: 75px;
     margin: 0 auto 5% auto;
@@ -132,11 +432,757 @@
     align-items: center;
     gap: 5%;
   }
-  .logInArea #authGoogle .googleIcon img {
+  html .logInArea #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html[data-theme=dark] {
+    background-color: #232323;
+  }
+  html[data-theme=dark] .header {
+    position: relative;
+  }
+  html[data-theme=dark] .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    text-align: center;
+    top: 60%;
+  }
+  html[data-theme=dark] .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 32.5%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .logInArea {
+    width: 40vh;
+    margin: 5% auto 0 auto;
+    height: 60vh;
+    background-color: #232323;
+    border: 1px solid #303030;
+    border-radius: 25px;
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .logInArea a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea a #registerText {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html[data-theme=dark] .logInArea .EmailPlace {
+    margin: 0 auto 5% auto;
+  }
+  html[data-theme=dark] .logInArea .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .PassPlace {
+    margin: 0 auto 5% auto;
+  }
+  html[data-theme=dark] .logInArea .PassPlace .PassWrite .password {
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .rememberMe {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  html[data-theme=dark] .logInArea .rememberMe label {
+    cursor: pointer;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input::after {
+    content: url("../img/checkCaret.svg");
+    opacity: 0;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input:checked {
+    background-color: rgba(58, 205, 126, 0.1);
+    border-color: rgba(58, 205, 126, 0.2);
+    -webkit-appearance: caret;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input:checked::after {
+    opacity: 1;
+  }
+  html[data-theme=dark] .logInArea .warn {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EA4335;
+  }
+  html[data-theme=dark] .logInArea #setProgress {
+    margin: 0 auto 5% auto;
+    width: 300px;
+    height: 75px;
+    background: rgba(58, 205, 126, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(58, 205, 126);
+    transition: 0.5s all;
+    cursor: pointer;
+    border: none;
+  }
+  html[data-theme=dark] .logInArea #setProgress:hover {
+    background: rgba(58, 205, 126, 0.8);
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea #authGoogle {
+    width: 300px;
+    height: 75px;
+    margin: 0 auto 5% auto;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+  html[data-theme=dark] .logInArea #authGoogle .googleIcon img {
     width: 36px;
     height: 36px;
   }
   #logInSvgPgoto {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1920px) and (min-width: 767px) {
+  html .header {
+    position: relative;
+  }
+  html .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 26px;
+    text-align: center;
+    top: 60%;
+  }
+  html .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 32.5%;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  html .logInArea {
+    width: 50vh;
+    margin: 5% auto 0 auto;
+    height: 60vh;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 25px;
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+  }
+  html .logInArea a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: #000;
+  }
+  html .logInArea a #registerText {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html .logInArea .EmailPlace {
+    margin: 0 auto 5% auto;
+  }
+  html .logInArea .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #000;
+  }
+  html .logInArea .PassPlace {
+    margin: 0 auto 5% auto;
+  }
+  html .logInArea .PassPlace .PassWrite .password {
+    color: #000;
+  }
+  html .logInArea .rememberMe {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  html .logInArea .rememberMe label {
+    cursor: pointer;
+  }
+  html .logInArea .rememberMe input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  html .logInArea .rememberMe input::after {
+    content: url("../img/checkCaret.svg");
+    opacity: 0;
+  }
+  html .logInArea .rememberMe input:checked {
+    background-color: rgba(58, 205, 126, 0.1);
+    border-color: rgba(58, 205, 126, 0.2);
+    -webkit-appearance: caret;
+  }
+  html .logInArea .rememberMe input:checked::after {
+    opacity: 1;
+  }
+  html .logInArea .warn {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EA4335;
+  }
+  html .logInArea #setProgress {
+    margin: 0 auto 5% auto;
+    width: 300px;
+    height: 75px;
+    background: rgba(58, 205, 126, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(58, 205, 126);
+    transition: 0.5s all;
+    cursor: pointer;
+    border: none;
+  }
+  html .logInArea #setProgress:hover {
+    background: rgba(58, 205, 126, 0.8);
+    color: #fff;
+  }
+  html .logInArea #authGoogle {
+    width: 300px;
+    height: 75px;
+    margin: 0 auto 5% auto;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+  html .logInArea #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html[data-theme=dark] {
+    background-color: #232323;
+  }
+  html[data-theme=dark] .header {
+    position: relative;
+  }
+  html[data-theme=dark] .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 26px;
+    text-align: center;
+    top: 60%;
+  }
+  html[data-theme=dark] .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 32.5%;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .logInArea {
+    width: 50vh;
+    margin: 5% auto 0 auto;
+    height: 60vh;
+    background-color: #fff;
+    background-color: #232323;
+    border: 1px solid #303030;
+    border-radius: 25px;
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .logInArea a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea a #registerText {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html[data-theme=dark] .logInArea .EmailPlace {
+    margin: 0 auto 5% auto;
+  }
+  html[data-theme=dark] .logInArea .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .PassPlace {
+    margin: 0 auto 5% auto;
+  }
+  html[data-theme=dark] .logInArea .PassPlace .PassWrite .password {
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .rememberMe {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    align-items: center;
+  }
+  html[data-theme=dark] .logInArea .rememberMe label {
+    cursor: pointer;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input::after {
+    content: url("../img/checkCaret.svg");
+    opacity: 0;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input:checked {
+    background-color: rgba(58, 205, 126, 0.1);
+    border-color: rgba(58, 205, 126, 0.2);
+    -webkit-appearance: caret;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input:checked::after {
+    opacity: 1;
+  }
+  html[data-theme=dark] .logInArea .warn {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EA4335;
+  }
+  html[data-theme=dark] .logInArea #setProgress {
+    margin: 0 auto 5% auto;
+    width: 300px;
+    height: 75px;
+    background: rgba(58, 205, 126, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(58, 205, 126);
+    transition: 0.5s all;
+    cursor: pointer;
+    border: none;
+  }
+  html[data-theme=dark] .logInArea #setProgress:hover {
+    background: rgba(58, 205, 126, 0.8);
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea #authGoogle {
+    width: 300px;
+    height: 75px;
+    margin: 0 auto 5% auto;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+  html[data-theme=dark] .logInArea #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  #logInSvgPgoto {
+    width: 32.5%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  html .header {
+    position: relative;
+  }
+  html .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    text-align: center;
+    top: 70%;
+  }
+  html .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 40%;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  html .logInArea {
+    width: 20%;
+    margin: 5% auto 0 auto;
+    height: 60vh;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-radius: 25px;
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+  }
+  html .logInArea a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: #000;
+  }
+  html .logInArea a #registerText {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html .logInArea .EmailPlace {
+    margin: 0 auto 5% auto;
+  }
+  html .logInArea .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #000;
+  }
+  html .logInArea .PassPlace {
+    margin: 0 auto 5% auto;
+  }
+  html .logInArea .PassPlace .PassWrite .password {
+    color: #000;
+  }
+  html .logInArea .rememberMe {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  html .logInArea .rememberMe label {
+    cursor: pointer;
+  }
+  html .logInArea .rememberMe input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  html .logInArea .rememberMe input::after {
+    content: url("../img/checkCaret.svg");
+    opacity: 0;
+  }
+  html .logInArea .rememberMe input:checked {
+    background-color: rgba(58, 205, 126, 0.1);
+    border-color: rgba(58, 205, 126, 0.2);
+    -webkit-appearance: caret;
+  }
+  html .logInArea .rememberMe input:checked::after {
+    opacity: 1;
+  }
+  html .logInArea .warn {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EA4335;
+  }
+  html .logInArea #setProgress {
+    margin: 0 auto 5% auto;
+    width: 300px;
+    height: 75px;
+    background: rgba(58, 205, 126, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(58, 205, 126);
+    transition: 0.5s all;
+    cursor: pointer;
+    border: none;
+  }
+  html .logInArea #setProgress:hover {
+    background: rgba(58, 205, 126, 0.8);
+    color: #fff;
+  }
+  html .logInArea #authGoogle {
+    width: 300px;
+    height: 75px;
+    margin: 0 auto 5% auto;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+  html .logInArea #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html #logInSvgPgoto {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  html[data-theme=dark] {
+    background-color: #232323;
+  }
+  html[data-theme=dark] .header {
+    position: relative;
+  }
+  html[data-theme=dark] .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    text-align: center;
+    top: 70%;
+  }
+  html[data-theme=dark] .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 40%;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .logInArea {
+    width: 20%;
+    margin: 5% auto 0 auto;
+    height: 60vh;
+    background-color: #232323;
+    border: 1px solid #303030;
+    border-radius: 25px;
+    display: flex;
+    padding: 2% 1%;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .logInArea a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5%;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea a #registerText {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html[data-theme=dark] .logInArea .EmailPlace {
+    margin: 0 auto 5% auto;
+  }
+  html[data-theme=dark] .logInArea .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .PassPlace {
+    margin: 0 auto 5% auto;
+  }
+  html[data-theme=dark] .logInArea .PassPlace .PassWrite .password {
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .rememberMe {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  html[data-theme=dark] .logInArea .rememberMe label {
+    cursor: pointer;
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input::after {
+    content: url("../img/checkCaret.svg");
+    opacity: 0;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input:checked {
+    background-color: rgba(58, 205, 126, 0.1);
+    border-color: rgba(58, 205, 126, 0.2);
+    -webkit-appearance: caret;
+  }
+  html[data-theme=dark] .logInArea .rememberMe input:checked::after {
+    opacity: 1;
+  }
+  html[data-theme=dark] .logInArea .warn {
+    width: 300px;
+    margin: 0 auto 5% auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EA4335;
+  }
+  html[data-theme=dark] .logInArea #setProgress {
+    margin: 0 auto 5% auto;
+    width: 300px;
+    height: 75px;
+    background: rgba(58, 205, 126, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(58, 205, 126);
+    transition: 0.5s all;
+    cursor: pointer;
+    border: none;
+  }
+  html[data-theme=dark] .logInArea #setProgress:hover {
+    background: rgba(58, 205, 126, 0.8);
+    color: #fff;
+  }
+  html[data-theme=dark] .logInArea #authGoogle {
+    width: 300px;
+    height: 75px;
+    margin: 0 auto 5% auto;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+  html[data-theme=dark] .logInArea #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html[data-theme=dark] #logInSvgPgoto {
     position: fixed;
     bottom: 0;
     left: 0;

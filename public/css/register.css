@@ -1,0 +1,1517 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.warn, .warnCurrentUser {
+  padding: 0px 5%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #EA4335;
+}
+
+@media only screen and (max-width: 400px) {
+  html .registerArea {
+    margin: 2.5vh auto;
+    padding: 50px 0.5% 5% 0.5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    row-gap: 25px;
+  }
+  html .registerArea #relativeText {
+    width: 300px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html .registerArea #relativeText span {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html .registerArea .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .left .EmailPlace, html .registerArea .left .dropdown-school, html .registerArea .left .namePlace, html .registerArea .left .PassPlace, html .registerArea .left .dropdown-education, html .registerArea .left .dropdown-province {
+    width: 100%;
+  }
+  html .registerArea .left .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #000;
+  }
+  html .registerArea .left .PassPlace .PassWrite .password {
+    color: #000;
+  }
+  html .registerArea .left .namePlace .nameWrite .name {
+    color: #000;
+  }
+  html .registerArea .left .dropdown-education .selectEdu .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .left .dropdown-province .selectPro .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .left .dropdown-school .selectSchool .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .secondFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level {
+    width: 300px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  html .registerArea .secondFlex .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  html .registerArea .secondFlex .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html .registerArea .secondFlex .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level .options input {
+    display: none;
+  }
+  html .registerArea .secondFlex .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  html .registerArea .secondFlex .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  html .registerArea .secondFlex .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  html .registerArea .secondFlex .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+  html .registerArea .rightFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .rightFlex .warnCopyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 315px;
+    text-align: center;
+  }
+  html .registerArea .rightFlex .warnCopyright span {
+    color: #6C63FF;
+  }
+  html .registerArea .rightFlex #authGoogle {
+    width: 315px;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+  }
+  html .registerArea .rightFlex #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html .registerArea .rightFlex #authGoogle .authText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+  }
+  html .registerArea .rightFlex .registerButton {
+    width: 315px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(58, 205, 126);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(58, 205, 126, 0.2);
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  html .registerArea .rightFlex .registerButton:hover {
+    background-color: rgb(58, 205, 126);
+    color: #fff;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .registerArea {
+    margin: 2.5vh auto;
+    padding: 50px 0.5% 5% 0.5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    row-gap: 25px;
+  }
+  html[data-theme=dark] .registerArea #relativeText {
+    width: 300px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .registerArea #relativeText span {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html[data-theme=dark] .registerArea .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .left .EmailPlace, html[data-theme=dark] .registerArea .left .dropdown-school, html[data-theme=dark] .registerArea .left .namePlace, html[data-theme=dark] .registerArea .left .PassPlace, html[data-theme=dark] .registerArea .left .dropdown-education, html[data-theme=dark] .registerArea .left .dropdown-province {
+    width: 100%;
+  }
+  html[data-theme=dark] .registerArea .left .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .PassPlace .PassWrite .password {
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .namePlace .nameWrite .name {
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-education .selectEdu .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-province .selectPro .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-school .selectSchool .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .secondFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level {
+    width: 300px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options input {
+    display: none;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+  html[data-theme=dark] .registerArea .rightFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .warnCopyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 315px;
+    text-align: center;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .warnCopyright span {
+    color: #6C63FF;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle {
+    width: 315px;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle .authText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .registerButton {
+    width: 315px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(58, 205, 126);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(58, 205, 126, 0.2);
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .registerButton:hover {
+    background-color: rgb(58, 205, 126);
+    color: #fff;
+  }
+  .header {
+    position: relative;
+  }
+  .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    text-align: center;
+    top: 60%;
+  }
+  .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 32.5%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 766px) and (min-width: 401px) {
+  html .registerArea {
+    margin: 5vh auto;
+    padding: 50px 0.5% 5% 0.5%;
+    width: 95%;
+    height: auto;
+    border-radius: 25px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    row-gap: 25px;
+  }
+  html .registerArea #relativeText {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    text-decoration: none;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html .registerArea #relativeText span {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html .registerArea .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .left .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #000;
+  }
+  html .registerArea .left .PassPlace .PassWrite .password {
+    color: #000;
+  }
+  html .registerArea .left .namePlace .nameWrite .name {
+    color: #000;
+  }
+  html .registerArea .left .dropdown-education .selectEdu .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .left .dropdown-province .selectPro .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .left .dropdown-school {
+    width: 300px;
+  }
+  html .registerArea .left .dropdown-school .selectSchool .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .secondFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level {
+    width: 300px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  html .registerArea .secondFlex .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  html .registerArea .secondFlex .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html .registerArea .secondFlex .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level .options input {
+    display: none;
+  }
+  html .registerArea .secondFlex .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  html .registerArea .secondFlex .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  html .registerArea .secondFlex .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  html .registerArea .secondFlex .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+  html .registerArea .rightFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .rightFlex .warnCopyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 350px;
+    text-align: center;
+  }
+  html .registerArea .rightFlex .warnCopyright span {
+    color: #6C63FF;
+  }
+  html .registerArea .rightFlex #authGoogle {
+    width: 300px;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+  }
+  html .registerArea .rightFlex #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html .registerArea .rightFlex #authGoogle .authText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+  }
+  html .registerArea .rightFlex .registerButton {
+    width: 300px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(58, 205, 126);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(58, 205, 126, 0.2);
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  html .registerArea .rightFlex .registerButton:hover {
+    background-color: rgb(58, 205, 126);
+    color: #fff;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .registerArea {
+    margin: 5vh auto;
+    padding: 50px 0.5% 5% 0.5%;
+    width: 95%;
+    height: auto;
+    border-radius: 25px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    row-gap: 25px;
+  }
+  html[data-theme=dark] .registerArea #relativeText {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .registerArea #relativeText span {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html[data-theme=dark] .registerArea .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .left .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .PassPlace .PassWrite .password {
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .namePlace .nameWrite .name {
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-education .selectEdu .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-province .selectPro .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-school {
+    width: 300px;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-school .selectSchool .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .secondFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level {
+    width: 300px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+    background: #232323;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options input {
+    display: none;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+  html[data-theme=dark] .registerArea .rightFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .warnCopyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 350px;
+    text-align: center;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .warnCopyright span {
+    color: #6C63FF;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle {
+    width: 300px;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle .authText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .registerButton {
+    width: 300px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(58, 205, 126);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(58, 205, 126, 0.2);
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .registerButton:hover {
+    background-color: rgb(58, 205, 126);
+    color: #fff;
+  }
+  .header {
+    position: relative;
+  }
+  .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    text-align: center;
+    top: 60%;
+  }
+  .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 32.5%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1919px) and (min-width: 767px) {
+  html .registerArea {
+    margin: 5vh auto;
+    padding: 10% 0.5% 5% 0.5%;
+    width: 85%;
+    height: auto;
+    border-radius: 25px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    row-gap: 25px;
+  }
+  html .registerArea #relativeText {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-decoration: none;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html .registerArea #relativeText span {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html .registerArea .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .left .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #000;
+  }
+  html .registerArea .left .PassPlace .PassWrite .password {
+    color: #000;
+  }
+  html .registerArea .left .namePlace .nameWrite .name {
+    color: #000;
+  }
+  html .registerArea .left .dropdown-education .selectEdu .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .left .dropdown-province .selectPro .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .left .dropdown-school {
+    width: 300px;
+  }
+  html .registerArea .left .dropdown-school .selectSchool .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .secondFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level {
+    width: 350px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  html .registerArea .secondFlex .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  html .registerArea .secondFlex .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html .registerArea .secondFlex .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level .options input {
+    display: none;
+  }
+  html .registerArea .secondFlex .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  html .registerArea .secondFlex .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  html .registerArea .secondFlex .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  html .registerArea .secondFlex .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+  html .registerArea .rightFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .rightFlex .warnCopyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 350px;
+    text-align: center;
+  }
+  html .registerArea .rightFlex .warnCopyright span {
+    color: #6C63FF;
+  }
+  html .registerArea .rightFlex #authGoogle {
+    width: 300px;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+  }
+  html .registerArea .rightFlex #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html .registerArea .rightFlex #authGoogle .authText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+  }
+  html .registerArea .rightFlex .registerButton {
+    width: 300px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(58, 205, 126);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(58, 205, 126, 0.2);
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  html .registerArea .rightFlex .registerButton:hover {
+    background-color: rgb(58, 205, 126);
+    color: #fff;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .registerArea {
+    margin: 5vh auto;
+    padding: 10% 0.5% 5% 0.5%;
+    width: 85%;
+    height: auto;
+    border-radius: 25px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    row-gap: 25px;
+  }
+  html[data-theme=dark] .registerArea #relativeText {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .registerArea #relativeText span {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html[data-theme=dark] .registerArea .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .left .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .PassPlace .PassWrite .password {
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .namePlace .nameWrite .name {
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-education .selectEdu .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-province .selectPro .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-school {
+    width: 300px;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-school .selectSchool .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .secondFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level {
+    width: 350px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options input {
+    display: none;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+  html[data-theme=dark] .registerArea .rightFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .warnCopyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 350px;
+    text-align: center;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .warnCopyright span {
+    color: #6C63FF;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle {
+    width: 300px;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle .authText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .registerButton {
+    width: 300px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(58, 205, 126);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(58, 205, 126, 0.2);
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .registerButton:hover {
+    background-color: rgb(58, 205, 126);
+    color: #fff;
+  }
+  .header {
+    position: relative;
+  }
+  .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 26px;
+    text-align: center;
+    top: 60%;
+  }
+  .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 32.5%;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  html .header {
+    position: relative;
+  }
+  html .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    text-align: center;
+    top: 70%;
+  }
+  html .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 40%;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  html .registerArea {
+    margin: 5vh auto;
+    width: 70%;
+    height: 725px;
+    border-radius: 25px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  html .registerArea #relativeText {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-decoration: none;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html .registerArea #relativeText span {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html .registerArea .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .left .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #000;
+  }
+  html .registerArea .left .PassPlace .PassWrite .password {
+    color: #000;
+  }
+  html .registerArea .left .namePlace .nameWrite .name {
+    color: #000;
+  }
+  html .registerArea .left .dropdown-education .selectEdu .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .left .dropdown-province .selectPro .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .left .dropdown-school {
+    width: 300px;
+  }
+  html .registerArea .left .dropdown-school .selectSchool .select-texts .selected {
+    color: #808080;
+  }
+  html .registerArea .secondFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level {
+    width: 350px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  html .registerArea .secondFlex .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  html .registerArea .secondFlex .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level .text .textContent {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html .registerArea .secondFlex .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  html .registerArea .secondFlex .py-level .options input {
+    display: none;
+  }
+  html .registerArea .secondFlex .py-level .options label {
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  html .registerArea .secondFlex .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  html .registerArea .secondFlex .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  html .registerArea .secondFlex .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+  html .registerArea .rightFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  html .registerArea .rightFlex .warnCopyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 350px;
+    text-align: center;
+  }
+  html .registerArea .rightFlex .warnCopyright span {
+    color: #6C63FF;
+  }
+  html .registerArea .rightFlex #authGoogle {
+    width: 300px;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+  }
+  html .registerArea .rightFlex #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html .registerArea .rightFlex #authGoogle .authText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+  }
+  html .registerArea .rightFlex .registerButton {
+    width: 300px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(58, 205, 126);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(58, 205, 126, 0.2);
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  html .registerArea .rightFlex .registerButton:hover {
+    background-color: rgb(58, 205, 126);
+    color: #fff;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .header {
+    position: relative;
+  }
+  html[data-theme=dark] .header .text {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    text-align: center;
+    top: 70%;
+  }
+  html[data-theme=dark] .header .Codingo {
+    position: absolute;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-align: center;
+    top: 40%;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .registerArea {
+    margin: 5vh auto;
+    width: 70%;
+    height: 725px;
+    border-radius: 25px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  html[data-theme=dark] .registerArea #relativeText {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .registerArea #relativeText span {
+    color: #4285F4;
+    text-decoration: underline;
+  }
+  html[data-theme=dark] .registerArea .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .left .EmailPlace .EmailWrite #email {
+    cursor: text;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .PassPlace .PassWrite .password {
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .namePlace .nameWrite .name {
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-education .selectEdu .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-province .selectPro .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-school {
+    width: 300px;
+  }
+  html[data-theme=dark] .registerArea .left .dropdown-school .selectSchool .select-texts .selected {
+    color: #808080;
+  }
+  html[data-theme=dark] .registerArea .secondFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level {
+    width: 350px;
+    height: 275px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level:hover {
+    border-color: #9C9C9C;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .text .textContent {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options {
+    padding: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options input {
+    display: none;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options label {
+    color: #fff;
+    width: 80%;
+    height: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options label:hover {
+    border: 1px solid #F1F1F1;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options .SelectedPy {
+    background-color: rgba(66, 133, 244, 0.1);
+    border: 1px solid #4285F4;
+  }
+  html[data-theme=dark] .registerArea .secondFlex .py-level .options .SelectedPy:hover {
+    border: 1px solid #4285F4;
+  }
+  html[data-theme=dark] .registerArea .rightFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .warnCopyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 350px;
+    text-align: center;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .warnCopyright span {
+    color: #6C63FF;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle {
+    width: 300px;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    text-decoration: none;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle .googleIcon img {
+    width: 36px;
+    height: 36px;
+  }
+  html[data-theme=dark] .registerArea .rightFlex #authGoogle .authText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .registerButton {
+    width: 300px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(58, 205, 126);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(58, 205, 126, 0.2);
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  html[data-theme=dark] .registerArea .rightFlex .registerButton:hover {
+    background-color: rgb(58, 205, 126);
+    color: #fff;
+  }
+}/*# sourceMappingURL=register.css.map */

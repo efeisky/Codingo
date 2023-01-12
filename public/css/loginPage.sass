@@ -1,130 +1,1026 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
 
 @media only screen and (max-width: 400px)
- 
-@media only screen and (max-width: 767px) and (min-width: 401px)
-
-@media only screen and (max-width: 1920px) and (min-width: 767px)
-
-@media only screen and (min-width: 1920px)
-    .header
-        position: relative
-        .text
-            position: absolute
-            width: 100%
-            font-family: 'Montserrat', sans-serif
-            font-weight: 500
-            color: #fff
-            letter-spacing: 1.5px
-            font-size: 30px
-            text-align: center
-            top: 70%
-        .Codingo
-            @extend .text
-            top: 40%
-            font-size: 26px
-            cursor: pointer
-    .logInArea
-        width: 20%
-        margin: 5% auto 0 auto
-        height: 60vh
-        background-color: #fff
-        border: 1px solid #E6E6E6
-        border-radius: 25px
-        display: flex
-        padding: 2% 1%
-        flex-direction: column
-        a
-            text-decoration: none
-            font-family: 'Montserrat', sans-serif
-            font-weight: 500
-            font-size: 15px
-            margin-bottom: 5%
-            color: #000
-            #registerText
-                color: #4285F4
-                text-decoration: underline
-        .EmailPlace
-            margin: 0 auto 5% auto
-        .EmailPlace .EmailWrite #email
-            cursor: text
-            color: #000
-
-        .PassPlace
-            margin: 0 auto 5% auto
-        .PassPlace .PassWrite .password
-            color: #000
-        .rememberMe
-            width: 300px
-            margin: 0 auto 5% auto
-            font-family: 'Montserrat', sans-serif
-            font-weight: 500
-            display: flex
-            gap: 10px
-            align-items: center
-            label
-                cursor: pointer
-            input
-                -webkit-appearance: none
-                -moz-appearance: none
-                width: 25px
-                height: 25px
-                border-radius: 5px
-                border: 1px solid #F1F1F1
-                cursor: pointer
-                transition: .3s all
-                &::after
-                    content: url('../img/checkCaret.svg')
-                    opacity: 0
-                &:checked
-                    background-color: rgba(58, 205, 126, .1)
-                    border-color: rgba(58, 205, 126, .2)
-                    -webkit-appearance: caret
-                    &::after
-                        opacity: 1
-        .warn
-            width: 300px
-            margin: 0 auto 5% auto
-            font-family: 'Montserrat', sans-serif
-            font-weight: 500
-            font-size: 13px
-            display: flex
-            gap: 10px
-            align-items: center
-            color: #EA4335
-        #setProgress
-            margin: 0 auto 5% auto
-            width: 300px
-            height: 75px
-            background: rgba(58, 205, 126, .2)
-            border-radius: 10px
-            text-align: center
-            line-height: 75px
-            font-family: 'Montserrat', sans-serif
-            font-weight: 600
-            font-size: 18px
-            color: rgb(58, 205, 126)
-            transition: .5s all
-            cursor: pointer
-            border: none
-            &:hover
-                background: rgba(58, 205, 126, .8) 
+    html
+        .header
+            position: relative
+            .text
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
                 color: #fff
-        #authGoogle
-            width: 300px
-            height: 75px
-            margin: 0 auto 5% auto
-            border: 1px solid #CBCBCB
-            border-radius: 10px
+                letter-spacing: 1.5px
+                font-size: 22px
+                text-align: center
+                top: 60%
+            .Codingo
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                text-align: center
+                top: 32.5%
+                font-size: 20px
+                cursor: pointer
+        .logInArea
+            width: 100%
+            margin: 5% auto 0 auto
+            height: 60vh
+            background-color: #fff
+            border-radius: 25px
             display: flex
-            justify-content: center
-            flex-direction: row
-            align-items: center
-            gap: 5%
-            .googleIcon img
-                width: 36px
-                height: 36px
+            padding: 2% 1%
+            flex-direction: column
+            a
+                text-decoration: none
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                margin-bottom: 5%
+                color: #000
+                #registerText
+                    color: #4285F4
+                    text-decoration: underline
+            .EmailPlace
+                margin: 0 auto 5% auto
+            .EmailPlace .EmailWrite #email
+                cursor: text
+                color: #000
+
+            .PassPlace
+                margin: 0 auto 5% auto
+            .PassPlace .PassWrite .password
+                color: #000
+            .rememberMe
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                display: flex
+                gap: 10px
+                align-items: center
+                label
+                    cursor: pointer
+                input
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    width: 25px
+                    height: 25px
+                    border-radius: 5px
+                    border: 1px solid #F1F1F1
+                    cursor: pointer
+                    transition: .3s all
+                    &::after
+                        content: url('../img/checkCaret.svg')
+                        opacity: 0
+                    &:checked
+                        background-color: rgba(58, 205, 126, .1)
+                        border-color: rgba(58, 205, 126, .2)
+                        -webkit-appearance: caret
+                        &::after
+                            opacity: 1
+            .warn
+                width: 90%
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 13px
+                display: flex
+                gap: 10px
+                align-items: center
+                color: #EA4335
+            #setProgress
+                margin: 0 auto 5% auto
+                width: 90%
+                height: 75px
+                background: rgba(58, 205, 126, .2)
+                border-radius: 10px
+                text-align: center
+                line-height: 75px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: rgb(58, 205, 126)
+                transition: .5s all
+                cursor: pointer
+                border: none
+                &:hover
+                    background: rgba(58, 205, 126, .8) 
+                    color: #fff
+            #authGoogle
+                width: 90%
+                height: 75px
+                margin: 0 auto 5% auto
+                border: 1px solid #CBCBCB
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                flex-direction: row
+                align-items: center
+                gap: 5%
+                .googleIcon img
+                    width: 36px
+                    height: 36px
+    html[data-theme="dark"]
+        background-color: #232323
+        .header
+            position: relative
+            .text
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                font-size: 22px
+                text-align: center
+                top: 60%
+            .Codingo
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                text-align: center
+                top: 32.5%
+                font-size: 20px
+                cursor: pointer
+        .logInArea
+            width: 100%
+            margin: 5% auto 0 auto
+            height: 60vh
+            background-color: #232323
+            border-radius: 25px
+            display: flex
+            padding: 2% 1%
+            flex-direction: column
+            a
+                text-decoration: none
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                margin-bottom: 5%
+                color: #fff
+                #registerText
+                    color: #4285F4
+                    text-decoration: underline
+            .EmailPlace
+                margin: 0 auto 5% auto
+            .EmailPlace .EmailWrite #email
+                cursor: text
+                color: #fff
+
+            .PassPlace
+                margin: 0 auto 5% auto
+            .PassPlace .PassWrite .password
+                color: #fff
+            .rememberMe
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                display: flex
+                gap: 10px
+                align-items: center
+                label
+                    cursor: pointer
+                    color: #fff
+                input
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    width: 25px
+                    height: 25px
+                    border-radius: 5px
+                    border: 1px solid #F1F1F1
+                    cursor: pointer
+                    transition: .3s all
+                    &::after
+                        content: url('../img/checkCaret.svg')
+                        opacity: 0
+                    &:checked
+                        background-color: rgba(58, 205, 126, .1)
+                        border-color: rgba(58, 205, 126, .2)
+                        -webkit-appearance: caret
+                        &::after
+                            opacity: 1
+            .warn
+                width: 90%
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 13px
+                display: flex
+                gap: 10px
+                align-items: center
+                color: #EA4335
+            #setProgress
+                margin: 0 auto 5% auto
+                width: 90%
+                height: 75px
+                background: rgba(58, 205, 126, .2)
+                border-radius: 10px
+                text-align: center
+                line-height: 75px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: rgb(58, 205, 126)
+                transition: .5s all
+                cursor: pointer
+                border: none
+                &:hover
+                    background: rgba(58, 205, 126, .8) 
+                    color: #fff
+            #authGoogle
+                width: 90%
+                height: 75px
+                margin: 0 auto 5% auto
+                border: 1px solid #CBCBCB
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                flex-direction: row
+                align-items: center
+                gap: 5%
+                .googleIcon img
+                    width: 36px
+                    height: 36px
     #logInSvgPgoto
+        display: none
+@media only screen and (max-width: 767px) and (min-width: 401px)
+    html
+        .header
+            position: relative
+            .text
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                font-size: 22px
+                text-align: center
+                top: 60%
+            .Codingo
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                text-align: center
+                top: 32.5%
+                font-size: 20px
+                cursor: pointer
+        .logInArea
+            width: 40vh
+            margin: 5% auto 0 auto
+            height: 60vh
+            background-color: #fff
+            border: 1px solid #E6E6E6
+            border-radius: 25px
+            display: flex
+            padding: 2% 1%
+            flex-direction: column
+            a
+                text-decoration: none
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                margin-bottom: 5%
+                color: #000
+                #registerText
+                    color: #4285F4
+                    text-decoration: underline
+            .EmailPlace
+                margin: 0 auto 5% auto
+            .EmailPlace .EmailWrite #email
+                cursor: text
+                color: #000
+
+            .PassPlace
+                margin: 0 auto 5% auto
+            .PassPlace .PassWrite .password
+                color: #000
+            .rememberMe
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                display: flex
+                gap: 10px
+                align-items: center
+                label
+                    cursor: pointer
+                input
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    width: 25px
+                    height: 25px
+                    border-radius: 5px
+                    border: 1px solid #F1F1F1
+                    cursor: pointer
+                    transition: .3s all
+                    &::after
+                        content: url('../img/checkCaret.svg')
+                        opacity: 0
+                    &:checked
+                        background-color: rgba(58, 205, 126, .1)
+                        border-color: rgba(58, 205, 126, .2)
+                        -webkit-appearance: caret
+                        &::after
+                            opacity: 1
+            .warn
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 13px
+                display: flex
+                gap: 10px
+                align-items: center
+                color: #EA4335
+            #setProgress
+                margin: 0 auto 5% auto
+                width: 300px
+                height: 75px
+                background: rgba(58, 205, 126, .2)
+                border-radius: 10px
+                text-align: center
+                line-height: 75px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: rgb(58, 205, 126)
+                transition: .5s all
+                cursor: pointer
+                border: none
+                &:hover
+                    background: rgba(58, 205, 126, .8) 
+                    color: #fff
+            #authGoogle
+                width: 300px
+                height: 75px
+                margin: 0 auto 5% auto
+                border: 1px solid #CBCBCB
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                flex-direction: row
+                align-items: center
+                gap: 5%
+                .googleIcon img
+                    width: 36px
+                    height: 36px
+    html[data-theme="dark"]
+        background-color: #232323
+        .header
+            position: relative
+            .text
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                font-size: 22px
+                text-align: center
+                top: 60%
+            .Codingo
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                text-align: center
+                top: 32.5%
+                font-size: 20px
+                cursor: pointer
+        .logInArea
+            width: 40vh
+            margin: 5% auto 0 auto
+            height: 60vh
+            background-color: #232323
+            border: 1px solid #303030
+            border-radius: 25px
+            display: flex
+            padding: 2% 1%
+            flex-direction: column
+            a
+                text-decoration: none
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                margin-bottom: 5%
+                color: #fff
+                #registerText
+                    color: #4285F4
+                    text-decoration: underline
+            .EmailPlace
+                margin: 0 auto 5% auto
+            .EmailPlace .EmailWrite #email
+                cursor: text
+                color: #fff
+
+            .PassPlace
+                margin: 0 auto 5% auto
+            .PassPlace .PassWrite .password
+                color: #fff
+            .rememberMe
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                display: flex
+                gap: 10px
+                align-items: center
+                label
+                    cursor: pointer
+                    color: #fff
+                input
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    width: 25px
+                    height: 25px
+                    border-radius: 5px
+                    border: 1px solid #F1F1F1
+                    cursor: pointer
+                    transition: .3s all
+                    &::after
+                        content: url('../img/checkCaret.svg')
+                        opacity: 0
+                    &:checked
+                        background-color: rgba(58, 205, 126, .1)
+                        border-color: rgba(58, 205, 126, .2)
+                        -webkit-appearance: caret
+                        &::after
+                            opacity: 1
+            .warn
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 13px
+                display: flex
+                gap: 10px
+                align-items: center
+                color: #EA4335
+            #setProgress
+                margin: 0 auto 5% auto
+                width: 300px
+                height: 75px
+                background: rgba(58, 205, 126, .2)
+                border-radius: 10px
+                text-align: center
+                line-height: 75px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: rgb(58, 205, 126)
+                transition: .5s all
+                cursor: pointer
+                border: none
+                &:hover
+                    background: rgba(58, 205, 126, .8) 
+                    color: #fff
+            #authGoogle
+                width: 300px
+                height: 75px
+                margin: 0 auto 5% auto
+                border: 1px solid #CBCBCB
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                flex-direction: row
+                align-items: center
+                gap: 5%
+                .googleIcon img
+                    width: 36px
+                    height: 36px
+    
+    #logInSvgPgoto
+        display: none
+@media only screen and (max-width: 1920px) and (min-width: 767px)
+    html
+        .header
+            position: relative
+            .text
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                font-size: 26px
+                text-align: center
+                top: 60%
+            .Codingo
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                text-align: center
+                top: 32.5%
+                font-size: 24px
+                cursor: pointer
+        .logInArea
+            width: 50vh
+            margin: 5% auto 0 auto
+            height: 60vh
+            background-color: #fff
+            border: 1px solid #E6E6E6
+            border-radius: 25px
+            display: flex
+            padding: 2% 1%
+            flex-direction: column
+            a
+                text-decoration: none
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                margin-bottom: 5%
+                color: #000
+                #registerText
+                    color: #4285F4
+                    text-decoration: underline
+            .EmailPlace
+                margin: 0 auto 5% auto
+            .EmailPlace .EmailWrite #email
+                cursor: text
+                color: #000
+
+            .PassPlace
+                margin: 0 auto 5% auto
+            .PassPlace .PassWrite .password
+                color: #000
+            .rememberMe
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                display: flex
+                gap: 10px
+                align-items: center
+                label
+                    cursor: pointer
+                input
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    width: 25px
+                    height: 25px
+                    border-radius: 5px
+                    border: 1px solid #F1F1F1
+                    cursor: pointer
+                    transition: .3s all
+                    &::after
+                        content: url('../img/checkCaret.svg')
+                        opacity: 0
+                    &:checked
+                        background-color: rgba(58, 205, 126, .1)
+                        border-color: rgba(58, 205, 126, .2)
+                        -webkit-appearance: caret
+                        &::after
+                            opacity: 1
+            .warn
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 13px
+                display: flex
+                gap: 10px
+                align-items: center
+                color: #EA4335
+            #setProgress
+                margin: 0 auto 5% auto
+                width: 300px
+                height: 75px
+                background: rgba(58, 205, 126, .2)
+                border-radius: 10px
+                text-align: center
+                line-height: 75px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: rgb(58, 205, 126)
+                transition: .5s all
+                cursor: pointer
+                border: none
+                &:hover
+                    background: rgba(58, 205, 126, .8) 
+                    color: #fff
+            #authGoogle
+                width: 300px
+                height: 75px
+                margin: 0 auto 5% auto
+                border: 1px solid #CBCBCB
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                flex-direction: row
+                align-items: center
+                gap: 5%
+                .googleIcon img
+                    width: 36px
+                    height: 36px
+    html[data-theme="dark"]
+        background-color: #232323
+        .header
+            position: relative
+            .text
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                font-size: 26px
+                text-align: center
+                top: 60%
+            .Codingo
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                text-align: center
+                top: 32.5%
+                font-size: 24px
+                cursor: pointer
+        .logInArea
+            width: 50vh
+            margin: 5% auto 0 auto
+            height: 60vh
+            background-color: #fff
+            background-color: #232323
+            border: 1px solid #303030
+            
+            border-radius: 25px
+            display: flex
+            padding: 2% 1%
+            flex-direction: column
+            a
+                text-decoration: none
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                margin-bottom: 5%
+                color: #fff
+                #registerText
+                    color: #4285F4
+                    text-decoration: underline
+            .EmailPlace
+                margin: 0 auto 5% auto
+            .EmailPlace .EmailWrite #email
+                cursor: text
+                color: #fff
+
+            .PassPlace
+                margin: 0 auto 5% auto
+            .PassPlace .PassWrite .password
+                color: #fff
+            .rememberMe
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                display: flex
+                gap: 10px
+                color: #fff
+                align-items: center
+                label
+                    cursor: pointer
+                input
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    width: 25px
+                    height: 25px
+                    border-radius: 5px
+                    border: 1px solid #F1F1F1
+                    cursor: pointer
+                    transition: .3s all
+                    &::after
+                        content: url('../img/checkCaret.svg')
+                        opacity: 0
+                    &:checked
+                        background-color: rgba(58, 205, 126, .1)
+                        border-color: rgba(58, 205, 126, .2)
+                        -webkit-appearance: caret
+                        &::after
+                            opacity: 1
+            .warn
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 13px
+                display: flex
+                gap: 10px
+                align-items: center
+                color: #EA4335
+            #setProgress
+                margin: 0 auto 5% auto
+                width: 300px
+                height: 75px
+                background: rgba(58, 205, 126, .2)
+                border-radius: 10px
+                text-align: center
+                line-height: 75px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: rgb(58, 205, 126)
+                transition: .5s all
+                cursor: pointer
+                border: none
+                &:hover
+                    background: rgba(58, 205, 126, .8) 
+                    color: #fff
+            #authGoogle
+                width: 300px
+                height: 75px
+                margin: 0 auto 5% auto
+                border: 1px solid #CBCBCB
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                flex-direction: row
+                align-items: center
+                gap: 5%
+                .googleIcon img
+                    width: 36px
+                    height: 36px
+    
+    #logInSvgPgoto
+        width: 32.5%
         position: fixed
         bottom: 0
         left: 0
+     
+@media only screen and (min-width: 1920px)
+    html
+        .header
+            position: relative
+            .text
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                font-size: 30px
+                text-align: center
+                top: 70%
+            .Codingo
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                text-align: center
+                top: 40%
+                font-size: 26px
+                cursor: pointer
+        .logInArea
+            width: 20%
+            margin: 5% auto 0 auto
+            height: 60vh
+            background-color: #fff
+            border: 1px solid #E6E6E6
+            border-radius: 25px
+            display: flex
+            padding: 2% 1%
+            flex-direction: column
+            a
+                text-decoration: none
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                margin-bottom: 5%
+                color: #000
+                #registerText
+                    color: #4285F4
+                    text-decoration: underline
+            .EmailPlace
+                margin: 0 auto 5% auto
+            .EmailPlace .EmailWrite #email
+                cursor: text
+                color: #000
+
+            .PassPlace
+                margin: 0 auto 5% auto
+            .PassPlace .PassWrite .password
+                color: #000
+            .rememberMe
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                display: flex
+                gap: 10px
+                align-items: center
+                label
+                    cursor: pointer
+                input
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    width: 25px
+                    height: 25px
+                    border-radius: 5px
+                    border: 1px solid #F1F1F1
+                    cursor: pointer
+                    transition: .3s all
+                    &::after
+                        content: url('../img/checkCaret.svg')
+                        opacity: 0
+                    &:checked
+                        background-color: rgba(58, 205, 126, .1)
+                        border-color: rgba(58, 205, 126, .2)
+                        -webkit-appearance: caret
+                        &::after
+                            opacity: 1
+            .warn
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 13px
+                display: flex
+                gap: 10px
+                align-items: center
+                color: #EA4335
+            #setProgress
+                margin: 0 auto 5% auto
+                width: 300px
+                height: 75px
+                background: rgba(58, 205, 126, .2)
+                border-radius: 10px
+                text-align: center
+                line-height: 75px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: rgb(58, 205, 126)
+                transition: .5s all
+                cursor: pointer
+                border: none
+                &:hover
+                    background: rgba(58, 205, 126, .8) 
+                    color: #fff
+            #authGoogle
+                width: 300px
+                height: 75px
+                margin: 0 auto 5% auto
+                border: 1px solid #CBCBCB
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                flex-direction: row
+                align-items: center
+                gap: 5%
+                .googleIcon img
+                    width: 36px
+                    height: 36px
+        #logInSvgPgoto
+            position: fixed
+            bottom: 0
+            left: 0
+    html[data-theme='dark']
+        background-color: #232323
+        .header
+            position: relative
+            .text
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                font-size: 30px
+                text-align: center
+                top: 70%
+            .Codingo
+                position: absolute
+                width: 100%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                color: #fff
+                letter-spacing: 1.5px
+                text-align: center
+                top: 40%
+                font-size: 26px
+                cursor: pointer
+        .logInArea
+            width: 20%
+            margin: 5% auto 0 auto
+            height: 60vh
+            background-color: #232323
+            border: 1px solid #303030
+            border-radius: 25px
+            display: flex
+            padding: 2% 1%
+            flex-direction: column
+            a
+                text-decoration: none
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 15px
+                margin-bottom: 5%
+                color: #fff
+                #registerText
+                    color: #4285F4
+                    text-decoration: underline
+            .EmailPlace
+                margin: 0 auto 5% auto
+            .EmailPlace .EmailWrite #email
+                cursor: text
+                color: #fff
+
+            .PassPlace
+                margin: 0 auto 5% auto
+            .PassPlace .PassWrite .password
+                color: #fff
+            .rememberMe
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                display: flex
+                gap: 10px
+                align-items: center
+                label
+                    cursor: pointer
+                    color: #fff
+                input
+                    -webkit-appearance: none
+                    -moz-appearance: none
+                    width: 25px
+                    height: 25px
+                    border-radius: 5px
+                    border: 1px solid #F1F1F1
+                    cursor: pointer
+                    transition: .3s all
+                    &::after
+                        content: url('../img/checkCaret.svg')
+                        opacity: 0
+                    &:checked
+                        background-color: rgba(58, 205, 126, .1)
+                        border-color: rgba(58, 205, 126, .2)
+                        -webkit-appearance: caret
+                        &::after
+                            opacity: 1
+            .warn
+                width: 300px
+                margin: 0 auto 5% auto
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 13px
+                display: flex
+                gap: 10px
+                align-items: center
+                color: #EA4335
+            #setProgress
+                margin: 0 auto 5% auto
+                width: 300px
+                height: 75px
+                background: rgba(58, 205, 126, .2)
+                border-radius: 10px
+                text-align: center
+                line-height: 75px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 18px
+                color: rgb(58, 205, 126)
+                transition: .5s all
+                cursor: pointer
+                border: none
+                &:hover
+                    background: rgba(58, 205, 126, .8) 
+                    color: #fff
+            #authGoogle
+                width: 300px
+                height: 75px
+                margin: 0 auto 5% auto
+                border: 1px solid #CBCBCB
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                flex-direction: row
+                align-items: center
+                gap: 5%
+                .googleIcon img
+                    width: 36px
+                    height: 36px
+        #logInSvgPgoto
+            position: fixed
+            bottom: 0
+            left: 0

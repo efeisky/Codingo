@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Deneme Dersi Bilgi Formu ~ Codingo</title>
+    
+    <link rel="shorcut icon" href="../img/Codingo_Title.png" />
 
     <link rel="stylesheet" href="../css/getInfo.css" type="text/css">
     <link rel="stylesheet" href="../css/reset.css" type="text/css">
@@ -14,14 +18,14 @@
 </head>
 <body>
     <div class="header">
-        <div class="logos">
+        <a class="logos" href="./homepage.html">
             <div class="logo">
                 <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" id="homeIcon">
                     <path d="M13.3543 30.2916V25.8193C13.3542 24.6818 14.2816 23.7575 15.4306 23.7498H19.6395C20.794 23.7498 21.7299 24.6764 21.7299 25.8193V25.8193V30.3055C21.7296 31.2714 22.5083 32.0607 23.4836 32.0834H26.2895C29.0866 32.0834 31.3542 29.8385 31.3542 27.0694V27.0694V14.3469C31.3392 13.2575 30.8226 12.2345 29.9512 11.569L20.355 3.91608C18.6739 2.58355 16.284 2.58355 14.6029 3.91608L5.04878 11.5829C4.17412 12.2457 3.6566 13.2704 3.64583 14.3608V27.0694C3.64583 29.8385 5.91335 32.0834 8.71049 32.0834H11.5164C12.5159 32.0834 13.3262 31.2812 13.3262 30.2916V30.2916" stroke="#3ACD7E" stroke-opacity="0.98" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <div class="Text">Codingo</div>
             </div>
-        </div>
+        </a>
     </div>
     <div class="getDiv">
         <div class="headText">Demek ki deneme dersine katılmak istiyorsun aşağıdakileri doldurur musun?</div>
@@ -111,11 +115,6 @@
             buttonStyle()
         })
 
-        if(document.querySelector("#education-level").getAttribute("value") != "none"){
-            console.log("aaa")
-        }else{
-            console.log("eee")
-        }
         $("#startLesson").on("click",()=>{
             const dropdownValue = document.querySelector("#education-level").getAttribute("value")
             const pyLevels = document.getElementsByName("python")
@@ -154,5 +153,6 @@
         
     </script>
     <script src="../js/appStyle.js"></script>
+    <script type="module" src="../js/controlAnotherTheme.js"></script>
 </body>
 </html>

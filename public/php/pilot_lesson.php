@@ -1174,5 +1174,8 @@ session_start();
     });
         
     </script>
+        
+    <script type="module" src="../js/controlAnotherTheme.js"></script>
+
 </body>
 </html>

@@ -30,15 +30,13 @@ require_once 'config.php';
 </head>
 <body>
     <div class="header">
-        <img src="../img/Header.svg" width="100%" alt="Header Görseli">
+        <img src="" width="100%" alt="Header Görseli" id="headerImg">
         <div class="Codingo" title="Anasayfa'ya git">Codingo</div>
         <div class="text">Giriş Yap</div>
     </div>
     
     <div class="logInArea">
         <a href="register.php">Henüz kayıt olmadıysanız şimdi <span id="registerText">kayıt olun</span>.</a>
-        <!-- <input type="email" placeholder="E - Posta adresinizi giriniz" id="personalEmail" name="personalEmail" > -->
-        <!-- <input type="password" placeholder="Şifrenizi giriniz" id="personalPass" name="personalPass" > -->
         <div class="EmailPlace">
             <div class="EmailWrite">
                 <div id="İnfoEmail">E - Posta </div>
@@ -88,13 +86,13 @@ require_once 'config.php';
     <script>
         //Header
         const screenWidth = screen.width
-        const headerHeight = screenWidth/(9.6)
-        $("#headerSvg").attr("width",screenWidth)
-        $("#headerSvg").attr("height",headerHeight)
-        $("#headerSvg").attr("viewBox",`0 0 ${screenWidth} ${headerHeight}`)
-        $(".Codingo").on("click",()=>{
-            window.location.href="./homepage.html"
-        })
+        if(screenWidth <=400){
+            $("#headerImg").attr("src","../img/headerSmall.svg")
+        }else if(screenWidth >400 && screenWidth <=767){
+            $("#headerImg").attr("src","../img/headerMid.svg")
+        }else{
+            $("#headerImg").attr("src","../img/headerBig.svg")
+        }
     </script>
     <script>
         //Password
@@ -114,6 +112,12 @@ require_once 'config.php';
             }
         })
     </script>
+    <script>
+        $(".Codingo").on("click",()=>{
+            window.location.href="./homepage.html"
+        })
+    </script>
+    <script type="module" src="../js/controlAnotherTheme.js"></script>
     <script type="module">
         import {encryption} from '../js/encrypt.js';
         //sendLogData 

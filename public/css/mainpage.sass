@@ -1,2 +1,1635 @@
-#theme
-    background-color: red
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
+
+
+.menu,.closedMenu
+    display: none
+.schoolLevelAreaPhone,.schoolTextPhone,.imgPhoneArea
+    display: none
+
+@media only screen and (max-width: 400px)
+    html
+        background-color: #fff
+        $bgColorTopBar: rgba(58,205,126,.6)
+        $textColor: #000
+        .openebleMenu
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100vh
+            background-color: #3ACD7E
+            z-index: 2
+            .headContent
+                width: 100%
+                height: 10vh
+                display: flex
+                justify-content: center
+                align-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                color: #fff
+                position: relative
+                svg
+                    position: absolute
+                    left: 10%
+            .links
+                padding: 20% 0 10% 5%
+                display: flex
+                flex-direction: column
+                align-items: flex-start 
+                gap: 25px
+                a
+                    display: flex
+                    align-items: center 
+                    gap: 15px
+                    text-decoration: none
+                    .txt
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 20px
+                        width: 100%
+                        color: #fff
+                    &:active
+                        color: #fff
+            .bottomContent
+                width: 100%
+                height: 150px
+                position: absolute
+                bottom: 0
+                display: flex
+                flex-direction: column
+                gap: 10%
+                .themeandWifi
+                    display: flex
+                    justify-content: space-around
+                .copyright
+                    padding: 0 10% 0 10%
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 13px
+                    line-height: 16px
+                    text-align: center
+                    span
+                        font-weight: 600
+        .topBar
+            position: sticky
+            z-index: 1
+            top: 0
+            width: 100%
+            height: 10vh
+            background-color: rgba(58,205,126,.6)
+            display: flex
+            align-items: center
+            .menu
+                display: block
+                cursor: pointer
+            div
+                width: calc(100% / 3)
+                text-align: center
+            #theme
+                display: none
+                svg
+                    cursor: pointer
+            .headerSubject
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+            .links
+                display: none
+        .mainImage
+            img
+                display: none
+            .textImage
+                padding: 50px 10px 20px 10px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                text-align: center
+            .buttonImage
+                display: none
+        .pilotLessonArea
+            padding: 2.5vh 10px 2.5vh 10px
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 2.5vh
+            .pilotLessonText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                text-align: center
+                #focusEye
+                    color: rgb(58,205,126)
+            a
+                width: 200px
+                height: 50px
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .line,.linePhone
+            width: 60%
+            margin: 0 auto 0 auto
+            height: 1px
+            background-color: #DBDBDB
+        .schoolLevelAreaPhone
+            width: 100%
+            height: 150px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .schoolLevel
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                padding-bottom: 20px
+                gap: 50px
+                width: 100%
+                overflow: auto
+                &::-webkit-scrollbar
+                    visibility: visible
+
+                div
+                    width: 100px
+                    aspect-ratio: 1 / 1
+                    min-width: 100px
+                    background-color: rgba(58,205,126,.8)
+                    border-radius: 50%
+                    transition: .5s background-color
+                    position: relative
+                    &:hover
+                        background-color: rgba(58,205,126,.9)
+                    img
+                        position: absolute
+                        width: 40%
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                    span
+                        position: absolute
+                        bottom: 10%
+                        left: 50%
+                        transform: translateX(-50%)
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 16px
+                        color: #fff
+        .schoolLevelArea
+            display: none
+        .schoolTextPhone
+            display: block
+            padding: 10px
+            width: 100%
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 16px
+            text-align: center
+            line-height: 18px
+            span
+                font-weight: 600
+        .imgPhoneArea
+            display: block
+        .navBar
+            width: 100%
+            height: auto
+            padding: 25px 0 25px 0 
+            background-color: #2F2E41
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            .Codingo
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                color: #fff
+            .lastNavArea
+                width: 95%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .copyright
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 16px
+                    span
+                        font-weight: 600
+
+    html[data-theme='dark']
+        background-color: #232323
+        $bgColorTopBar: rgba(58,205,126,.98)
+        color: #fff
+        .openebleMenu
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100vh
+            background-color: #232323
+            z-index: 2
+            .headContent
+                width: 100%
+                height: 10vh
+                display: flex
+                justify-content: center
+                align-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                color: #fff
+                position: relative
+                svg
+                    position: absolute
+                    left: 10%
+            .links
+                padding: 20% 0 10% 5%
+                display: flex
+                flex-direction: column
+                align-items: flex-start 
+                gap: 25px
+                a
+                    display: flex
+                    align-items: center 
+                    gap: 15px
+                    text-decoration: none
+                    .txt
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 20px
+                        width: 100%
+                        color: #fff
+                    &:active
+                        color: #fff
+            .bottomContent
+                width: 100%
+                height: 150px
+                position: absolute
+                bottom: 0
+                display: flex
+                flex-direction: column
+                gap: 10%
+                .themeandWifi
+                    display: flex
+                    justify-content: space-around
+                .copyright
+                    padding: 0 10% 0 10%
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 13px
+                    line-height: 16px
+                    text-align: center
+                    span
+                        font-weight: 600
+        .topBar
+            position: sticky
+            z-index: 1
+            top: 0
+            width: 100%
+            height: 10vh
+            background-color: rgba(58,205,126,.98)
+            display: flex
+            align-items: center
+            .menu
+                display: block
+                cursor: pointer
+            div
+                width: calc(100% / 3)
+                text-align: center
+            #theme
+                display: none
+                svg
+                    cursor: pointer
+            .headerSubject
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+            .links
+                display: none
+        .mainImage
+            img
+                display: none
+            .textImage
+                padding: 50px 10px 20px 10px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                text-align: center
+            .buttonImage
+                display: none
+        .pilotLessonArea
+            padding: 2.5vh 10px 2.5vh 10px
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 2.5vh
+            .pilotLessonText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                text-align: center
+                #focusEye
+                    color: rgb(58,205,126)
+            a
+                width: 200px
+                height: 50px
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 16px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .line,.linePhone
+            width: 60%
+            margin: 0 auto 0 auto
+            height: 1px
+            background-color: #DBDBDB
+        .schoolLevelAreaPhone
+            width: 100%
+            height: 150px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .schoolLevel
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                padding-bottom: 20px
+                gap: 50px
+                width: 100%
+                overflow: auto
+                &::-webkit-scrollbar
+                    visibility: visible
+
+                div
+                    width: 100px
+                    aspect-ratio: 1 / 1
+                    min-width: 100px
+                    background-color: rgba(58,205,126,.2)
+                    border-radius: 50%
+                    transition: .5s background-color
+                    position: relative
+                    &:hover
+                        background-color: rgba(58,205,126,.3)
+                    img
+                        position: absolute
+                        width: 40%
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                    span
+                        position: absolute
+                        bottom: 10%
+                        left: 50%
+                        transform: translateX(-50%)
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 16px
+                        color: #3ACD7E
+        .schoolLevelArea
+            display: none
+        .schoolTextPhone
+            display: block
+            padding: 10px
+            width: 100%
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 16px
+            text-align: center
+            line-height: 18px
+            span
+                font-weight: 600
+        .imgPhoneArea
+            display: block
+        .navBar
+            width: 100%
+            height: auto
+            padding: 25px 0 25px 0 
+            background-color: #2F2E41
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            .Codingo
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                color: #fff
+            .lastNavArea
+                width: 95%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .copyright
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 16px
+                    span
+                        font-weight: 600
+
+@media only screen and (max-width: 767px) and (min-width: 401px)
+    html
+        background-color: #fff
+        $bgColorTopBar: rgba(58,205,126,.6)
+        $textColor: #000
+        .openebleMenu
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100vh
+            background-color: #3ACD7E
+            z-index: 2
+            .headContent
+                width: 100%
+                height: 10vh
+                display: flex
+                justify-content: center
+                align-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                color: #fff
+                position: relative
+                svg
+                    position: absolute
+                    left: 10%
+            .links
+                padding: 20% 0 10% 5%
+                display: flex
+                flex-direction: column
+                align-items: flex-start 
+                gap: 25px
+                a
+                    display: flex
+                    align-items: center 
+                    gap: 15px
+                    text-decoration: none
+                    .txt
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 20px
+                        width: 100%
+                        color: #fff
+                    &:active
+                        color: #fff
+            .bottomContent
+                width: 100%
+                height: 150px
+                position: absolute
+                bottom: 0
+                display: flex
+                flex-direction: column
+                gap: 10%
+                .themeandWifi
+                    display: flex
+                    justify-content: space-around
+                .copyright
+                    padding: 0 10% 0 10%
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 13px
+                    line-height: 16px
+                    text-align: center
+                    span
+                        font-weight: 600
+        .topBar
+            position: sticky
+            z-index: 1
+            top: 0
+            width: 100%
+            height: 10vh
+            background-color: rgba(58,205,126,.6)
+            display: flex
+            align-items: center
+            .menu
+                display: block
+                cursor: pointer
+            div
+                width: calc(100% / 3)
+                text-align: center
+            #theme
+                display: none
+                svg
+                    cursor: pointer
+            .headerSubject
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+            .links
+                display: none
+        .mainImage
+            .textImage
+                padding: 50px 10px 20px 10px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                text-align: center
+            .buttonImage
+                margin: 0 auto 50px auto
+                width: 200px
+                height: 60px
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .pilotLessonArea
+            padding: 5vh 0 5vh 0
+            width: 100%
+            height: 25vh
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 2.5vh
+            .pilotLessonText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                text-align: center
+                #focusEye
+                    color: rgb(58,205,126)
+            a
+                width: 250px
+                height: 10vh
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .line,.linePhone
+            width: 60%
+            margin: 0 auto 0 auto
+            height: 1px
+            background-color: #DBDBDB
+        .schoolLevelArea
+            width: 100%
+            height: 400px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 5vh
+            .schoolLevel
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                padding-bottom: 20px
+                gap: 50px
+                width: 90%
+                overflow: auto
+                &::-webkit-scrollbar
+                    visibility: visible
+
+                div
+                    width: 100px
+                    aspect-ratio: 1 / 1
+                    min-width: 100px
+                    background-color: rgba(58,205,126,.8)
+                    border-radius: 50%
+                    transition: .5s background-color
+                    position: relative
+                    &:hover
+                        background-color: rgba(58,205,126,.9)
+                    img
+                        position: absolute
+                        width: 40%
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                    span
+                        position: absolute
+                        bottom: 10%
+                        left: 50%
+                        transform: translateX(-50%)
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 16px
+                        color: #fff
+            .schoolText
+                width: 90%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                text-align: center
+                line-height: 24px
+                span
+                    font-weight: 600
+        .navBar
+            width: 100%
+            height: 225px
+            background-color: #2F2E41
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            .Codingo
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                color: #fff
+            .lastNavArea
+                width: 95%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .copyright
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 16px
+                    span
+                        font-weight: 600
+
+    html[data-theme='dark']
+        background-color: #232323
+        $bgColorTopBar: rgba(58,205,126,.98)
+        color: #fff
+        .openebleMenu
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100vh
+            background-color: #232323
+            z-index: 2
+            .headContent
+                width: 100%
+                height: 10vh
+                display: flex
+                justify-content: center
+                align-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                color: #fff
+                position: relative
+                svg
+                    position: absolute
+                    left: 10%
+            .links
+                padding: 20% 0 10% 5%
+                display: flex
+                flex-direction: column
+                align-items: flex-start 
+                gap: 25px
+                a
+                    display: flex
+                    align-items: center 
+                    gap: 15px
+                    text-decoration: none
+                    .txt
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 20px
+                        width: 100%
+                        color: #fff
+                    &:active
+                        color: #fff
+            .bottomContent
+                width: 100%
+                height: 150px
+                position: absolute
+                bottom: 0
+                display: flex
+                flex-direction: column
+                gap: 10%
+                .themeandWifi
+                    display: flex
+                    justify-content: space-around
+                .copyright
+                    padding: 0 10% 0 10%
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 13px
+                    line-height: 16px
+                    text-align: center
+                    span
+                        font-weight: 600
+        .topBar
+            position: sticky
+            z-index: 1
+            top: 0
+            width: 100%
+            height: 10vh
+            background-color: rgba(58,205,126,.98)
+            display: flex
+            align-items: center
+            .menu
+                display: block
+                cursor: pointer
+            div
+                width: calc(100% / 3)
+                text-align: center
+            #theme
+                display: none
+                svg
+                    cursor: pointer
+            .headerSubject
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+            .links
+                display: none
+        .mainImage
+            .textImage
+                padding: 50px 10px 20px 10px
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                text-align: center
+            .buttonImage
+                margin: 0 auto 50px auto
+                width: 200px
+                height: 60px
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .pilotLessonArea
+            padding: 5vh 0 5vh 0
+            width: 100%
+            height: 25vh
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 2.5vh
+            .pilotLessonText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                text-align: center
+                #focusEye
+                    color: rgb(58,205,126)
+            a
+                width: 250px
+                height: 10vh
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .line,.linePhone
+            width: 60%
+            margin: 0 auto 0 auto
+            height: 1px
+            background-color: #DBDBDB
+        .schoolLevelArea
+            width: 100%
+            height: 400px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 5vh
+            .schoolLevel
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                padding-bottom: 20px
+                gap: 50px
+                width: 90%
+                overflow: auto
+                &::-webkit-scrollbar
+                    visibility: visible
+
+                div
+                    width: 100px
+                    aspect-ratio: 1 / 1
+                    min-width: 100px
+                    background-color: rgba(58,205,126,.2)
+                    border-radius: 50%
+                    transition: .5s background-color
+                    position: relative
+                    &:hover
+                        background-color: rgba(58,205,126,.3)
+                    img
+                        position: absolute
+                        width: 40%
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                    span
+                        position: absolute
+                        bottom: 10%
+                        left: 50%
+                        transform: translateX(-50%)
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 16px
+                        color: #3ACD7E
+            .schoolText
+                width: 90%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                text-align: center
+                line-height: 24px
+                span
+                    font-weight: 600
+        .navBar
+            width: 100%
+            height: 225px
+            background-color: #2F2E41
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            .Codingo
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 20px
+                color: #fff
+            .lastNavArea
+                width: 95%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .copyright
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 16px
+                    span
+                        font-weight: 600
+
+@media only screen and (max-width: 1920px) and (min-width: 767px)
+    html
+        background-color: #fff
+        $bgColorTopBar: rgba(58,205,126,.6)
+        $textColor: #000
+        .topBar
+            position: sticky
+            z-index: 1
+            top: 0
+            width: 100%
+            height: 10vh
+            background-color: rgba(58,205,126,.6)
+            display: flex
+            align-items: center
+            div
+                width: calc(100% / 3)
+                text-align: center
+            #theme
+                svg
+                    cursor: pointer
+            .headerSubject
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+            .links
+                display: flex
+                align-items: center 
+                justify-content: center
+                gap: 50px
+                a
+                    display: flex
+                    align-items: center 
+                    gap: 15px
+                    text-decoration: none
+                    .txt
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 20px
+                        width: 100%
+                        color: #000
+                    &:active
+                        color: #000
+        .mainImage
+            position: relative
+            .textImage
+                position: absolute
+                left: 50%
+                top: 20%
+                transform: translate(-50%, -50%)
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                width: 50%
+                text-align: center
+            .buttonImage
+                position: absolute
+                left: 50%
+                top: 40%
+                transform: translate(-50%, -50%)
+                width: 200px
+                height: 60px
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .pilotLessonArea
+            padding: 5vh 0 5vh 0
+            width: 100%
+            height: 25vh
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 2.5vh
+            .pilotLessonText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                text-align: center
+                #focusEye
+                    color: rgb(58,205,126)
+            a
+                width: 250px
+                height: 10vh
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .line
+            width: 60%
+            margin: 0 auto 0 auto
+            height: 1px
+            background-color: #DBDBDB
+        .schoolLevelArea
+            width: 100%
+            height: 400px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 5vh
+            .schoolLevel
+                display: flex
+                flex-direction: row
+                justify-content: center
+                gap: 30px
+                width: 100%
+                overflow: auto
+                div
+                    width: 20%
+                    max-width: 250px
+                    aspect-ratio: 1 / 1
+                    background-color: rgba(58,205,126,.8)
+                    border-radius: 50%
+                    transition: .5s background-color
+                    position: relative
+                    &:hover
+                        background-color: rgba(58,205,126,.9)
+                    img
+                        position: absolute
+                        width: 40%
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                    span
+                        position: absolute
+                        bottom: 10%
+                        left: 50%
+                        transform: translateX(-50%)
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 22px
+                        color: #fff
+            .schoolText
+                width: 90%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                text-align: center
+                line-height: 30px
+                span
+                    font-weight: 600
+        .navBar
+            width: 100%
+            height: 300px
+            background-color: #2F2E41
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            .Codingo
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                color: #fff
+            .lastNavArea
+                width: 95%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .copyright
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 20px
+                    span
+                        font-weight: 600
+    html[data-theme='dark']
+        background-color: #232323
+        $bgColorTopBar: rgba(58,205,126,.98)
+        color: #fff
+        .topBar
+            position: sticky
+            z-index: 1
+            top: 0
+            width: 100%
+            height: 10vh
+            background-color: $bgColorTopBar
+            display: flex
+            align-items: center
+            div
+                width: calc(100% / 3)
+                text-align: center
+            #theme
+                svg
+                    cursor: pointer
+            .headerSubject
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+            .links
+                display: flex
+                align-items: center 
+                justify-content: center
+                gap: 50px
+                a
+                    display: flex
+                    align-items: center 
+                    gap: 15px
+                    text-decoration: none
+                    .txt
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 20px
+                        width: 100%
+                        color: #fff
+                    &:active
+                        color: #fff
+        .mainImage
+            position: relative
+            .textImage
+                position: absolute
+                left: 50%
+                top: 20%
+                transform: translate(-50%, -50%)
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                width: 50%
+                text-align: center
+            .buttonImage
+                position: absolute
+                left: 50%
+                top: 40%
+                transform: translate(-50%, -50%)
+                width: 200px
+                height: 60px
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .pilotLessonArea
+            padding: 5vh 0 5vh 0
+            width: 100%
+            height: 25vh
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 2.5vh
+            .pilotLessonText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                text-align: center
+                #focusEye
+                    color: rgb(58,205,126)
+            a
+                width: 250px
+                height: 10vh
+                background: rgba(58,205,126,.8)
+                border-radius: 10px
+                display: grid
+                place-items: center
+                font-family: 'Montserrat', sans-serif
+                font-weight: 600
+                font-size: 20px
+                color: #fff
+                cursor: pointer
+                text-decoration: none
+                transition: .5s all
+                &:hover
+                    background: rgba(58,205,126,.9)
+        .line
+            width: 60%
+            margin: 0 auto 0 auto
+            height: 1px
+            background-color: #DBDBDB
+        .schoolLevelArea
+            width: 100%
+            height: 400px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 5vh
+            .schoolLevel
+                display: flex
+                flex-direction: row
+                justify-content: center
+                gap: 30px
+                width: 100%
+                overflow: auto
+                div
+                    width: 20%
+                    max-width: 250px
+                    aspect-ratio: 1 / 1
+                    background-color: rgba(58,205,126,.2)
+                    border-radius: 50%
+                    transition: .5s background-color
+                    position: relative
+                    &:hover
+                        background-color: rgba(58,205,126,.3)
+                    img
+                        position: absolute
+                        width: 40%
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                    span
+                        position: absolute
+                        bottom: 10%
+                        left: 50%
+                        transform: translateX(-50%)
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 22px
+                        color: #3ACD7E
+            .schoolText
+                width: 90%
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                text-align: center
+                line-height: 30px
+                span
+                    font-weight: 600
+        .navBar
+            width: 100%
+            height: 300px
+            background-color: #2F2E41
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            .Codingo
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+                color: #fff
+            .lastNavArea
+                width: 95%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .copyright
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    color: #fff
+                    font-size: 20px
+                    span
+                        font-weight: 600
+    
+@media only screen and (min-width: 1920px)
+    html
+        background-color: #fff
+        $bgColorTopBar: rgba(58,205,126,.6)
+        $textColor: #000
+        .topBar
+            position: sticky
+            z-index: 1
+            top: 0
+            width: 100%
+            height: 10vh
+            background-color: $bgColorTopBar
+            display: flex
+            align-items: center
+            div
+                width: calc(100% / 3)
+                text-align: center
+            #theme
+                svg
+                    cursor: pointer
+            .headerSubject
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+        .links
+                display: flex
+                align-items: center 
+                justify-content: center
+                gap: 50px
+                a
+                    display: flex
+                    align-items: center 
+                    gap: 15px
+                    text-decoration: none
+                    .txt
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 20px
+                        width: 100%
+                        color: #000
+                    &:active
+                        color: #000
+        .mainImage
+                position: relative
+                .textImage
+                    position: absolute
+                    left: 50%
+                    top: 20%
+                    transform: translate(-50%, -50%)
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 40px
+                    width: 50%
+                    text-align: center
+                .buttonImage
+                    position: absolute
+                    left: 50%
+                    top: 40%
+                    transform: translate(-50%, -50%)
+                    width: 17.5%
+                    height: 10vh
+                    background: rgba(58,205,126,.8)
+                    border-radius: 10px
+                    display: grid
+                    place-items: center
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 600
+                    font-size: 24px
+                    color: #fff
+                    cursor: pointer
+                    text-decoration: none
+                    transition: .5s all
+                    &:hover
+                        background: rgba(58,205,126,.9)
+        .pilotLessonArea
+                padding: 5vh 0 5vh 0
+                width: 100%
+                height: 25vh
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 2.5vh
+                .pilotLessonText
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 24px
+                    #focusEye
+                        color: rgb(58,205,126)
+                a
+                    width: 17.5%
+                    height: 10vh
+                    background: rgba(58,205,126,.8)
+                    border-radius: 10px
+                    display: grid
+                    place-items: center
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 600
+                    font-size: 24px
+                    color: #fff
+                    cursor: pointer
+                    text-decoration: none
+                    transition: .5s all
+                    &:hover
+                        background: rgba(58,205,126,.9)
+        .line
+                width: 60%
+                margin: 0 auto 0 auto
+                height: 1px
+                background-color: #DBDBDB
+        .schoolLevelArea
+                width: 80%
+                margin: auto
+                height: 400px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                gap: 5vh
+                .schoolLevel
+                    display: flex
+                    flex-direction: row
+                    gap: 100px
+                    div
+                        width: 250px
+                        height: 250px
+                        background-color: rgba(58,205,126,.8)
+                        border-radius: 50%
+                        transition: .5s background-color
+                        position: relative
+                        &:hover
+                            background-color: rgba(58,205,126,.9)
+                        img
+                            position: absolute
+                            width: 40%
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%,-50%)
+                        span
+                            position: absolute
+                            bottom: 10%
+                            left: 50%
+                            transform: translateX(-50%)
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 24px
+                            color: #fff
+                .schoolText
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 24px
+                    text-align: center
+                    line-height: 30px
+                    span
+                        font-weight: 600
+        .navBar
+                width: 100%
+                height: 300px
+                background-color: #2F2E41
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: space-around
+                .Codingo
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 24px
+                    color: #fff
+                .lastNavArea
+                    width: 95%
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    .copyright
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        color: #fff
+                        font-size: 20px
+                        span
+                            font-weight: 600
+    html[data-theme='dark']
+        background-color: #232323
+        $bgColorTopBar: rgba(58,205,126,.98)
+        color: #fff
+        .topBar
+            position: sticky
+            z-index: 1
+            top: 0
+            width: 100%
+            height: 10vh
+            background-color: $bgColorTopBar
+            display: flex
+            align-items: center
+            div
+                width: calc(100% / 3)
+                text-align: center
+            #themeDark
+                svg
+                    cursor: pointer
+            .headerSubject
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                font-size: 24px
+        .links
+                display: flex
+                align-items: center 
+                justify-content: center
+                gap: 50px
+                a
+                    display: flex
+                    align-items: center 
+                    gap: 15px
+                    text-decoration: none
+                    .txt
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        font-size: 20px
+                        width: 100%
+                        color: #fff
+                    &:active
+                        color: #fff
+        .mainImage
+                position: relative
+                .textImage
+                    position: absolute
+                    left: 50%
+                    top: 20%
+                    transform: translate(-50%, -50%)
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 40px
+                    width: 50%
+                    text-align: center
+                .buttonImage
+                    position: absolute
+                    left: 50%
+                    top: 40%
+                    transform: translate(-50%, -50%)
+                    width: 17.5%
+                    height: 10vh
+                    background: rgba(58,205,126,.8)
+                    border-radius: 10px
+                    display: grid
+                    place-items: center
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 600
+                    font-size: 24px
+                    color: #fff
+                    cursor: pointer
+                    text-decoration: none
+                    transition: .5s all
+                    &:hover
+                        background: rgba(58,205,126,.9)
+        .pilotLessonArea
+                padding: 5vh 0 5vh 0
+                width: 100%
+                height: 25vh
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 2.5vh
+                .pilotLessonText
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 24px
+                    #focusEye
+                        color: rgb(58,205,126)
+                a
+                    width: 17.5%
+                    height: 10vh
+                    background: rgba(58,205,126,.8)
+                    border-radius: 10px
+                    display: grid
+                    place-items: center
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 600
+                    font-size: 24px
+                    color: #fff
+                    cursor: pointer
+                    text-decoration: none
+                    transition: .5s all
+                    &:hover
+                        background: rgba(58,205,126,.9)
+        .line
+                width: 60%
+                margin: 0 auto 0 auto
+                height: 1px
+                background-color: #DBDBDB
+        .schoolLevelArea
+                width: 80%
+                margin: auto
+                height: 400px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                gap: 5vh
+                .schoolLevel
+                    display: flex
+                    flex-direction: row
+                    gap: 100px
+                    div
+                        width: 250px
+                        height: 250px
+                        background-color: rgba(58,205,126,.2)
+                        border-radius: 50%
+                        transition: .5s background-color
+                        position: relative
+                        &:hover
+                            background-color: rgba(58,205,126,.3)
+                        img
+                            position: absolute
+                            width: 40%
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%,-50%)
+                        span
+                            position: absolute
+                            bottom: 10%
+                            left: 50%
+                            transform: translateX(-50%)
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 24px
+                            color:  #3ACD7E
+                .schoolText
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 24px
+                    text-align: center
+                    line-height: 30px
+                    span
+                        font-weight: 600
+        .navBar
+                width: 100%
+                height: 300px
+                background-color: #2F2E41
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: space-around
+                .Codingo
+                    font-family: 'Montserrat', sans-serif
+                    font-weight: 500
+                    font-size: 24px
+                    color: #fff
+                .lastNavArea
+                    width: 95%
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    .copyright
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        color: #fff
+                        font-size: 20px
+                        span
+                            font-weight: 600

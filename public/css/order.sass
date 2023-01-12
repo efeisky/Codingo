@@ -1,7 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
-
+html[data-theme="dark"]
+    .OrderHeader
+        color: #fff
+    #subjectOrder
+        text-align: center
+        font-family: 'Montserrat', sans-serif
+        font-weight: 500
+        color: #fff
+    #orderName
+        font-family: 'Montserrat', sans-serif
+        font-weight: 500
+        color: #fff
+    #orderScore
+        font-family: 'Montserrat', sans-serif
+        font-weight: 600
+        color: #fff
+    #orderOrder
+        width: 35px
 .orderPanel
     width: 80%
+    background: #fff
     display: flex
     flex-direction: column
     gap: 50px
@@ -27,187 +45,386 @@
         #orderMy
             background-color: rgba(58,205 ,126 ,.1 ) 
 @media only screen and (max-width: 400px)
-    .OrderHeader
-        padding: 10px 0 0 20px
-        font-family: 'Montserrat', sans-serif
-        font-weight: 500
-    .orderPanel
-        width: 100%
-        padding: 20px 0 0 0
-        .orderSection
-            height: 90%
-            &::-webkit-scrollbar
-                width: 12px
-            &::-webkit-scrollbar-track
-                border-radius: 10px
-                background-color: #DDDDDD
-            &::-webkit-scrollbar-thumb
-                border-radius: 10px 
-                background-color: #cbcbcb
-            #orderData,#orderMy
-                padding: 0 10px 0 10px
-                display: flex
-                flex-direction: row
-                justify-content: space-around
-                align-items: center
-                #userOrderNamePicture
+    html
+        .OrderHeader
+            padding: 10px 0 0 20px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+        .orderPanel
+            width: 100%
+            padding: 20px 0 0 0
+            .orderSection
+                height: 90%
+                &::-webkit-scrollbar
+                    width: 12px
+                &::-webkit-scrollbar-track
+                    border-radius: 10px
+                    background-color: #DDDDDD
+                &::-webkit-scrollbar-thumb
+                    border-radius: 10px 
+                    background-color: #cbcbcb
+                #orderData,#orderMy
+                    padding: 0 10px 0 10px
                     display: flex
-                    gap: 20px
+                    flex-direction: row
+                    justify-content: space-around
                     align-items: center
-                    width: 85%
-                #orderPicture
-                    width: 35px
-                #orderFinalist
-                    width: 35px
-                #orderScore
-                    width: 15%
-                    font-size: 16px
-                    text-align: end
-                #orderOrder
-                    width: 50px
-                    font-family: 'Montserrat', sans-serif
-                    font-weight: 500
-                    text-align: center
-
+                    #userOrderNamePicture
+                        display: flex
+                        gap: 20px
+                        align-items: center
+                        width: 85%
+                    #orderPicture
+                        width: 35px
+                    #orderFinalist
+                        width: 35px
+                    #orderScore
+                        width: 15%
+                        font-size: 16px
+                        text-align: end
+                    #orderOrder
+                        width: 50px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        text-align: center
+    html[data-theme="dark"]
+        background: #232323
+        .OrderHeader
+            padding: 10px 0 0 20px
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            color: #fff
+        .orderPanel
+            width: 100%
+            padding: 20px 0 0 0
+            background: none
+            .orderSection
+                height: 90%
+                &::-webkit-scrollbar
+                    width: 12px
+                &::-webkit-scrollbar-track
+                    border-radius: 10px
+                    background-color: #DDDDDD
+                &::-webkit-scrollbar-thumb
+                    border-radius: 10px 
+                    background-color: #cbcbcb
+                #orderData,#orderMy
+                    padding: 0 10px 0 10px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-around
+                    align-items: center
+                    #userOrderNamePicture
+                        display: flex
+                        gap: 20px
+                        align-items: center
+                        width: 85%
+                    #orderPicture
+                        width: 35px
+                    #orderFinalist
+                        width: 35px
+                    #orderScore
+                        width: 15%
+                        font-size: 16px
+                        text-align: end
+                    #orderOrder
+                        width: 50px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        text-align: center
+                        color: #fff
+    
 @media only screen and (max-width: 766px) and (min-width: 401px)
-    .OrderHeader
-        padding: 20px 0 0 10%
-        font-family: 'Montserrat', sans-serif
-        font-weight: 500
-    .orderPanel
-        width: 100%
-        padding: 20px 0 0 0
-        .orderSection
-            height: 90%
-            &::-webkit-scrollbar
-                width: 12px
-            &::-webkit-scrollbar-track
-                border-radius: 10px
-                background-color: #DDDDDD
-            &::-webkit-scrollbar-thumb
-                border-radius: 10px 
-                background-color: #cbcbcb
-            #orderData,#orderMy
-                padding: 0 10px 0 10px
-                display: flex
-                flex-direction: row
-                justify-content: space-around
-                align-items: center
-                #userOrderNamePicture
+    html
+        .OrderHeader
+            padding: 20px 0 0 10%
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+        .orderPanel
+            width: 100%
+            padding: 20px 0 0 0
+            .orderSection
+                height: 90%
+                &::-webkit-scrollbar
+                    width: 12px
+                &::-webkit-scrollbar-track
+                    border-radius: 10px
+                    background-color: #DDDDDD
+                &::-webkit-scrollbar-thumb
+                    border-radius: 10px 
+                    background-color: #cbcbcb
+                #orderData,#orderMy
+                    padding: 0 10px 0 10px
                     display: flex
-                    gap: 20px
+                    flex-direction: row
+                    justify-content: space-around
                     align-items: center
-                    width: 70%
-                #orderPicture
-                    width: 35px
-                #orderFinalist
-                    width: 35px
-                #orderScore
-                    width: 30%
-                    font-size: 16px
-                    text-align: end
-                #orderOrder
-                    width: 50px
-                    font-family: 'Montserrat', sans-serif
-                    font-weight: 500
-                    text-align: center
-
+                    #userOrderNamePicture
+                        display: flex
+                        gap: 20px
+                        align-items: center
+                        width: 70%
+                    #orderPicture
+                        width: 35px
+                    #orderFinalist
+                        width: 35px
+                    #orderScore
+                        width: 30%
+                        font-size: 16px
+                        text-align: end
+                    #orderOrder
+                        width: 50px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        text-align: center
+    html[data-theme="dark"]
+        background: #232323
+        .OrderHeader
+            padding: 20px 0 0 10%
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            color: #fff
+        .orderPanel
+            width: 100%
+            padding: 20px 0 0 0
+            background: none
+            .orderSection
+                height: 90%
+                &::-webkit-scrollbar
+                    width: 12px
+                &::-webkit-scrollbar-track
+                    border-radius: 10px
+                    background-color: #DDDDDD
+                &::-webkit-scrollbar-thumb
+                    border-radius: 10px 
+                    background-color: #cbcbcb
+                #orderData,#orderMy
+                    padding: 0 10px 0 10px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-around
+                    align-items: center
+                    #userOrderNamePicture
+                        display: flex
+                        gap: 20px
+                        align-items: center
+                        width: 70%
+                    #orderPicture
+                        width: 35px
+                    #orderFinalist
+                        width: 35px
+                    #orderScore
+                        width: 30%
+                        font-size: 16px
+                        text-align: end
+                    #orderOrder
+                        width: 50px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        text-align: center
+                        color: #fff
+    
 @media only screen and (max-width: 1919px) and (min-width: 767px)
-    .OrderHeader
-        padding: 2.5% 0 0 10%
-        font-family: 'Montserrat', sans-serif
-        font-weight: 500
-        font-size: 18px
-    .orderPanel
-        margin: 5% auto 0px auto
-        height: 600px        
-        border: 1px solid #DBDBDB
-        border-radius: 20px
-        padding: 20px 0 20px 0
-        .orderSection
-            overflow: auto
-            height: 90%
-            &::-webkit-scrollbar
-                width: 12px
-            &::-webkit-scrollbar-track
-                border-radius: 10px
-                background-color: #DDDDDD
-            &::-webkit-scrollbar-thumb
-                border-radius: 10px 
-                background-color: #cbcbcb
-            #orderData,#orderMy
-                padding: 0 25px 0 25px
-                display: flex
-                flex-direction: row
-                justify-content: space-around
-                align-items: center
-                #userOrderNamePicture
+    html
+        .OrderHeader
+            padding: 2.5% 0 0 10%
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 18px
+        .orderPanel
+            margin: 5% auto 0px auto
+            height: 600px        
+            border: 1px solid #DBDBDB
+            border-radius: 20px
+            padding: 20px 0 20px 0
+            .orderSection
+                overflow: auto
+                height: 90%
+                &::-webkit-scrollbar
+                    width: 12px
+                &::-webkit-scrollbar-track
+                    border-radius: 10px
+                    background-color: #DDDDDD
+                &::-webkit-scrollbar-thumb
+                    border-radius: 10px 
+                    background-color: #cbcbcb
+                #orderData,#orderMy
+                    padding: 0 25px 0 25px
                     display: flex
-                    gap: 50px
+                    flex-direction: row
+                    justify-content: space-around
                     align-items: center
-                    width: 50%
-                #orderPicture
-                    width: 50px
-                #orderFinalist
-                    width: 50px
-                #orderScore
-                    padding-right: 50px
-                    width: 50%
-                    font-size: 16px
-                    text-align: end
-                #orderOrder
-                    width: 50px
-                    font-family: 'Montserrat', sans-serif
-                    font-weight: 500
-                    text-align: center
-    
+                    #userOrderNamePicture
+                        display: flex
+                        gap: 50px
+                        align-items: center
+                        width: 50%
+                    #orderPicture
+                        width: 50px
+                    #orderFinalist
+                        width: 50px
+                    #orderScore
+                        padding-right: 50px
+                        width: 50%
+                        font-size: 16px
+                        text-align: end
+                    #orderOrder
+                        width: 50px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        text-align: center
+    html[data-theme="dark"]
+        background: #232323
+        .OrderHeader
+            padding: 2.5% 0 0 10%
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 18px
+            color: #fff
+        .orderPanel
+            margin: 5% auto 0px auto
+            height: 600px        
+            border: 1px solid #DBDBDB
+            border-radius: 20px
+            padding: 20px 0 20px 0
+            background: none
+            .orderSection
+                overflow: auto
+                height: 90%
+                &::-webkit-scrollbar
+                    width: 12px
+                &::-webkit-scrollbar-track
+                    border-radius: 10px
+                    background-color: #DDDDDD
+                &::-webkit-scrollbar-thumb
+                    border-radius: 10px 
+                    background-color: #cbcbcb
+                #orderData,#orderMy
+                    padding: 0 25px 0 25px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-around
+                    align-items: center
+                    #userOrderNamePicture
+                        display: flex
+                        gap: 50px
+                        align-items: center
+                        width: 50%
+                    #orderPicture
+                        width: 50px
+                    #orderFinalist
+                        width: 50px
+                    #orderScore
+                        padding-right: 50px
+                        width: 50%
+                        font-size: 16px
+                        text-align: end
+                    #orderOrder
+                        width: 50px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        text-align: center
+                        color: #fff
 @media only screen and (min-width: 1920px)
-    .OrderHeader
-        padding: 2.5% 0 0 10%
-        font-family: 'Montserrat', sans-serif
-        font-weight: 500
-        font-size: 19px
-    .orderPanel
-        margin: 5% auto 0px auto
-        height: 600px        
-        border: 1px solid #DBDBDB
-        border-radius: 20px
-        padding: 20px 0 20px 0
-        .orderSection
-            overflow: auto
-            height: 90%
-            &::-webkit-scrollbar
-                width: 12px
-            &::-webkit-scrollbar-track
-                border-radius: 10px
-                background-color: #DDDDDD
-            &::-webkit-scrollbar-thumb
-                border-radius: 10px 
-                background-color: #cbcbcb
-            #orderData,#orderMy
-                padding: 0 25px 0 25px
-                display: flex
-                flex-direction: row
-                justify-content: space-around
-                align-items: center
-                #userOrderNamePicture
+    html
+        .OrderHeader
+            padding: 2.5% 0 0 10%
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 19px
+        .orderPanel
+            margin: 5% auto 0px auto
+            height: 600px        
+            border: 1px solid #DBDBDB
+            border-radius: 20px
+            padding: 20px 0 20px 0
+            background: none
+            .orderSection
+                overflow: auto
+                height: 90%
+                &::-webkit-scrollbar
+                    width: 12px
+                &::-webkit-scrollbar-track
+                    border-radius: 10px
+                    background-color: #DDDDDD
+                &::-webkit-scrollbar-thumb
+                    border-radius: 10px 
+                    background-color: #cbcbcb
+                #orderData,#orderMy
+                    padding: 0 25px 0 25px
                     display: flex
-                    gap: 50px
-                    padding: 50px
+                    flex-direction: row
+                    justify-content: space-around
                     align-items: center
-                    width: 50%
-                #orderPicture
-                    width: 50px
-                #orderFinalist
-                    width: 50px
-                #orderScore
-                    padding-right: 50px
-                    width: 50%
-                    font-size: 16px
-                    text-align: end
-                #orderOrder
-                    width: 50px
-                    font-family: 'Montserrat', sans-serif
-                    font-weight: 500
-                    text-align: center
-    
+                    #userOrderNamePicture
+                        display: flex
+                        gap: 50px
+                        padding: 50px
+                        align-items: center
+                        width: 50%
+                    #orderPicture
+                        width: 50px
+                    #orderFinalist
+                        width: 50px
+                    #orderScore
+                        padding-right: 50px
+                        width: 50%
+                        font-size: 16px
+                        text-align: end
+                    #orderOrder
+                        width: 50px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        text-align: center
+    html[data-theme="dark"]
+        .OrderHeader
+            padding: 2.5% 0 0 10%
+            font-family: 'Montserrat', sans-serif
+            font-weight: 500
+            font-size: 19px
+        .orderPanel
+            margin: 5% auto 0px auto
+            height: 600px        
+            border: 1px solid #DBDBDB
+            border-radius: 20px
+            padding: 20px 0 20px 0
+            background: none
+            .orderSection
+                overflow: auto
+                height: 90%
+                &::-webkit-scrollbar
+                    width: 12px
+                &::-webkit-scrollbar-track
+                    border-radius: 10px
+                    background-color: #DDDDDD
+                &::-webkit-scrollbar-thumb
+                    border-radius: 10px 
+                    background-color: #cbcbcb
+                #orderData,#orderMy
+                    padding: 0 25px 0 25px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-around
+                    align-items: center
+                    #userOrderNamePicture
+                        display: flex
+                        gap: 50px
+                        padding: 50px
+                        align-items: center
+                        width: 50%
+                    #orderPicture
+                        width: 50px
+                    #orderFinalist
+                        width: 50px
+                    #orderScore
+                        padding-right: 50px
+                        width: 50%
+                        font-size: 16px
+                        text-align: end
+                    #orderOrder
+                        width: 50px
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        text-align: center
+                        color: #fff
+        

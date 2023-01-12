@@ -1,6 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 @media only screen and (max-width: 400px) {
-  .subjectArea {
+  html .warnArea {
+    padding: 1%;
+    width: 100%;
+    height: 125px;
+    background: rgba(255, 195, 49, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5%;
+  }
+  html .warnArea .warnIcon svg {
+    width: 36px;
+  }
+  html .warnArea .warnText {
+    color: #EAAF03;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+  html .subjectArea {
     padding: 100px 0 100px 0;
     width: 100%;
     height: auto;
@@ -9,17 +30,17 @@
     gap: 50px;
     align-items: center;
   }
-  .subjectArea .bottomPanel {
+  html .subjectArea .bottomPanel {
     width: 90%;
     display: flex;
     justify-content: space-between;
   }
-  .subjectArea .bottomPanel .Codingo {
+  html .subjectArea .bottomPanel .Codingo {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
   }
-  .subjectArea .category {
+  html .subjectArea .category {
     width: 90%;
     height: 475px;
     background-color: #FFFFFF;
@@ -28,43 +49,43 @@
     border-radius: 20px;
     position: relative;
   }
-  .subjectArea .category .subjectName {
+  html .subjectArea .category .subjectName {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
   }
-  .subjectArea .category .lessons {
+  html .subjectArea .category .lessons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .subjectArea .category .lessons div {
+  html .subjectArea .category .lessons div {
     width: 33.3333333333%;
   }
-  .subjectArea .category .lessons .startLessonZero {
+  html .subjectArea .category .lessons .startLessonZero {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .subjectArea .category .lessons .startLessonZero #arrowStart {
+  html .subjectArea .category .lessons .startLessonZero #arrowStart {
     width: 80%;
     height: auto;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero {
+  html .subjectArea .category .lessons .startLessonZero .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero svg {
+  html .subjectArea .category .lessons .startLessonZero .textZero svg {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
+  html .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -72,29 +93,29 @@
     font-size: 14px;
     text-align: center;
   }
-  .subjectArea .category .lessons .finishLesson {
+  html .subjectArea .category .lessons .finishLesson {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .finishLesson #arrowSVG {
+  html .subjectArea .category .lessons .finishLesson #arrowSVG {
     transform: rotate(180deg);
     width: 80%;
     height: auto;
   }
-  .subjectArea .category .lessons .finishLesson .textZero {
+  html .subjectArea .category .lessons .finishLesson .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .finishLesson .textZero svg {
+  html .subjectArea .category .lessons .finishLesson .textZero svg {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
+  html .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -102,14 +123,14 @@
     font-size: 14px;
     text-align: center;
   }
-  .subjectArea .category .lessons .lesson {
+  html .subjectArea .category .lessons .lesson {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
   }
-  .subjectArea .category .lessons .lesson .lastCircleNumber {
+  html .subjectArea .category .lessons .lesson .lastCircleNumber {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -118,14 +139,14 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .lastCircleNumber .number {
+  html .subjectArea .category .lessons .lesson .lastCircleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #FFFFFF;
   }
-  .subjectArea .category .lessons .lesson .circleNumber {
+  html .subjectArea .category .lessons .lesson .circleNumber {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -134,14 +155,14 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .circleNumber .number {
+  html .subjectArea .category .lessons .lesson .circleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #FFFFFF;
   }
-  .subjectArea .category .lessons .lesson .nextCircleNumber {
+  html .subjectArea .category .lessons .lesson .nextCircleNumber {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -150,28 +171,28 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .nextCircleNumber .number {
+  html .subjectArea .category .lessons .lesson .nextCircleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #FFFFFF;
   }
-  .subjectArea .category .lessons .lesson .info {
+  html .subjectArea .category .lessons .lesson .info {
     display: none;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .lesson .info .subjectLessonActive {
+  html .subjectArea .category .lessons .lesson .info .subjectLessonActive {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #000;
   }
-  .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
+  html .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -179,10 +200,10 @@
     color: #A0A0A0;
     display: none;
   }
-  .subjectArea .category .lessons .lesson .info .status {
+  html .subjectArea .category .lessons .lesson .info .status {
     display: none;
   }
-  .subjectArea .category .lessons .lesson .info button {
+  html .subjectArea .category .lessons .lesson .info button {
     width: 180px;
     height: 60px;
     background-color: rgba(234, 67, 53, 0.3);
@@ -195,34 +216,34 @@
     font-size: 16px;
     border: none;
   }
-  .subjectArea .category .lessons .lesson .info button:hover {
+  html .subjectArea .category .lessons .lesson .info button:hover {
     background-color: rgba(234, 67, 53, 0.7);
   }
-  .subjectArea .category .lessons .finishSomething {
+  html .subjectArea .category .lessons .finishSomething {
     width: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
   }
-  .subjectArea .category .lessons .finishSomething #infinity {
+  html .subjectArea .category .lessons .finishSomething #infinity {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero {
+  html .subjectArea .category .lessons .finishSomething .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
     gap: 10px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
+  html .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #3ACD7E;
     font-size: 19px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
+  html .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, html .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
     display: flex;
     align-items: center;
     font-family: "Montserrat", sans-serif;
@@ -233,12 +254,12 @@
     cursor: pointer;
     gap: 15px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
+  html .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, html .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .subjectArea .category .phone {
+  html .subjectArea .category .phone {
     width: 100%;
     height: auto;
     display: flex;
@@ -247,12 +268,12 @@
     font-weight: 500;
     text-align: center;
   }
-  .subjectArea .category .phone .info {
+  html .subjectArea .category .phone .info {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .subjectArea .category .phone button {
+  html .subjectArea .category .phone button {
     z-index: 1;
     width: 180px;
     height: 60px;
@@ -266,10 +287,10 @@
     font-size: 16px;
     border: none;
   }
-  .subjectArea .category .phone button:hover {
+  html .subjectArea .category .phone button:hover {
     background-color: rgba(234, 67, 53, 0.7);
   }
-  .subjectArea .category .doPracticeMath, .subjectArea .category .doPracticePy {
+  html .subjectArea .category .doPracticeMath, html .subjectArea .category .doPracticePy {
     display: flex;
     gap: 15px;
     position: absolute;
@@ -279,10 +300,336 @@
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .warnArea {
+    padding: 1%;
+    width: 100%;
+    height: 125px;
+    background: rgba(255, 195, 49, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5%;
+  }
+  html[data-theme=dark] .warnArea .warnIcon svg {
+    width: 36px;
+  }
+  html[data-theme=dark] .warnArea .warnText {
+    color: #EAAF03;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+  html[data-theme=dark] .subjectArea {
+    padding: 100px 0 100px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .bottomPanel {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  html[data-theme=dark] .subjectArea .bottomPanel .Codingo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category {
+    width: 90%;
+    height: 475px;
+    background-color: #232323;
+    border: 1px solid #CBCBCB;
+    padding: 25px 5px 25px 5px;
+    border-radius: 20px;
+    position: relative;
+  }
+  html[data-theme=dark] .subjectArea .category .subjectName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons div {
+    width: 33.3333333333%;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero #arrowStart {
+    width: 80%;
+    height: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero svg {
+    width: 48px;
+    height: 48px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 14px;
+    text-align: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson #arrowSVG {
+    transform: rotate(180deg);
+    width: 80%;
+    height: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero svg {
+    width: 48px;
+    height: 48px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 14px;
+    text-align: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .lastCircleNumber {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(58, 205, 126, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .lastCircleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .circleNumber {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #EA4335;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .circleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .nextCircleNumber {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(66, 133, 244, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .nextCircleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .subjectLessonActive {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #A0A0A0;
+    display: none;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .status {
+    display: none;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info button {
+    width: 180px;
+    height: 60px;
+    background-color: rgba(234, 67, 53, 0.3);
+    color: #fff;
+    transition: 0.5s all;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info button:hover {
+    background-color: rgba(234, 67, 53, 0.7);
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething {
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething #infinity {
+    width: 48px;
+    height: 48px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    gap: 15px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html[data-theme=dark] .subjectArea .category .phone {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .phone .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  html[data-theme=dark] .subjectArea .category .phone button {
+    z-index: 1;
+    width: 180px;
+    height: 60px;
+    background-color: rgba(234, 67, 53, 0.3);
+    color: #fff;
+    transition: 0.5s all;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+  }
+  html[data-theme=dark] .subjectArea .category .phone button:hover {
+    background-color: rgba(234, 67, 53, 0.7);
+  }
+  html[data-theme=dark] .subjectArea .category .doPracticeMath, html[data-theme=dark] .subjectArea .category .doPracticePy {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 401px) {
-  .subjectArea {
+  html .warnArea {
+    padding: 1%;
+    width: 100%;
+    height: 125px;
+    background: rgba(255, 195, 49, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+  }
+  html .warnArea .warnText {
+    color: #EAAF03;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 75%;
+  }
+  html .subjectArea {
     padding: 100px 0 100px 0;
     width: 100%;
     height: auto;
@@ -291,17 +638,17 @@
     gap: 50px;
     align-items: center;
   }
-  .subjectArea .bottomPanel {
+  html .subjectArea .bottomPanel {
     width: 90%;
     display: flex;
     justify-content: space-between;
   }
-  .subjectArea .bottomPanel .Codingo {
+  html .subjectArea .bottomPanel .Codingo {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
   }
-  .subjectArea .category {
+  html .subjectArea .category {
     width: 90%;
     height: 475px;
     background-color: #FFFFFF;
@@ -310,43 +657,43 @@
     border-radius: 20px;
     position: relative;
   }
-  .subjectArea .category .subjectName {
+  html .subjectArea .category .subjectName {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
   }
-  .subjectArea .category .lessons {
+  html .subjectArea .category .lessons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .subjectArea .category .lessons div {
+  html .subjectArea .category .lessons div {
     width: 33.3333333333%;
   }
-  .subjectArea .category .lessons .startLessonZero {
+  html .subjectArea .category .lessons .startLessonZero {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .subjectArea .category .lessons .startLessonZero #arrowStart {
+  html .subjectArea .category .lessons .startLessonZero #arrowStart {
     width: 80%;
     height: auto;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero {
+  html .subjectArea .category .lessons .startLessonZero .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero svg {
+  html .subjectArea .category .lessons .startLessonZero .textZero svg {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
+  html .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -354,29 +701,29 @@
     font-size: 14px;
     text-align: center;
   }
-  .subjectArea .category .lessons .finishLesson {
+  html .subjectArea .category .lessons .finishLesson {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .finishLesson #arrowSVG {
+  html .subjectArea .category .lessons .finishLesson #arrowSVG {
     transform: rotate(180deg);
     width: 80%;
     height: auto;
   }
-  .subjectArea .category .lessons .finishLesson .textZero {
+  html .subjectArea .category .lessons .finishLesson .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .finishLesson .textZero svg {
+  html .subjectArea .category .lessons .finishLesson .textZero svg {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
+  html .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -384,14 +731,14 @@
     font-size: 14px;
     text-align: center;
   }
-  .subjectArea .category .lessons .lesson {
+  html .subjectArea .category .lessons .lesson {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
   }
-  .subjectArea .category .lessons .lesson .lastCircleNumber {
+  html .subjectArea .category .lessons .lesson .lastCircleNumber {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -400,14 +747,14 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .lastCircleNumber .number {
+  html .subjectArea .category .lessons .lesson .lastCircleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #FFFFFF;
   }
-  .subjectArea .category .lessons .lesson .circleNumber {
+  html .subjectArea .category .lessons .lesson .circleNumber {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -416,14 +763,14 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .circleNumber .number {
+  html .subjectArea .category .lessons .lesson .circleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #FFFFFF;
   }
-  .subjectArea .category .lessons .lesson .nextCircleNumber {
+  html .subjectArea .category .lessons .lesson .nextCircleNumber {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -432,28 +779,28 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .nextCircleNumber .number {
+  html .subjectArea .category .lessons .lesson .nextCircleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #FFFFFF;
   }
-  .subjectArea .category .lessons .lesson .info {
+  html .subjectArea .category .lessons .lesson .info {
     display: none;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .lesson .info .subjectLessonActive {
+  html .subjectArea .category .lessons .lesson .info .subjectLessonActive {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #000;
   }
-  .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
+  html .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -461,10 +808,10 @@
     color: #A0A0A0;
     display: none;
   }
-  .subjectArea .category .lessons .lesson .info .status {
+  html .subjectArea .category .lessons .lesson .info .status {
     display: none;
   }
-  .subjectArea .category .lessons .lesson .info button {
+  html .subjectArea .category .lessons .lesson .info button {
     width: 180px;
     height: 60px;
     background-color: rgba(234, 67, 53, 0.3);
@@ -477,34 +824,34 @@
     font-size: 16px;
     border: none;
   }
-  .subjectArea .category .lessons .lesson .info button:hover {
+  html .subjectArea .category .lessons .lesson .info button:hover {
     background-color: rgba(234, 67, 53, 0.7);
   }
-  .subjectArea .category .lessons .finishSomething {
+  html .subjectArea .category .lessons .finishSomething {
     width: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
   }
-  .subjectArea .category .lessons .finishSomething #infinity {
+  html .subjectArea .category .lessons .finishSomething #infinity {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero {
+  html .subjectArea .category .lessons .finishSomething .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
     gap: 10px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
+  html .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #3ACD7E;
     font-size: 19px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
+  html .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, html .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
     display: flex;
     align-items: center;
     font-family: "Montserrat", sans-serif;
@@ -515,12 +862,12 @@
     cursor: pointer;
     gap: 15px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
+  html .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, html .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .subjectArea .category .phone {
+  html .subjectArea .category .phone {
     width: 100%;
     height: auto;
     display: flex;
@@ -529,12 +876,12 @@
     font-weight: 500;
     text-align: center;
   }
-  .subjectArea .category .phone .info {
+  html .subjectArea .category .phone .info {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .subjectArea .category .phone button {
+  html .subjectArea .category .phone button {
     z-index: 1;
     width: 180px;
     height: 60px;
@@ -548,10 +895,10 @@
     font-size: 16px;
     border: none;
   }
-  .subjectArea .category .phone button:hover {
+  html .subjectArea .category .phone button:hover {
     background-color: rgba(234, 67, 53, 0.7);
   }
-  .subjectArea .category .doPracticeMath, .subjectArea .category .doPracticePy {
+  html .subjectArea .category .doPracticeMath, html .subjectArea .category .doPracticePy {
     display: flex;
     gap: 15px;
     position: absolute;
@@ -562,9 +909,27 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1919px) {
-  .subjectArea {
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .warnArea {
+    padding: 1%;
+    width: 100%;
+    height: 125px;
+    background: rgba(255, 195, 49, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+  }
+  html[data-theme=dark] .warnArea .warnText {
+    color: #EAAF03;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 75%;
+  }
+  html[data-theme=dark] .subjectArea {
     padding: 100px 0 100px 0;
     width: 100%;
     height: auto;
@@ -573,107 +938,109 @@
     gap: 50px;
     align-items: center;
   }
-  .subjectArea .bottomPanel {
+  html[data-theme=dark] .subjectArea .bottomPanel {
     width: 90%;
     display: flex;
     justify-content: space-between;
   }
-  .subjectArea .bottomPanel .Codingo {
+  html[data-theme=dark] .subjectArea .bottomPanel .Codingo {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
+    color: #fff;
   }
-  .subjectArea .category {
+  html[data-theme=dark] .subjectArea .category {
     width: 90%;
-    height: 425px;
-    background-color: #FFFFFF;
+    height: 475px;
+    background-color: #232323;
     border: 1px solid #CBCBCB;
-    padding: 25px;
+    padding: 25px 5px 25px 5px;
     border-radius: 20px;
     position: relative;
   }
-  .subjectArea .category .subjectName {
+  html[data-theme=dark] .subjectArea .category .subjectName {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
+    color: #fff;
   }
-  .subjectArea .category .lessons {
+  html[data-theme=dark] .subjectArea .category .lessons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .subjectArea .category .lessons div {
+  html[data-theme=dark] .subjectArea .category .lessons div {
     width: 33.3333333333%;
   }
-  .subjectArea .category .lessons .startLessonZero {
-    display: flex;
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
-  .subjectArea .category .lessons .startLessonZero #arrowStart {
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero #arrowStart {
     width: 80%;
     height: auto;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero {
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero svg {
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero svg {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #3ACD7E;
-    font-size: 19px;
+    font-size: 14px;
     text-align: center;
   }
-  .subjectArea .category .lessons .finishLesson {
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .finishLesson #arrowSVG {
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson #arrowSVG {
     transform: rotate(180deg);
     width: 80%;
     height: auto;
   }
-  .subjectArea .category .lessons .finishLesson .textZero {
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .finishLesson .textZero svg {
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero svg {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #3ACD7E;
-    font-size: 19px;
+    font-size: 14px;
     text-align: center;
   }
-  .subjectArea .category .lessons .lesson {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
   }
-  .subjectArea .category .lessons .lesson .lastCircleNumber {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .lastCircleNumber {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -682,14 +1049,14 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .lastCircleNumber .number {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .lastCircleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
-    color: #FFFFFF;
+    color: #fff;
   }
-  .subjectArea .category .lessons .lesson .circleNumber {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .circleNumber {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -698,14 +1065,14 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .circleNumber .number {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .circleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
-    color: #FFFFFF;
+    color: #fff;
   }
-  .subjectArea .category .lessons .lesson .nextCircleNumber {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .nextCircleNumber {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -714,42 +1081,39 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .nextCircleNumber .number {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .nextCircleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
-    color: #FFFFFF;
+    color: #fff;
   }
-  .subjectArea .category .lessons .lesson .info {
-    display: flex;
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info {
+    display: none;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .lesson .info .subjectLessonActive {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .subjectLessonActive {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: #000;
+    color: #fff;
   }
-  .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
-    width: 100%;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: #A0A0A0;
-  }
-  .subjectArea .category .lessons .lesson .info .status {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #A0A0A0;
+    display: none;
   }
-  .subjectArea .category .lessons .lesson .info button {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .status {
+    display: none;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info button {
     width: 180px;
     height: 60px;
     background-color: rgba(234, 67, 53, 0.3);
@@ -762,34 +1126,34 @@
     font-size: 16px;
     border: none;
   }
-  .subjectArea .category .lessons .lesson .info button:hover {
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info button:hover {
     background-color: rgba(234, 67, 53, 0.7);
   }
-  .subjectArea .category .lessons .finishSomething {
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething {
     width: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
   }
-  .subjectArea .category .lessons .finishSomething #infinity {
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething #infinity {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero {
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
     gap: 10px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #3ACD7E;
     font-size: 19px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
     display: flex;
     align-items: center;
     font-family: "Montserrat", sans-serif;
@@ -800,15 +1164,319 @@
     cursor: pointer;
     gap: 15px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .phone {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .phone .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  html[data-theme=dark] .subjectArea .category .phone button {
+    z-index: 1;
+    width: 180px;
+    height: 60px;
+    background-color: rgba(234, 67, 53, 0.3);
+    color: #fff;
+    transition: 0.5s all;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+  }
+  html[data-theme=dark] .subjectArea .category .phone button:hover {
+    background-color: rgba(234, 67, 53, 0.7);
+  }
+  html[data-theme=dark] .subjectArea .category .doPracticeMath, html[data-theme=dark] .subjectArea .category .doPracticePy {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1919px) {
+  html .warnArea {
+    padding: 1%;
+    width: 100%;
+    height: 125px;
+    background: rgba(255, 195, 49, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+  }
+  html .warnArea .warnText {
+    color: #EAAF03;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  html .subjectArea {
+    padding: 100px 0 100px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  html .subjectArea .bottomPanel {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  html .subjectArea .bottomPanel .Codingo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  html .subjectArea .category {
+    width: 90%;
+    height: 425px;
+    background-color: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    padding: 25px;
+    border-radius: 20px;
+    position: relative;
+  }
+  html .subjectArea .category .subjectName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+  }
+  html .subjectArea .category .lessons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  html .subjectArea .category .lessons div {
+    width: 33.3333333333%;
+  }
+  html .subjectArea .category .lessons .startLessonZero {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  html .subjectArea .category .lessons .startLessonZero #arrowStart {
+    width: 80%;
+    height: auto;
+  }
+  html .subjectArea .category .lessons .startLessonZero .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  html .subjectArea .category .lessons .startLessonZero .textZero svg {
+    width: 48px;
+    height: 48px;
+  }
+  html .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+    text-align: center;
+  }
+  html .subjectArea .category .lessons .finishLesson {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  html .subjectArea .category .lessons .finishLesson #arrowSVG {
+    transform: rotate(180deg);
+    width: 80%;
+    height: auto;
+  }
+  html .subjectArea .category .lessons .finishLesson .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  html .subjectArea .category .lessons .finishLesson .textZero svg {
+    width: 48px;
+    height: 48px;
+  }
+  html .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+    text-align: center;
+  }
+  html .subjectArea .category .lessons .lesson {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  html .subjectArea .category .lessons .lesson .lastCircleNumber {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(58, 205, 126, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html .subjectArea .category .lessons .lesson .lastCircleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #FFFFFF;
+  }
+  html .subjectArea .category .lessons .lesson .circleNumber {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #EA4335;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html .subjectArea .category .lessons .lesson .circleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #FFFFFF;
+  }
+  html .subjectArea .category .lessons .lesson .nextCircleNumber {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(66, 133, 244, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html .subjectArea .category .lessons .lesson .nextCircleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #FFFFFF;
+  }
+  html .subjectArea .category .lessons .lesson .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: auto;
+  }
+  html .subjectArea .category .lessons .lesson .info .subjectLessonActive {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #000;
+  }
+  html .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #A0A0A0;
+  }
+  html .subjectArea .category .lessons .lesson .info .status {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #A0A0A0;
+  }
+  html .subjectArea .category .lessons .lesson .info button {
+    width: 180px;
+    height: 60px;
+    background-color: rgba(234, 67, 53, 0.3);
+    color: #fff;
+    transition: 0.5s all;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+  }
+  html .subjectArea .category .lessons .lesson .info button:hover {
+    background-color: rgba(234, 67, 53, 0.7);
+  }
+  html .subjectArea .category .lessons .finishSomething {
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html .subjectArea .category .lessons .finishSomething #infinity {
+    width: 48px;
+    height: 48px;
+  }
+  html .subjectArea .category .lessons .finishSomething .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+  }
+  html .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+  }
+  html .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, html .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    gap: 15px;
+  }
+  html .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, html .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .subjectArea .category .phone {
+  html .subjectArea .category .phone {
     display: none;
   }
-  .subjectArea .category .doPracticeMath, .subjectArea .category .doPracticePy {
+  html .subjectArea .category .doPracticeMath, html .subjectArea .category .doPracticePy {
     display: flex;
     gap: 15px;
     position: absolute;
@@ -819,9 +1487,303 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .warnArea {
+    padding: 1%;
+    width: 100%;
+    height: 125px;
+    background: rgba(255, 195, 49, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+  }
+  html[data-theme=dark] .warnArea .warnText {
+    color: #EAAF03;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  html[data-theme=dark] .subjectArea {
+    padding: 100px 0 100px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .bottomPanel {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  html[data-theme=dark] .subjectArea .bottomPanel .Codingo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  html[data-theme=dark] .subjectArea .category {
+    width: 90%;
+    height: 425px;
+    background-color: #232323;
+    border: 1px solid #CBCBCB;
+    padding: 25px;
+    border-radius: 20px;
+    position: relative;
+  }
+  html[data-theme=dark] .subjectArea .category .subjectName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons div {
+    width: 33.3333333333%;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero #arrowStart {
+    width: 80%;
+    height: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero svg {
+    width: 48px;
+    height: 48px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+    text-align: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson #arrowSVG {
+    transform: rotate(180deg);
+    width: 80%;
+    height: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero svg {
+    width: 48px;
+    height: 48px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+    text-align: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .lastCircleNumber {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(58, 205, 126, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .lastCircleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .circleNumber {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #EA4335;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .circleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .nextCircleNumber {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(66, 133, 244, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .nextCircleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .subjectLessonActive {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #A0A0A0;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .status {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #A0A0A0;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info button {
+    width: 180px;
+    height: 60px;
+    background-color: rgba(234, 67, 53, 0.3);
+    color: #fff;
+    transition: 0.5s all;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info button:hover {
+    background-color: rgba(234, 67, 53, 0.7);
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething {
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething #infinity {
+    width: 48px;
+    height: 48px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    gap: 15px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .phone {
+    display: none;
+  }
+  html[data-theme=dark] .subjectArea .category .doPracticeMath, html[data-theme=dark] .subjectArea .category .doPracticePy {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
 }
 @media only screen and (min-width: 1920px) {
-  .subjectArea {
+  html .warnArea {
+    width: 100%;
+    height: 125px;
+    background: rgba(255, 195, 49, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+  }
+  html .warnArea .warnText {
+    color: #EAAF03;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  html .subjectArea {
     padding: 100px 0 100px 0;
     width: 100%;
     height: auto;
@@ -830,17 +1792,17 @@
     gap: 50px;
     align-items: center;
   }
-  .subjectArea .bottomPanel {
+  html .subjectArea .bottomPanel {
     width: 90%;
     display: flex;
     justify-content: space-between;
   }
-  .subjectArea .bottomPanel .Codingo {
+  html .subjectArea .bottomPanel .Codingo {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
   }
-  .subjectArea .category {
+  html .subjectArea .category {
     width: 90%;
     height: 425px;
     background-color: #FFFFFF;
@@ -849,86 +1811,86 @@
     border-radius: 20px;
     position: relative;
   }
-  .subjectArea .category .subjectName {
+  html .subjectArea .category .subjectName {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
   }
-  .subjectArea .category .lessons {
+  html .subjectArea .category .lessons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .subjectArea .category .lessons div {
+  html .subjectArea .category .lessons div {
     width: 33.3333333333%;
   }
-  .subjectArea .category .lessons .startLessonZero {
+  html .subjectArea .category .lessons .startLessonZero {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero {
+  html .subjectArea .category .lessons .startLessonZero .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero svg {
+  html .subjectArea .category .lessons .startLessonZero .textZero svg {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
+  html .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #3ACD7E;
     font-size: 19px;
   }
-  .subjectArea .category .lessons .startLessonZero #arrowStart {
+  html .subjectArea .category .lessons .startLessonZero #arrowStart {
     width: 313px;
     height: 74px;
   }
-  .subjectArea .category .lessons .finishLesson {
+  html .subjectArea .category .lessons .finishLesson {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .finishLesson #arrowSVG {
+  html .subjectArea .category .lessons .finishLesson #arrowSVG {
     transform: rotate(180deg);
     width: 313px;
     height: 74px;
   }
-  .subjectArea .category .lessons .finishLesson .textZero {
+  html .subjectArea .category .lessons .finishLesson .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
   }
-  .subjectArea .category .lessons .finishLesson .textZero svg {
+  html .subjectArea .category .lessons .finishLesson .textZero svg {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
+  html .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #3ACD7E;
     font-size: 19px;
   }
-  .subjectArea .category .lessons .lesson {
+  html .subjectArea .category .lessons .lesson {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
   }
-  .subjectArea .category .lessons .lesson .lastCircleNumber {
+  html .subjectArea .category .lessons .lesson .lastCircleNumber {
     width: 105px;
     height: 105px;
     border-radius: 50%;
@@ -937,14 +1899,14 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .lastCircleNumber .number {
+  html .subjectArea .category .lessons .lesson .lastCircleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #FFFFFF;
   }
-  .subjectArea .category .lessons .lesson .circleNumber {
+  html .subjectArea .category .lessons .lesson .circleNumber {
     width: 105px;
     height: 105px;
     border-radius: 50%;
@@ -953,14 +1915,14 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .circleNumber .number {
+  html .subjectArea .category .lessons .lesson .circleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #FFFFFF;
   }
-  .subjectArea .category .lessons .lesson .nextCircleNumber {
+  html .subjectArea .category .lessons .lesson .nextCircleNumber {
     width: 105px;
     height: 105px;
     border-radius: 50%;
@@ -969,41 +1931,41 @@
     justify-content: center;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .nextCircleNumber .number {
+  html .subjectArea .category .lessons .lesson .nextCircleNumber .number {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #FFFFFF;
   }
-  .subjectArea .category .lessons .lesson .info {
+  html .subjectArea .category .lessons .lesson .info {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
   }
-  .subjectArea .category .lessons .lesson .info .subjectLessonActive {
+  html .subjectArea .category .lessons .lesson .info .subjectLessonActive {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #000;
   }
-  .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
+  html .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #A0A0A0;
   }
-  .subjectArea .category .lessons .lesson .info .status {
+  html .subjectArea .category .lessons .lesson .info .status {
     width: 100%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #A0A0A0;
   }
-  .subjectArea .category .lessons .lesson .info button {
+  html .subjectArea .category .lessons .lesson .info button {
     width: 200px;
     height: 70px;
     background-color: rgba(234, 67, 53, 0.3);
@@ -1016,34 +1978,34 @@
     font-size: 16px;
     border: none;
   }
-  .subjectArea .category .lessons .lesson .info button:hover {
+  html .subjectArea .category .lessons .lesson .info button:hover {
     background-color: rgba(234, 67, 53, 0.7);
   }
-  .subjectArea .category .lessons .finishSomething {
+  html .subjectArea .category .lessons .finishSomething {
     width: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
   }
-  .subjectArea .category .lessons .finishSomething #infinity {
+  html .subjectArea .category .lessons .finishSomething #infinity {
     width: 48px;
     height: 48px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero {
+  html .subjectArea .category .lessons .finishSomething .textZero {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
     gap: 10px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
+  html .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #3ACD7E;
     font-size: 19px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
+  html .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, html .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
     display: flex;
     align-items: center;
     font-family: "Montserrat", sans-serif;
@@ -1054,15 +2016,15 @@
     cursor: pointer;
     gap: 15px;
   }
-  .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
+  html .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, html .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
     width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .subjectArea .category .phone {
+  html .subjectArea .category .phone {
     display: none;
   }
-  .subjectArea .category .doPracticeMath, .subjectArea .category .doPracticePy {
+  html .subjectArea .category .doPracticeMath, html .subjectArea .category .doPracticePy {
     display: flex;
     gap: 15px;
     position: absolute;
@@ -1072,5 +2034,276 @@
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+  }
+  html[data-theme=dark] .warnArea {
+    width: 100%;
+    height: 125px;
+    background: rgba(255, 195, 49, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+  }
+  html[data-theme=dark] .warnArea .warnText {
+    color: #EAAF03;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  html[data-theme=dark] .subjectArea {
+    padding: 100px 0 100px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .bottomPanel {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  html[data-theme=dark] .subjectArea .bottomPanel .Codingo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category {
+    width: 90%;
+    height: 425px;
+    background-color: #232323;
+    border: 1px solid #CBCBCB;
+    padding: 25px;
+    border-radius: 20px;
+    position: relative;
+  }
+  html[data-theme=dark] .subjectArea .category .subjectName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons div {
+    width: 33.3333333333%;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero svg {
+    width: 48px;
+    height: 48px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .startLessonZero #arrowStart {
+    width: 313px;
+    height: 74px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson #arrowSVG {
+    transform: rotate(180deg);
+    width: 313px;
+    height: 74px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero svg {
+    width: 48px;
+    height: 48px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishLesson .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .lastCircleNumber {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: rgba(58, 205, 126, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .lastCircleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #FFFFFF;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .circleNumber {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: #EA4335;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .circleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #FFFFFF;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .nextCircleNumber {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: rgba(66, 133, 244, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .nextCircleNumber .number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    color: #FFFFFF;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .subjectLessonActive {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .subjectLessonnoActive {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #A0A0A0;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info .status {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #A0A0A0;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info button {
+    width: 200px;
+    height: 70px;
+    background-color: rgba(234, 67, 53, 0.3);
+    color: #fff;
+    transition: 0.5s all;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .lesson .info button:hover {
+    background-color: rgba(234, 67, 53, 0.7);
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething {
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething #infinity {
+    width: 48px;
+    height: 48px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .textZeroContent {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #3ACD7E;
+    font-size: 19px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd, html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    gap: 15px;
+  }
+  html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticeMathEnd .practiceText, html[data-theme=dark] .subjectArea .category .lessons .finishSomething .textZero .doPracticePyEnd .practiceText {
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .subjectArea .category .phone {
+    display: none;
+  }
+  html[data-theme=dark] .subjectArea .category .doPracticeMath, html[data-theme=dark] .subjectArea .category .doPracticePy {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
   }
 }/*# sourceMappingURL=personalPage.css.map */

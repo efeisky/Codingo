@@ -1,27 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
-.video {
+html .video {
   text-align: center;
 }
-
-.infoText {
+html .infoText {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-align: start;
 }
-
-.button {
+html .button {
   margin-top: 20px;
   text-align: center;
 }
-
-.infoHeader {
+html .infoHeader {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-align: center;
   color: #6C63FF;
 }
-
-.header {
+html .header {
   width: 100%;
   height: 100px;
   border-bottom: 1px solid #cbcbcb;
@@ -30,22 +26,19 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-.Text {
+html .Text {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #3ACD7E;
   letter-spacing: 1px;
 }
-
-.logo {
+html .logo {
   display: flex;
   gap: 10px;
   align-items: center;
   cursor: pointer;
 }
-
-.TextSubject {
+html .TextSubject {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #000;
@@ -54,8 +47,7 @@
       -ms-user-select: none;
           user-select: none;
 }
-
-.questSandQ {
+html .questSandQ {
   margin-top: 30px;
   display: flex;
   gap: 5px;
@@ -64,21 +56,19 @@
   align-items: center;
   margin-bottom: 50px;
 }
-.questSandQ .speaker:hover {
+html .questSandQ .speaker:hover {
   cursor: pointer;
 }
-
-.images {
+html .images {
   width: 100%;
   height: auto;
   text-align: center;
   margin-bottom: 25px;
 }
-.images #image {
+html .images #image {
   max-height: 400px;
 }
-
-#YourAnswer {
+html #YourAnswer {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-align: start;
@@ -86,8 +76,85 @@
   font-size: 16px;
 }
 
+html[data-theme=dark] .controlDrag {
+  background: none;
+}
+html[data-theme=dark] .subject, html[data-theme=dark] .level, html[data-theme=dark] .dragLetter, html[data-theme=dark] .text {
+  color: #fff;
+}
+html[data-theme=dark] .video {
+  text-align: center;
+}
+html[data-theme=dark] .infoText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: start;
+  color: #fff;
+}
+html[data-theme=dark] .button {
+  margin-top: 20px;
+  text-align: center;
+}
+html[data-theme=dark] .infoHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #6C63FF;
+}
+html[data-theme=dark] .header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #cbcbcb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+html[data-theme=dark] .Text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #3ACD7E;
+  letter-spacing: 1px;
+}
+html[data-theme=dark] .logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+html[data-theme=dark] .TextSubject {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html[data-theme=dark] .questSandQ {
+  margin-top: 30px;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+html[data-theme=dark] .questSandQ .speaker:hover {
+  cursor: pointer;
+}
+html[data-theme=dark] .images {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 25px;
+}
+html[data-theme=dark] .images #image {
+  max-height: 400px;
+}
+
 @media only screen and (max-width: 400px) {
-  .info {
+  html .info {
     margin-top: 50px;
     width: 100%;
     height: 100%;
@@ -95,15 +162,15 @@
     flex-direction: row;
     justify-content: center;
   }
-  .info #infoVideo {
+  html .info #infoVideo {
     width: 100%;
     height: 250px;
   }
-  .info .area {
+  html .info .area {
     width: 80%;
     height: 100%;
   }
-  .info #closeInfo {
+  html .info #closeInfo {
     width: 200px;
     height: 80px;
     background-color: rgba(108, 99, 255, 0.2);
@@ -117,24 +184,24 @@
     transition: 0.3s all;
     margin-bottom: 100px;
   }
-  .info #closeInfo:hover {
+  html .info #closeInfo:hover {
     background-color: #6C63FF;
     color: #FFFFFF;
   }
-  .info .infoText {
+  html .info .infoText {
     padding-top: 30px;
     font-size: 16px;
   }
-  .info .infoHeader {
+  html .info .infoHeader {
     padding-top: 20px;
     font-size: 18px;
   }
-  .textArea {
+  html .textArea {
     width: 100%;
     height: 300px;
     position: relative;
   }
-  .textArea .textDiv {
+  html .textArea .textDiv {
     position: absolute;
     width: 300px;
     height: 210px;
@@ -145,10 +212,10 @@
     display: flex;
     flex-direction: column;
   }
-  .textArea .textDiv .textAreaCompArea {
+  html .textArea .textDiv .textAreaCompArea {
     padding-top: 5px;
   }
-  .textArea .textDiv .textAreaCompArea textarea {
+  html .textArea .textDiv .textAreaCompArea textarea {
     background: none;
     border: none;
     width: 100%;
@@ -156,30 +223,30 @@
     outline: none;
     font-size: 18px;
   }
-  .textArea .textDiv .sendText {
+  html .textArea .textDiv .sendText {
     position: absolute;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
   }
-  .rowsABCD {
+  html .rowsABCD {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
     margin-bottom: 200px;
   }
-  .rowsABCD .row-AB {
+  html .rowsABCD .row-AB {
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
-  .rowsABCD .row-CD {
+  html .rowsABCD .row-CD {
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
-  .answerPut {
+  html .answerPut {
     width: 300px;
     height: 80px;
     border: 1px solid #F2F2F2;
@@ -188,7 +255,7 @@
     position: relative;
     transition: 0.5s all;
   }
-  .answerPut #choice {
+  html .answerPut #choice {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -197,7 +264,7 @@
     position: absolute;
     left: 30px;
   }
-  .answerPut .questionAnswerInfos {
+  html .answerPut .questionAnswerInfos {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -205,10 +272,10 @@
     line-height: 80px;
     text-align: center;
   }
-  .answerPut:hover {
+  html .answerPut:hover {
     border-color: #4285F4;
   }
-  .rightAnswer {
+  html .rightAnswer {
     width: 100%;
     height: 150px;
     background-color: rgba(58, 205, 126, 0.1);
@@ -216,7 +283,7 @@
     bottom: 0px;
     right: 0px;
   }
-  .rightAnswer .scos {
+  html .rightAnswer .scos {
     position: absolute;
     display: flex;
     gap: 25px;
@@ -224,13 +291,13 @@
     left: 5px;
     align-items: center;
   }
-  .rightAnswer .scos .message {
+  html .rightAnswer .scos .message {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: #3ACD7E;
   }
-  .rightAnswer #nextQstnTrue {
+  html .rightAnswer #nextQstnTrue {
     position: absolute;
     right: 30px;
     bottom: 30px;
@@ -242,7 +309,7 @@
     border: none;
     cursor: pointer;
   }
-  .falseAnswer {
+  html .falseAnswer {
     width: 100%;
     height: 150px;
     background-color: rgba(234, 67, 53, 0.1);
@@ -253,7 +320,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  .falseAnswer .scos {
+  html .falseAnswer .scos {
     position: absolute;
     display: flex;
     gap: 25px;
@@ -261,13 +328,13 @@
     left: 5px;
     align-items: center;
   }
-  .falseAnswer .scos .message {
+  html .falseAnswer .scos .message {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #EA4335;
   }
-  .falseAnswer #nextQstnFalse {
+  html .falseAnswer #nextQstnFalse {
     position: absolute;
     right: 30px;
     bottom: 30px;
@@ -279,12 +346,12 @@
     border: none;
     cursor: pointer;
   }
-  .mobile-Note {
+  html .mobile-Note {
     width: 95%;
     padding-top: 20px;
     text-align: end;
   }
-  .newNote {
+  html .newNote {
     position: fixed;
     flex-direction: column;
     align-items: center;
@@ -297,27 +364,27 @@
     border-left: 1px solid #CBCBCB;
     border-bottom: 1px solid #CBCBCB;
   }
-  .newNote .noteCount {
+  html .newNote .noteCount {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .newNote .noteCount #count {
+  html .newNote .noteCount #count {
     font-weight: 600;
   }
-  .newNote .head {
+  html .newNote .head {
     width: 100%;
     text-align: center;
     padding-top: 25px;
   }
-  .newNote .head .close-Popup {
+  html .newNote .head .close-Popup {
     cursor: pointer;
     justify-self: start;
     position: absolute;
     top: 25px;
     left: 25px;
   }
-  .newNote .head .content {
+  html .newNote .head .content {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #000;
@@ -327,7 +394,7 @@
             user-select: none;
     font-size: 26px;
   }
-  .newNote .notSend {
+  html .newNote .notSend {
     width: 80%;
     height: 150px;
     border: 1px solid #CBCBCB;
@@ -335,7 +402,7 @@
     padding: 5px;
     position: relative;
   }
-  .newNote .notSend textarea {
+  html .newNote .notSend textarea {
     width: 100%;
     height: 80%;
     border: none;
@@ -345,13 +412,13 @@
     font-weight: 500;
     resize: none;
   }
-  .newNote .notSend #sendNote {
+  html .newNote .notSend #sendNote {
     cursor: pointer;
     position: absolute;
     right: 5px;
     bottom: 5px;
   }
-  .newNote .myNote {
+  html .newNote .myNote {
     width: 80%;
     height: 300px;
     overflow: auto;
@@ -360,38 +427,355 @@
     flex-direction: column;
     gap: 20px;
   }
-  .newNote .myNote .note {
+  html .newNote .myNote .note {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .newNote .myNote .note .LessonNote {
+  html .newNote .myNote .note .LessonNote {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     max-width: 100%;
     word-break: break-all;
   }
-  .newNote .myNote::-webkit-scrollbar {
+  html .newNote .myNote::-webkit-scrollbar {
     width: 12px;
   }
-  .newNote .myNote::-webkit-scrollbar-track {
+  html .newNote .myNote::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .newNote .myNote::-webkit-scrollbar-thumb {
+  html .newNote .myNote::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .Text {
+  html .Text {
     font-size: 18px;
   }
-  .TextSubject {
+  html .TextSubject {
     font-size: 18px;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .info {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  html[data-theme=dark] .info #infoVideo {
+    width: 100%;
+    height: 250px;
+  }
+  html[data-theme=dark] .info .area {
+    width: 80%;
+    height: 100%;
+  }
+  html[data-theme=dark] .info #closeInfo {
+    width: 200px;
+    height: 80px;
+    background-color: rgba(108, 99, 255, 0.2);
+    border: 1px solid #6C63FF;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #6C63FF;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s all;
+    margin-bottom: 100px;
+  }
+  html[data-theme=dark] .info #closeInfo:hover {
+    background-color: #6C63FF;
+    color: #FFFFFF;
+  }
+  html[data-theme=dark] .info .infoText {
+    padding-top: 30px;
+    font-size: 16px;
+    color: #fff;
+  }
+  html[data-theme=dark] .info .infoHeader {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #fff;
+  }
+  html[data-theme=dark] .textArea {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  html[data-theme=dark] .textArea .textDiv {
+    position: absolute;
+    width: 300px;
+    height: 210px;
+    left: calc(50% - 150px);
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .textArea .textDiv .textAreaCompArea {
+    padding-top: 5px;
+  }
+  html[data-theme=dark] .textArea .textDiv .textAreaCompArea textarea {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 120px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+  }
+  html[data-theme=dark] .textArea .textDiv .sendText {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .rowsABCD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 200px;
+  }
+  html[data-theme=dark] .rowsABCD .row-AB {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  html[data-theme=dark] .rowsABCD .row-CD {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  html[data-theme=dark] .answerPut {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s all;
+  }
+  html[data-theme=dark] .answerPut #choice {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4285F4;
+    line-height: 80px;
+    position: absolute;
+    left: 30px;
+  }
+  html[data-theme=dark] .answerPut .questionAnswerInfos {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+  }
+  html[data-theme=dark] .answerPut:hover {
+    border-color: #4285F4;
+  }
+  html[data-theme=dark] .rightAnswer {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(58, 205, 126, 0.1);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+  }
+  html[data-theme=dark] .rightAnswer .scos {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    top: 5px;
+    left: 5px;
+    align-items: center;
+  }
+  html[data-theme=dark] .rightAnswer .scos .message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3ACD7E;
+  }
+  html[data-theme=dark] .rightAnswer #nextQstnTrue {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3ACD7E;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .falseAnswer {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(234, 67, 53, 0.1);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .falseAnswer .scos {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    top: 5px;
+    left: 5px;
+    align-items: center;
+  }
+  html[data-theme=dark] .falseAnswer .scos .message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #EA4335;
+  }
+  html[data-theme=dark] .falseAnswer #nextQstnFalse {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #EA4335;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .mobile-Note {
+    width: 95%;
+    padding-top: 20px;
+    text-align: end;
+  }
+  html[data-theme=dark] .mobile-Note svg path {
+    fill: #fff;
+  }
+  html[data-theme=dark] .newNote {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #232323;
+    border-left: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+  }
+  html[data-theme=dark] .newNote .noteCount {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .noteCount #count {
+    font-weight: 600;
+  }
+  html[data-theme=dark] .newNote .head {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+  }
+  html[data-theme=dark] .newNote .head .close-Popup {
+    cursor: pointer;
+    justify-self: start;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  html[data-theme=dark] .newNote .head .content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 26px;
+  }
+  html[data-theme=dark] .newNote .notSend {
+    width: 80%;
+    height: 150px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+  }
+  html[data-theme=dark] .newNote .notSend textarea {
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    resize: none;
+    background: none;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .notSend #sendNote {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  html[data-theme=dark] .newNote .myNote {
+    width: 80%;
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+  }
+  html[data-theme=dark] .newNote .myNote .note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  html[data-theme=dark] .newNote .myNote .note .LessonNote {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    max-width: 100%;
+    word-break: break-all;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] .Text {
+    font-size: 18px;
+    color: #fff;
+  }
+  html[data-theme=dark] .TextSubject {
+    font-size: 18px;
+    color: #fff;
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 401px) {
-  .info {
+  html .info {
     margin-top: 100px;
     width: 100%;
     height: 100%;
@@ -399,15 +783,15 @@
     flex-direction: row;
     justify-content: center;
   }
-  .info #infoVideo {
+  html .info #infoVideo {
     width: 100%;
     height: 290px;
   }
-  .info .area {
+  html .info .area {
     width: 60%;
     height: 100%;
   }
-  .info #closeInfo {
+  html .info #closeInfo {
     width: 250px;
     height: 70px;
     background-color: rgba(108, 99, 255, 0.2);
@@ -421,24 +805,24 @@
     transition: 0.3s all;
     margin-bottom: 100px;
   }
-  .info #closeInfo:hover {
+  html .info #closeInfo:hover {
     background-color: #6C63FF;
     color: #FFFFFF;
   }
-  .info .infoText {
+  html .info .infoText {
     padding-top: 30px;
     font-size: 18px;
   }
-  .info .infoHeader {
+  html .info .infoHeader {
     padding-top: 20px;
     font-size: 20px;
   }
-  .textArea {
+  html .textArea {
     width: 100%;
     height: 300px;
     position: relative;
   }
-  .textArea .textDiv {
+  html .textArea .textDiv {
     position: absolute;
     width: 300px;
     height: 210px;
@@ -449,10 +833,10 @@
     display: flex;
     flex-direction: column;
   }
-  .textArea .textDiv .textAreaCompArea {
+  html .textArea .textDiv .textAreaCompArea {
     padding-top: 5px;
   }
-  .textArea .textDiv .textAreaCompArea textarea {
+  html .textArea .textDiv .textAreaCompArea textarea {
     background: none;
     border: none;
     width: 100%;
@@ -460,30 +844,30 @@
     outline: none;
     font-size: 18px;
   }
-  .textArea .textDiv .sendText {
+  html .textArea .textDiv .sendText {
     position: absolute;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
   }
-  .rowsABCD {
+  html .rowsABCD {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
     margin-bottom: 200px;
   }
-  .rowsABCD .row-AB {
+  html .rowsABCD .row-AB {
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
-  .rowsABCD .row-CD {
+  html .rowsABCD .row-CD {
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
-  .answerPut {
+  html .answerPut {
     width: 300px;
     height: 80px;
     border: 1px solid #F2F2F2;
@@ -492,7 +876,7 @@
     position: relative;
     transition: 0.5s all;
   }
-  .answerPut #choice {
+  html .answerPut #choice {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -501,7 +885,7 @@
     position: absolute;
     left: 30px;
   }
-  .answerPut .questionAnswerInfos {
+  html .answerPut .questionAnswerInfos {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -509,10 +893,10 @@
     line-height: 80px;
     text-align: center;
   }
-  .answerPut:hover {
+  html .answerPut:hover {
     border-color: #4285F4;
   }
-  .rightAnswer {
+  html .rightAnswer {
     width: 100%;
     height: 150px;
     background-color: rgba(58, 205, 126, 0.1);
@@ -520,7 +904,7 @@
     bottom: 0px;
     right: 0px;
   }
-  .rightAnswer .scos {
+  html .rightAnswer .scos {
     position: absolute;
     display: flex;
     gap: 25px;
@@ -528,13 +912,13 @@
     left: 5px;
     align-items: center;
   }
-  .rightAnswer .scos .message {
+  html .rightAnswer .scos .message {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: #3ACD7E;
   }
-  .rightAnswer #nextQstnTrue {
+  html .rightAnswer #nextQstnTrue {
     position: absolute;
     right: 30px;
     bottom: 30px;
@@ -546,7 +930,7 @@
     border: none;
     cursor: pointer;
   }
-  .falseAnswer {
+  html .falseAnswer {
     width: 100%;
     height: 150px;
     background-color: rgba(234, 67, 53, 0.1);
@@ -557,7 +941,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  .falseAnswer .scos {
+  html .falseAnswer .scos {
     position: absolute;
     display: flex;
     gap: 25px;
@@ -565,13 +949,13 @@
     left: 5px;
     align-items: center;
   }
-  .falseAnswer .scos .message {
+  html .falseAnswer .scos .message {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 22px;
     color: #EA4335;
   }
-  .falseAnswer #nextQstnFalse {
+  html .falseAnswer #nextQstnFalse {
     position: absolute;
     right: 30px;
     bottom: 30px;
@@ -583,15 +967,15 @@
     border: none;
     cursor: pointer;
   }
-  .openNote {
+  html .openNote {
     position: absolute;
     right: 25px;
     top: 25%;
   }
-  .openNote svg {
+  html .openNote svg {
     cursor: pointer;
   }
-  .newNote {
+  html .newNote {
     position: fixed;
     flex-direction: column;
     align-items: center;
@@ -604,27 +988,27 @@
     border-left: 1px solid #CBCBCB;
     border-bottom: 1px solid #CBCBCB;
   }
-  .newNote .noteCount {
+  html .newNote .noteCount {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .newNote .noteCount #count {
+  html .newNote .noteCount #count {
     font-weight: 600;
   }
-  .newNote .head {
+  html .newNote .head {
     width: 100%;
     text-align: center;
     padding-top: 25px;
   }
-  .newNote .head .close-Popup {
+  html .newNote .head .close-Popup {
     cursor: pointer;
     justify-self: start;
     position: absolute;
     top: 25px;
     left: 25px;
   }
-  .newNote .head .content {
+  html .newNote .head .content {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #000;
@@ -634,7 +1018,7 @@
             user-select: none;
     font-size: 26px;
   }
-  .newNote .notSend {
+  html .newNote .notSend {
     width: 80%;
     height: 150px;
     border: 1px solid #CBCBCB;
@@ -642,7 +1026,7 @@
     padding: 5px;
     position: relative;
   }
-  .newNote .notSend textarea {
+  html .newNote .notSend textarea {
     width: 100%;
     height: 80%;
     border: none;
@@ -652,13 +1036,13 @@
     font-weight: 500;
     resize: none;
   }
-  .newNote .notSend #sendNote {
+  html .newNote .notSend #sendNote {
     cursor: pointer;
     position: absolute;
     right: 5px;
     bottom: 5px;
   }
-  .newNote .myNote {
+  html .newNote .myNote {
     width: 80%;
     height: 300px;
     overflow: auto;
@@ -667,38 +1051,39 @@
     flex-direction: column;
     gap: 20px;
   }
-  .newNote .myNote .note {
+  html .newNote .myNote .note {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .newNote .myNote .note .LessonNote {
+  html .newNote .myNote .note .LessonNote {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     max-width: 100%;
     word-break: break-all;
   }
-  .newNote .myNote::-webkit-scrollbar {
+  html .newNote .myNote::-webkit-scrollbar {
     width: 12px;
   }
-  .newNote .myNote::-webkit-scrollbar-track {
+  html .newNote .myNote::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .newNote .myNote::-webkit-scrollbar-thumb {
+  html .newNote .myNote::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .Text {
+  html .Text {
     font-size: 22px;
   }
-  .TextSubject {
+  html .TextSubject {
     font-size: 22px;
   }
-}
-@media only screen and (max-width: 1920px) and (min-width: 767px) {
-  .info {
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .info {
     margin-top: 100px;
     width: 100%;
     height: 100%;
@@ -706,15 +1091,327 @@
     flex-direction: row;
     justify-content: center;
   }
-  .info #infoVideo {
+  html[data-theme=dark] .info #infoVideo {
     width: 100%;
-    height: 370px;
+    height: 290px;
   }
-  .info .area {
+  html[data-theme=dark] .info .area {
     width: 60%;
     height: 100%;
   }
-  .info #closeInfo {
+  html[data-theme=dark] .info #closeInfo {
+    width: 250px;
+    height: 70px;
+    background-color: rgba(108, 99, 255, 0.2);
+    border: 1px solid #6C63FF;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #6C63FF;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s all;
+    margin-bottom: 100px;
+  }
+  html[data-theme=dark] .info #closeInfo:hover {
+    background-color: #6C63FF;
+    color: #FFFFFF;
+  }
+  html[data-theme=dark] .info .infoText {
+    padding-top: 30px;
+    font-size: 18px;
+  }
+  html[data-theme=dark] .info .infoHeader {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  html[data-theme=dark] .textArea {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  html[data-theme=dark] .textArea .textDiv {
+    position: absolute;
+    width: 300px;
+    height: 210px;
+    left: calc(50% - 150px);
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .textArea .textDiv .textAreaCompArea {
+    padding-top: 5px;
+  }
+  html[data-theme=dark] .textArea .textDiv .textAreaCompArea textarea {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 120px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+  }
+  html[data-theme=dark] .textArea .textDiv .sendText {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .rowsABCD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 200px;
+  }
+  html[data-theme=dark] .rowsABCD .row-AB {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  html[data-theme=dark] .rowsABCD .row-CD {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  html[data-theme=dark] .answerPut {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s all;
+  }
+  html[data-theme=dark] .answerPut #choice {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4285F4;
+    line-height: 80px;
+    position: absolute;
+    left: 30px;
+  }
+  html[data-theme=dark] .answerPut .questionAnswerInfos {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+  }
+  html[data-theme=dark] .answerPut:hover {
+    border-color: #4285F4;
+  }
+  html[data-theme=dark] .rightAnswer {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(58, 205, 126, 0.1);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+  }
+  html[data-theme=dark] .rightAnswer .scos {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    top: 5px;
+    left: 5px;
+    align-items: center;
+  }
+  html[data-theme=dark] .rightAnswer .scos .message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3ACD7E;
+  }
+  html[data-theme=dark] .rightAnswer #nextQstnTrue {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #3ACD7E;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .falseAnswer {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(234, 67, 53, 0.1);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .falseAnswer .scos {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    top: 5px;
+    left: 5px;
+    align-items: center;
+  }
+  html[data-theme=dark] .falseAnswer .scos .message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #EA4335;
+  }
+  html[data-theme=dark] .falseAnswer #nextQstnFalse {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #EA4335;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .openNote {
+    position: absolute;
+    right: 25px;
+    top: 25%;
+  }
+  html[data-theme=dark] .openNote svg {
+    cursor: pointer;
+  }
+  html[data-theme=dark] .newNote {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #232323;
+    border-left: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+  }
+  html[data-theme=dark] .newNote .noteCount {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .noteCount #count {
+    font-weight: 600;
+  }
+  html[data-theme=dark] .newNote .head {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+  }
+  html[data-theme=dark] .newNote .head .close-Popup {
+    cursor: pointer;
+    justify-self: start;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  html[data-theme=dark] .newNote .head .content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 26px;
+  }
+  html[data-theme=dark] .newNote .notSend {
+    width: 80%;
+    height: 150px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+  }
+  html[data-theme=dark] .newNote .notSend textarea {
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    resize: none;
+    background: none;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .notSend #sendNote {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  html[data-theme=dark] .newNote .myNote {
+    width: 80%;
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+  }
+  html[data-theme=dark] .newNote .myNote .note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  html[data-theme=dark] .newNote .myNote .note .LessonNote {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    max-width: 100%;
+    word-break: break-all;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] .Text {
+    font-size: 22px;
+  }
+  html[data-theme=dark] .TextSubject {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 1920px) and (min-width: 767px) {
+  html .info {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  html .info #infoVideo {
+    width: 100%;
+    height: 370px;
+  }
+  html .info .area {
+    width: 60%;
+    height: 100%;
+  }
+  html .info #closeInfo {
     width: 300px;
     height: 80px;
     background-color: rgba(108, 99, 255, 0.2);
@@ -727,37 +1424,37 @@
     cursor: pointer;
     transition: 0.3s all;
   }
-  .info #closeInfo:hover {
+  html .info #closeInfo:hover {
     background-color: #6C63FF;
     color: #FFFFFF;
   }
-  .info .infoText {
+  html .info .infoText {
     padding-top: 30px;
     font-size: 18px;
   }
-  .info .infoHeader {
+  html .info .infoHeader {
     padding-top: 20px;
     font-size: 20px;
   }
-  .rowsABCD {
+  html .rowsABCD {
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin-bottom: 200px;
   }
-  .rowsABCD .row-AB {
+  html .rowsABCD .row-AB {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
   }
-  .rowsABCD .row-CD {
+  html .rowsABCD .row-CD {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
   }
-  .answerPut {
+  html .answerPut {
     width: 300px;
     height: 80px;
     border: 1px solid #F2F2F2;
@@ -766,7 +1463,7 @@
     position: relative;
     transition: 0.5s all;
   }
-  .answerPut #choice {
+  html .answerPut #choice {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -775,7 +1472,7 @@
     position: absolute;
     left: 30px;
   }
-  .answerPut .questionAnswerInfos {
+  html .answerPut .questionAnswerInfos {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -783,15 +1480,15 @@
     line-height: 80px;
     text-align: center;
   }
-  .answerPut:hover {
+  html .answerPut:hover {
     border-color: #4285F4;
   }
-  .textArea {
+  html .textArea {
     width: 100%;
     height: 300px;
     position: relative;
   }
-  .textArea .textDiv {
+  html .textArea .textDiv {
     position: absolute;
     width: 700px;
     height: 210px;
@@ -802,10 +1499,10 @@
     display: flex;
     flex-direction: column;
   }
-  .textArea .textDiv .textAreaCompArea {
+  html .textArea .textDiv .textAreaCompArea {
     padding-top: 5px;
   }
-  .textArea .textDiv .textAreaCompArea textarea {
+  html .textArea .textDiv .textAreaCompArea textarea {
     background: none;
     border: none;
     width: 100%;
@@ -813,13 +1510,13 @@
     outline: none;
     font-size: 18px;
   }
-  .textArea .textDiv .sendText {
+  html .textArea .textDiv .sendText {
     position: absolute;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
   }
-  .rightAnswer {
+  html .rightAnswer {
     width: 100%;
     height: 150px;
     background-color: rgba(58, 205, 126, 0.1);
@@ -830,18 +1527,18 @@
     justify-content: space-around;
     align-items: center;
   }
-  .rightAnswer .scos {
+  html .rightAnswer .scos {
     display: flex;
     gap: 100px;
     align-items: center;
   }
-  .rightAnswer .scos .message {
+  html .rightAnswer .scos .message {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 22px;
     color: #3ACD7E;
   }
-  .rightAnswer #nextQstnTrue {
+  html .rightAnswer #nextQstnTrue {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 22px;
@@ -850,7 +1547,7 @@
     border: none;
     cursor: pointer;
   }
-  .falseAnswer {
+  html .falseAnswer {
     width: 100%;
     height: 150px;
     background-color: rgba(234, 67, 53, 0.1);
@@ -861,18 +1558,18 @@
     justify-content: space-around;
     align-items: center;
   }
-  .falseAnswer .scos {
+  html .falseAnswer .scos {
     display: flex;
     gap: 100px;
     align-items: center;
   }
-  .falseAnswer .scos .message {
+  html .falseAnswer .scos .message {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 22px;
     color: #EA4335;
   }
-  .falseAnswer #nextQstnFalse {
+  html .falseAnswer #nextQstnFalse {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 22px;
@@ -881,15 +1578,15 @@
     border: none;
     cursor: pointer;
   }
-  .openNote {
+  html .openNote {
     position: fixed;
     right: 120px;
     top: 20%;
   }
-  .openNote svg {
+  html .openNote svg {
     cursor: pointer;
   }
-  .newNote {
+  html .newNote {
     position: fixed;
     flex-direction: column;
     align-items: center;
@@ -902,19 +1599,19 @@
     border-left: 1px solid #CBCBCB;
     border-bottom: 1px solid #CBCBCB;
   }
-  .newNote .head {
+  html .newNote .head {
     width: 100%;
     text-align: center;
     padding-top: 25px;
   }
-  .newNote .head .close-Popup {
+  html .newNote .head .close-Popup {
     cursor: pointer;
     justify-self: start;
     position: absolute;
     top: 25px;
     left: 25px;
   }
-  .newNote .head .content {
+  html .newNote .head .content {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #000;
@@ -924,7 +1621,7 @@
             user-select: none;
     font-size: 26px;
   }
-  .newNote .notSend {
+  html .newNote .notSend {
     width: 80%;
     height: 150px;
     border: 1px solid #CBCBCB;
@@ -932,7 +1629,7 @@
     padding: 5px;
     position: relative;
   }
-  .newNote .notSend textarea {
+  html .newNote .notSend textarea {
     width: 100%;
     height: 80%;
     border: none;
@@ -942,13 +1639,13 @@
     font-weight: 500;
     resize: none;
   }
-  .newNote .notSend #sendNote {
+  html .newNote .notSend #sendNote {
     cursor: pointer;
     position: absolute;
     right: 5px;
     bottom: 5px;
   }
-  .newNote .myNote {
+  html .newNote .myNote {
     width: 80%;
     height: 150px;
     overflow: auto;
@@ -957,59 +1654,363 @@
     flex-direction: column;
     gap: 20px;
   }
-  .newNote .myNote .noteCount {
+  html .newNote .myNote .noteCount {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .newNote .myNote .noteCount #count {
+  html .newNote .myNote .noteCount #count {
     font-weight: 600;
   }
-  .newNote .myNote .note {
+  html .newNote .myNote .note {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .newNote .myNote .note .LessonNote {
+  html .newNote .myNote .note .LessonNote {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     max-width: 100%;
     word-break: break-all;
   }
-  .newNote .myNote::-webkit-scrollbar {
+  html .newNote .myNote::-webkit-scrollbar {
     width: 12px;
   }
-  .newNote .myNote::-webkit-scrollbar-track {
+  html .newNote .myNote::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .newNote .myNote::-webkit-scrollbar-thumb {
+  html .newNote .myNote::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .Text {
+  html .Text {
     font-size: 24px;
   }
-  .TextSubject {
+  html .TextSubject {
+    font-size: 24px;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .info {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  html[data-theme=dark] .info #infoVideo {
+    width: 100%;
+    height: 370px;
+  }
+  html[data-theme=dark] .info .area {
+    width: 60%;
+    height: 100%;
+  }
+  html[data-theme=dark] .info #closeInfo {
+    width: 300px;
+    height: 80px;
+    background-color: rgba(108, 99, 255, 0.2);
+    border: 1px solid #6C63FF;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #6C63FF;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  html[data-theme=dark] .info #closeInfo:hover {
+    background-color: #6C63FF;
+    color: #FFFFFF;
+  }
+  html[data-theme=dark] .info .infoText {
+    padding-top: 30px;
+    font-size: 18px;
+  }
+  html[data-theme=dark] .info .infoHeader {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  html[data-theme=dark] .rowsABCD {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 200px;
+  }
+  html[data-theme=dark] .rowsABCD .row-AB {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  html[data-theme=dark] .rowsABCD .row-CD {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  html[data-theme=dark] .answerPut {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s all;
+  }
+  html[data-theme=dark] .answerPut #choice {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4285F4;
+    line-height: 80px;
+    position: absolute;
+    left: 30px;
+  }
+  html[data-theme=dark] .answerPut .questionAnswerInfos {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+  }
+  html[data-theme=dark] .answerPut:hover {
+    border-color: #4285F4;
+  }
+  html[data-theme=dark] .textArea {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  html[data-theme=dark] .textArea .textDiv {
+    position: absolute;
+    width: 700px;
+    height: 210px;
+    left: calc(50% - 350px);
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .textArea .textDiv .textAreaCompArea {
+    padding-top: 5px;
+  }
+  html[data-theme=dark] .textArea .textDiv .textAreaCompArea textarea {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 120px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+  }
+  html[data-theme=dark] .textArea .textDiv .sendText {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .rightAnswer {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(58, 205, 126, 0.1);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .rightAnswer .scos {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+  }
+  html[data-theme=dark] .rightAnswer .scos .message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #3ACD7E;
+  }
+  html[data-theme=dark] .rightAnswer #nextQstnTrue {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #3ACD7E;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .falseAnswer {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(234, 67, 53, 0.1);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .falseAnswer .scos {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+  }
+  html[data-theme=dark] .falseAnswer .scos .message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #EA4335;
+  }
+  html[data-theme=dark] .falseAnswer #nextQstnFalse {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #EA4335;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .openNote {
+    position: fixed;
+    right: 120px;
+    top: 20%;
+  }
+  html[data-theme=dark] .openNote svg {
+    cursor: pointer;
+  }
+  html[data-theme=dark] .newNote {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #232323;
+    width: 425px;
+    height: 500px;
+    right: 0;
+    top: 100px;
+    border-left: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+  }
+  html[data-theme=dark] .newNote .head {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+  }
+  html[data-theme=dark] .newNote .head .close-Popup {
+    cursor: pointer;
+    justify-self: start;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  html[data-theme=dark] .newNote .head .content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 26px;
+  }
+  html[data-theme=dark] .newNote .notSend {
+    width: 80%;
+    height: 150px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+  }
+  html[data-theme=dark] .newNote .notSend textarea {
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    resize: none;
+    color: #fff;
+    background: none;
+  }
+  html[data-theme=dark] .newNote .notSend #sendNote {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  html[data-theme=dark] .newNote .myNote {
+    width: 80%;
+    height: 150px;
+    overflow: auto;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+  }
+  html[data-theme=dark] .newNote .myNote .noteCount {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .myNote .noteCount #count {
+    font-weight: 600;
+  }
+  html[data-theme=dark] .newNote .myNote .note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  html[data-theme=dark] .newNote .myNote .note .LessonNote {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    max-width: 100%;
+    word-break: break-all;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] .Text {
+    font-size: 24px;
+  }
+  html[data-theme=dark] .TextSubject {
     font-size: 24px;
   }
 }
 @media only screen and (min-width: 1920px) {
-  .info {
+  html .info {
     margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .info #infoVideo {
+  html .info #infoVideo {
     width: 900px;
     height: 450px;
   }
-  .info .area {
+  html .info .area {
     width: 900px;
   }
-  .info #closeInfo {
+  html .info #closeInfo {
     width: 300px;
     height: 80px;
     background-color: rgba(108, 99, 255, 0.2);
@@ -1022,43 +2023,43 @@
     cursor: pointer;
     transition: 0.3s all;
   }
-  .info #closeInfo:hover {
+  html .info #closeInfo:hover {
     background-color: #6C63FF;
     color: #FFFFFF;
   }
-  .infoText {
+  html .infoText {
     padding-top: 30px;
     font-size: 18px;
   }
-  .infoHeader {
+  html .infoHeader {
     padding-top: 20px;
     font-size: 20px;
   }
-  .Text {
+  html .Text {
     font-size: 26px;
   }
-  .TextSubject {
+  html .TextSubject {
     font-size: 26px;
   }
-  .rowsABCD {
+  html .rowsABCD {
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin-bottom: 200px;
   }
-  .rowsABCD .row-AB {
+  html .rowsABCD .row-AB {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
   }
-  .rowsABCD .row-CD {
+  html .rowsABCD .row-CD {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
   }
-  .answerPut {
+  html .answerPut {
     width: 300px;
     height: 80px;
     border: 1px solid #F2F2F2;
@@ -1067,7 +2068,7 @@
     position: relative;
     transition: 0.5s all;
   }
-  .answerPut #choice {
+  html .answerPut #choice {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -1076,7 +2077,7 @@
     position: absolute;
     left: 30px;
   }
-  .answerPut .questionAnswerInfos {
+  html .answerPut .questionAnswerInfos {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -1084,15 +2085,15 @@
     line-height: 80px;
     text-align: center;
   }
-  .answerPut:hover {
+  html .answerPut:hover {
     border-color: #4285F4;
   }
-  .textArea {
+  html .textArea {
     width: 100%;
     height: 300px;
     position: relative;
   }
-  .textArea .textDiv {
+  html .textArea .textDiv {
     position: absolute;
     width: 700px;
     height: 210px;
@@ -1103,10 +2104,10 @@
     display: flex;
     flex-direction: column;
   }
-  .textArea .textDiv .textAreaCompArea {
+  html .textArea .textDiv .textAreaCompArea {
     padding-top: 5px;
   }
-  .textArea .textDiv .textAreaCompArea textarea {
+  html .textArea .textDiv .textAreaCompArea textarea {
     background: none;
     border: none;
     width: 100%;
@@ -1114,13 +2115,13 @@
     outline: none;
     font-size: 18px;
   }
-  .textArea .textDiv .sendText {
+  html .textArea .textDiv .sendText {
     position: absolute;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
   }
-  .rightAnswer {
+  html .rightAnswer {
     width: 100%;
     height: 150px;
     background-color: rgba(58, 205, 126, 0.1);
@@ -1131,18 +2132,18 @@
     justify-content: space-around;
     align-items: center;
   }
-  .rightAnswer .scos {
+  html .rightAnswer .scos {
     display: flex;
     gap: 100px;
     align-items: center;
   }
-  .rightAnswer .scos .message {
+  html .rightAnswer .scos .message {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 22px;
     color: #3ACD7E;
   }
-  .rightAnswer #nextQstnTrue {
+  html .rightAnswer #nextQstnTrue {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 22px;
@@ -1151,7 +2152,7 @@
     border: none;
     cursor: pointer;
   }
-  .falseAnswer {
+  html .falseAnswer {
     width: 100%;
     height: 150px;
     background-color: rgba(234, 67, 53, 0.1);
@@ -1162,18 +2163,18 @@
     justify-content: space-around;
     align-items: center;
   }
-  .falseAnswer .scos {
+  html .falseAnswer .scos {
     display: flex;
     gap: 100px;
     align-items: center;
   }
-  .falseAnswer .scos .message {
+  html .falseAnswer .scos .message {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 22px;
     color: #EA4335;
   }
-  .falseAnswer #nextQstnFalse {
+  html .falseAnswer #nextQstnFalse {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 22px;
@@ -1182,15 +2183,15 @@
     border: none;
     cursor: pointer;
   }
-  .openNote {
+  html .openNote {
     position: fixed;
     right: 120px;
     top: 50%;
   }
-  .openNote svg {
+  html .openNote svg {
     cursor: pointer;
   }
-  .newNote {
+  html .newNote {
     position: fixed;
     flex-direction: column;
     align-items: center;
@@ -1202,27 +2203,27 @@
     border-left: 1px solid #CBCBCB;
     border-bottom: 1px solid #CBCBCB;
   }
-  .newNote .noteCount {
+  html .newNote .noteCount {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .newNote .noteCount #count {
+  html .newNote .noteCount #count {
     font-weight: 600;
   }
-  .newNote .head {
+  html .newNote .head {
     width: 100%;
     text-align: center;
     padding-top: 25px;
   }
-  .newNote .head .close-Popup {
+  html .newNote .head .close-Popup {
     cursor: pointer;
     justify-self: start;
     position: absolute;
     top: 25px;
     left: 25px;
   }
-  .newNote .head .content {
+  html .newNote .head .content {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #000;
@@ -1232,7 +2233,7 @@
             user-select: none;
     font-size: 26px;
   }
-  .newNote .notSend {
+  html .newNote .notSend {
     width: 80%;
     height: 150px;
     border: 1px solid #CBCBCB;
@@ -1240,7 +2241,7 @@
     padding: 5px;
     position: relative;
   }
-  .newNote .notSend textarea {
+  html .newNote .notSend textarea {
     width: 100%;
     height: 80%;
     border: none;
@@ -1250,13 +2251,13 @@
     font-weight: 500;
     resize: none;
   }
-  .newNote .notSend #sendNote {
+  html .newNote .notSend #sendNote {
     cursor: pointer;
     position: absolute;
     right: 5px;
     bottom: 5px;
   }
-  .newNote .myNote {
+  html .newNote .myNote {
     width: 80%;
     height: 300px;
     overflow: auto;
@@ -1265,26 +2266,335 @@
     flex-direction: column;
     gap: 20px;
   }
-  .newNote .myNote .note {
+  html .newNote .myNote .note {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .newNote .myNote .note .LessonNote {
+  html .newNote .myNote .note .LessonNote {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     max-width: 100%;
     word-break: break-all;
   }
-  .newNote .myNote::-webkit-scrollbar {
+  html .newNote .myNote::-webkit-scrollbar {
     width: 12px;
   }
-  .newNote .myNote::-webkit-scrollbar-track {
+  html .newNote .myNote::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .newNote .myNote::-webkit-scrollbar-thumb {
+  html .newNote .myNote::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .info {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  html[data-theme=dark] .info #infoVideo {
+    width: 900px;
+    height: 450px;
+  }
+  html[data-theme=dark] .info .area {
+    width: 900px;
+  }
+  html[data-theme=dark] .info #closeInfo {
+    width: 300px;
+    height: 80px;
+    background-color: rgba(108, 99, 255, 0.2);
+    border: 1px solid #6C63FF;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #6C63FF;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  html[data-theme=dark] .info #closeInfo:hover {
+    background-color: #6C63FF;
+    color: #FFFFFF;
+  }
+  html[data-theme=dark] .infoText {
+    padding-top: 30px;
+    font-size: 18px;
+    color: #fff;
+  }
+  html[data-theme=dark] .infoHeader {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  html[data-theme=dark] .Text {
+    font-size: 26px;
+    color: rgb(58, 205, 126);
+  }
+  html[data-theme=dark] .TextSubject {
+    font-size: 26px;
+    color: #fff;
+  }
+  html[data-theme=dark] .rowsABCD {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 200px;
+  }
+  html[data-theme=dark] .rowsABCD .row-AB {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  html[data-theme=dark] .rowsABCD .row-CD {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+  html[data-theme=dark] .answerPut {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s all;
+  }
+  html[data-theme=dark] .answerPut #choice {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4285F4;
+    line-height: 80px;
+    position: absolute;
+    left: 30px;
+  }
+  html[data-theme=dark] .answerPut .questionAnswerInfos {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+  }
+  html[data-theme=dark] .answerPut:hover {
+    border-color: #4285F4;
+  }
+  html[data-theme=dark] .textArea {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  html[data-theme=dark] .textArea .textDiv {
+    position: absolute;
+    width: 700px;
+    height: 210px;
+    left: calc(50% - 350px);
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  html[data-theme=dark] .textArea .textDiv .textAreaCompArea {
+    padding-top: 5px;
+  }
+  html[data-theme=dark] .textArea .textDiv .textAreaCompArea textarea {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 120px;
+    outline: none;
+    font-size: 18px;
+  }
+  html[data-theme=dark] .textArea .textDiv .sendText {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .subject, html[data-theme=dark] .level, html[data-theme=dark] .text, html[data-theme=dark] .textAreaCompArea textarea, html[data-theme=dark] .dragLetter {
+    color: #fff;
+  }
+  html[data-theme=dark] .controlDrag {
+    background: none;
+  }
+  html[data-theme=dark] .rightAnswer {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(58, 205, 126, 0.1);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .rightAnswer .scos {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+  }
+  html[data-theme=dark] .rightAnswer .scos .message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #3ACD7E;
+  }
+  html[data-theme=dark] .rightAnswer #nextQstnTrue {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #3ACD7E;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .falseAnswer {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(234, 67, 53, 0.1);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .falseAnswer .scos {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+  }
+  html[data-theme=dark] .falseAnswer .scos .message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #EA4335;
+  }
+  html[data-theme=dark] .falseAnswer #nextQstnFalse {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #EA4335;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  html[data-theme=dark] .openNote {
+    position: fixed;
+    right: 120px;
+    top: 50%;
+  }
+  html[data-theme=dark] .openNote svg {
+    cursor: pointer;
+  }
+  html[data-theme=dark] .newNote {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 475px;
+    height: 650px;
+    right: 0;
+    top: 100px;
+    background: #232323;
+    border-left: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+  }
+  html[data-theme=dark] .newNote .noteCount {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .noteCount #count {
+    font-weight: 600;
+  }
+  html[data-theme=dark] .newNote .head {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+  }
+  html[data-theme=dark] .newNote .head .close-Popup {
+    cursor: pointer;
+    justify-self: start;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  html[data-theme=dark] .newNote .head .content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 26px;
+  }
+  html[data-theme=dark] .newNote .notSend {
+    width: 80%;
+    height: 150px;
+    border: 1px solid #CBCBCB;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+  }
+  html[data-theme=dark] .newNote .notSend textarea {
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    resize: none;
+    background: none;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .notSend #sendNote {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  html[data-theme=dark] .newNote .myNote {
+    width: 80%;
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+  }
+  html[data-theme=dark] .newNote .myNote .note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  html[data-theme=dark] .newNote .myNote .note .LessonNote {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    max-width: 100%;
+    word-break: break-all;
+    color: #fff;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .newNote .myNote::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }

@@ -1018,5 +1018,6 @@ $questions = json_encode($listQuestion);
         }
     });
 </script>
+<script type="module" src="../js/controlAnotherTheme.js"></script>
 </body>
 </html>

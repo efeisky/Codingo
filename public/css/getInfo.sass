@@ -1,622 +1,1268 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
-    
+$mainColor: #fff
+.logos
+    text-decoration: none 
+
 @media only screen and (max-width: 400px)
-    .getDiv
-        width: 100%
-        height: calc(100vh - 100px)
-        display: flex
-        justify-content: center
-        align-items: center 
-        flex-direction: column
-        gap: 20px
-        .headText
-            font-family: 'Montserrat', sans-serif
-            font-weight: 500
-            text-align: center
-
-        .personalInfo
+    html
+        .getDiv
+            width: 100%
+            height: calc(100vh - 100px)
             display: flex
+            justify-content: center
+            align-items: center 
             flex-direction: column
-            align-items: center
-            gap: 25px
+            gap: 20px
+            .headText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
 
-            .dropdown-education
-                width: 90%
-                height: 80px
-                position: relative
-                .select
-                    height: 100%
-                    background: #fff 
-                    display: flex
-                    justify-content: space-between
-                    align-items: center
-                    border: 1px solid #cbcbcb
-                    border-radius: 10px
-                    padding: 15px
-                    cursor: pointer
-                    transition: .5s all
+            .personalInfo
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 25px
+
+                .dropdown-education
+                    width: 90%
+                    height: 80px
                     position: relative
-                    .select-texts
-                        #infoSelect
-                            position: absolute
-                            top: 15px
-                            left: 1em
-                            letter-spacing: .5px
-                            font-family: 'Montserrat', sans-serif
-                            font-weight: 500
-                            font-size: 16px
-                    .selected
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
-                        font-size: 15px
-                        position: absolute
-                        bottom: 15px
-                        left: 1.5em
-                        letter-spacing: .5px
-                        color: #A0A0A0
-                    &:hover
-                        border: 1px solid #9C9C9C
-                    .caret-rotate
-                        transform: rotate(180deg)
-            
-            .menu
-                list-style: none
-                padding: .2em .5em
-                background: #E4E4E4
-                border: 1px solid #cbcbcb
-                position: absolute
-                top: 90px
-                left: 50%
-                width: 100%
-                transform: translateX(-50%)
-                opacity: 0
-                display: none
-                transition: .2s
-                z-index: 1
-                border-radius: 10px
-                border: 1px solid #cbcbcb
-                transition: .5s all
-                li
-                    padding: .7em .5em
-                    margin: .3em 0
-                    border-radius: .5em
-                    cursor: pointer
-                    font-family: 'Montserrat', sans-serif
-                    font-weight: 500
-                    transition: .5s all
-                    &:hover
-                        background: #F2F2F2
-                .active
-                    background-color:  #fff
-
-            .menu-open
-                display: block
-                opacity: 1
-
-            #startLesson
-
-                width: 90%
-                height: 80px
-                background-color: rgb(66, 133, 244,.1)
-                border: 1px solid #4285F4
-                cursor: pointer
-                color: #4285F4
-                font-size: 26px
-                border-radius: 20px
-
-                &.noActive
-                    background-color: #c4c4c4
-                    border: 1px solid #9C9C9C
-                    cursor: default
-                    user-select: none
-                    color: #9C9C9C
-                    font-size: 26px
-                    border-radius: 20px
-
-            .py-level
-                width: 100%
-                height: auto
-                padding: 15px
-            
-                &:hover
-                    border-color: #9C9C9C
-                
-                .text
-                    display: flex
-                    justify-content: space-around
-                    align-items: center
-                    .textContent
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
-                .options
-                    padding: 5px 0 5px 0
-                    display: flex
-                    flex-direction: column
-                    gap: 25px
-                    align-items: center
-                    input
-                        display: none
-                    label
-                        width: 80%
-                        height: 45px
+                    .select
+                        height: 100%
+                        background: #fff 
                         display: flex
-                        gap: 20px
+                        justify-content: space-between
                         align-items: center
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
-                        font-size: 14px
-                        padding: 5px
+                        border: 1px solid #cbcbcb
                         border-radius: 10px
+                        padding: 15px
+                        cursor: pointer
                         transition: .5s all
-                        
-                    .SelectedPy
-                        background-color: rgb(66, 133, 244,.1)
-                        border: 1px solid #4285F4
-                        &:hover
-                            border: 1px solid #4285F4
-@media only screen and (max-width: 767px) and (min-width: 401px)
-    .getDiv
-        width: 100%
-        height: calc(100vh - 100px)
-        display: flex
-        justify-content: center
-        align-items: center 
-        flex-direction: column
-        gap: 20px
-        .headText
-            font-family: 'Montserrat', sans-serif
-            font-weight: 500
-            text-align: center
-
-        .personalInfo
-            display: flex
-            flex-direction: column
-            align-items: center
-            gap: 25px
-
-            .dropdown-education
-                width: 300px
-                height: 80px
-                position: relative
-                .select
-                    height: 100%
-                    background: #fff 
-                    display: flex
-                    justify-content: space-between
-                    align-items: center
-                    border: 1px solid #cbcbcb
-                    border-radius: 10px
-                    padding: 15px
-                    cursor: pointer
-                    transition: .5s all
-                    position: relative
-                    .select-texts
-                        #infoSelect
-                            position: absolute
-                            top: 15px
-                            left: 1em
-                            letter-spacing: .5px
+                        position: relative
+                        .select-texts
+                            #infoSelect
+                                position: absolute
+                                top: 15px
+                                left: 1em
+                                letter-spacing: .5px
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                font-size: 16px
+                        .selected
                             font-family: 'Montserrat', sans-serif
                             font-weight: 500
-                            font-size: 16px
-                    .selected
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
-                        font-size: 15px
-                        position: absolute
-                        bottom: 15px
-                        left: 1.5em
-                        letter-spacing: .5px
-                        color: #A0A0A0
-                    &:hover
-                        border: 1px solid #9C9C9C
-                    .caret-rotate
-                        transform: rotate(180deg)
-            
-            .menu
-                list-style: none
-                padding: .2em .5em
-                background: #E4E4E4
-                border: 1px solid #cbcbcb
-                position: absolute
-                top: 90px
-                left: 50%
-                width: 100%
-                transform: translateX(-50%)
-                opacity: 0
-                display: none
-                transition: .2s
-                z-index: 1
-                border-radius: 10px
-                border: 1px solid #cbcbcb
-                transition: .5s all
-                li
-                    padding: .7em .5em
-                    margin: .3em 0
-                    border-radius: .5em
-                    cursor: pointer
-                    font-family: 'Montserrat', sans-serif
-                    font-weight: 500
-                    transition: .5s all
-                    &:hover
-                        background: #F2F2F2
-                .active
-                    background-color:  #fff
-
-            .menu-open
-                display: block
-                opacity: 1
-
-            #startLesson
-
-                width: 300px
-                height: 80px
-                background-color: rgb(66, 133, 244,.1)
-                border: 1px solid #4285F4
-                cursor: pointer
-                color: #4285F4
-                font-size: 26px
-                border-radius: 20px
-
-                &.noActive
-                    background-color: #c4c4c4
-                    border: 1px solid #9C9C9C
-                    cursor: default
-                    user-select: none
-                    color: #9C9C9C
-                    font-size: 26px
-                    border-radius: 20px
-
-            .py-level
-                width: 350px
-                height: 275px
-                border: 1px solid #cbcbcb
-                border-radius: 10px
-                padding: 15px
-            
-                &:hover
-                    border-color: #9C9C9C
+                            font-size: 15px
+                            position: absolute
+                            bottom: 15px
+                            left: 1.5em
+                            letter-spacing: .5px
+                            color: #A0A0A0
+                        &:hover
+                            border: 1px solid #9C9C9C
+                        .caret-rotate
+                            transform: rotate(180deg)
                 
-                .text
-                    display: flex
-                    justify-content: space-around
-                    align-items: center
-                    .textContent
+                .menu
+                    list-style: none
+                    padding: .2em .5em
+                    background: #E4E4E4
+                    border: 1px solid #cbcbcb
+                    position: absolute
+                    top: 90px
+                    left: 50%
+                    width: 100%
+                    transform: translateX(-50%)
+                    opacity: 0
+                    display: none
+                    transition: .2s
+                    z-index: 1
+                    border-radius: 10px
+                    border: 1px solid #cbcbcb
+                    transition: .5s all
+                    li
+                        padding: .7em .5em
+                        margin: .3em 0
+                        border-radius: .5em
+                        cursor: pointer
                         font-family: 'Montserrat', sans-serif
                         font-weight: 500
-                .options
-                    padding: 5px 0 5px 0
-                    display: flex
-                    flex-direction: column
-                    gap: 25px
-                    align-items: center
-                    input
-                        display: none
-                    label
-                        width: 80%
-                        height: 45px
-                        display: flex
-                        gap: 20px
-                        align-items: center
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
-                        font-size: 14px
-                        padding: 5px
-                        border-radius: 10px
                         transition: .5s all
-                        
-                    .SelectedPy
-                        background-color: rgb(66, 133, 244,.1)
-                        border: 1px solid #4285F4
                         &:hover
-                            border: 1px solid #4285F4
-@media only screen and (max-width: 1920px) and (min-width: 767px)
-    .getDiv
-        width: 100%
-        height: calc(100vh - 100px)
-        display: flex
-        justify-content: center
-        align-items: center 
-        flex-direction: column
-        gap: 20px
-        .headText
-            font-family: 'Montserrat', sans-serif
-            font-weight: 500
-            text-align: center
+                            background: #F2F2F2
+                    .active
+                        background-color:  #fff
 
-        .personalInfo
-            display: flex
-            flex-direction: column
-            align-items: center
-            gap: 25px
+                .menu-open
+                    display: block
+                    opacity: 1
 
-            .dropdown-education
-                width: 300px
-                height: 80px
-                position: relative
-                .select
-                    height: 100%
-                    background: #fff 
-                    display: flex
-                    justify-content: space-between
-                    align-items: center
-                    border: 1px solid #cbcbcb
-                    border-radius: 10px
-                    padding: 15px
+                #startLesson
+
+                    width: 90%
+                    height: 80px
+                    background-color: rgb(66, 133, 244,.1)
+                    border: 1px solid #4285F4
                     cursor: pointer
-                    transition: .5s all
-                    position: relative
-                    .select-texts
-                        #infoSelect
-                            position: absolute
-                            top: 15px
-                            left: 1em
-                            letter-spacing: .5px
-                            font-family: 'Montserrat', sans-serif
-                            font-weight: 500
-                            font-size: 16px
-                    .selected
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
-                        font-size: 15px
-                        position: absolute
-                        bottom: 15px
-                        left: 1.5em
-                        letter-spacing: .5px
-                        color: #A0A0A0
-                    &:hover
-                        border: 1px solid #9C9C9C
-                    .caret-rotate
-                        transform: rotate(180deg)
-            
-            .menu
-                list-style: none
-                padding: .2em .5em
-                background: #E4E4E4
-                border: 1px solid #cbcbcb
-                position: absolute
-                top: 90px
-                left: 50%
-                width: 100%
-                transform: translateX(-50%)
-                opacity: 0
-                display: none
-                transition: .2s
-                z-index: 1
-                border-radius: 10px
-                border: 1px solid #cbcbcb
-                li
-                    padding: .7em .5em
-                    margin: .3em 0
-                    border-radius: .5em
-                    cursor: pointer
-                    font-family: 'Montserrat', sans-serif
-                    font-weight: 500
-                    &:hover
-                        background: #F2F2F2
-                .active
-                    background-color:  #fff
-
-            .menu-open
-                display: block
-                opacity: 1
-
-            #startLesson
-
-                width: 300px
-                height: 80px
-                background-color: rgb(66, 133, 244,.1)
-                border: 1px solid #4285F4
-                cursor: pointer
-                color: #4285F4
-                font-size: 26px
-                border-radius: 20px
-            
-                &.noActive
-                    background-color: #c4c4c4
-                    border: 1px solid #9C9C9C
-                    cursor: default
-                    user-select: none
-                    color: #9C9C9C
+                    color: #4285F4
                     font-size: 26px
                     border-radius: 20px
 
-            .py-level
-                width: 350px
-                height: 275px
-                border: 1px solid #cbcbcb
-                border-radius: 10px
-                padding: 15px
+                    &.noActive
+                        background-color: #c4c4c4
+                        border: 1px solid #9C9C9C
+                        cursor: default
+                        user-select: none
+                        color: #9C9C9C
+                        font-size: 26px
+                        border-radius: 20px
 
-                &:hover
-                    border-color: #9C9C9C
+                .py-level
+                    width: 100%
+                    height: auto
+                    padding: 15px
                 
-                .text
-                    display: flex
-                    justify-content: space-around
-                    align-items: center
-                    .textContent
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
-                .options
-                    padding: 5px 0 5px 0
-                    display: flex
-                    flex-direction: column
-                    gap: 25px
-                    align-items: center
-                    input
-                        display: none
-                    label
-                        width: 80%
-                        height: 45px
+                    &:hover
+                        border-color: #9C9C9C
+                    
+                    .text
                         display: flex
-                        gap: 20px
+                        justify-content: space-around
                         align-items: center
+                        .textContent
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                    .options
+                        padding: 5px 0 5px 0
+                        display: flex
+                        flex-direction: column
+                        gap: 25px
+                        align-items: center
+                        input
+                            display: none
+                        label
+                            width: 80%
+                            height: 45px
+                            display: flex
+                            gap: 20px
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 14px
+                            padding: 5px
+                            border-radius: 10px
+                            transition: .5s all
+                            
+                        .SelectedPy
+                            background-color: rgb(66, 133, 244,.1)
+                            border: 1px solid #4285F4
+                            &:hover
+                                border: 1px solid #4285F4
+    html[data-theme="dark"]
+        background:#232323
+        .getDiv
+            width: 100%
+            height: calc(100vh - 100px)
+            display: flex
+            justify-content: center
+            flex-direction: column
+            gap: 20px
+            .headText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+                color: $mainColor
+            .personalInfo
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 25px
+
+                .dropdown-education
+                    width: 90%
+                    height: 80px
+                    position: relative
+                    .select
+                        height: 100%
+                        background: #232323 
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        border: 1px solid #cbcbcb
+                        border-radius: 10px
+                        padding: 15px
+                        cursor: pointer
+                        transition: .5s all
+                        position: relative
+                        .select-texts
+                            #infoSelect
+                                position: absolute
+                                top: 15px
+                                left: 1em
+                                letter-spacing: .5px
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                font-size: 16px
+                                color: $mainColor
+                        .selected
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 15px
+                            position: absolute
+                            bottom: 15px
+                            left: 1.5em
+                            letter-spacing: .5px
+                            color: #A0A0A0
+                        &:hover
+                            border: 1px solid #9C9C9C
+                        .caret-rotate
+                            transform: rotate(180deg)
+                
+                .menu
+                    list-style: none
+                    padding: .2em .5em
+                    background: #232323
+                    border: 1px solid #cbcbcb
+                    position: absolute
+                    top: 90px
+                    left: 50%
+                    width: 100%
+                    transform: translateX(-50%)
+                    opacity: 0
+                    display: none
+                    transition: .2s
+                    z-index: 1
+                    border-radius: 10px
+                    border: 1px solid #cbcbcb
+                    transition: .5s all
+                    li
+                        padding: .7em .5em
+                        margin: .3em 0
+                        border-radius: .5em
+                        cursor: pointer
                         font-family: 'Montserrat', sans-serif
                         font-weight: 500
-                        font-size: 14px
-                        padding: 5px
-                        border-radius: 10px
+                        transition: .5s all
+                        color: $mainColor
                         &:hover
-                            border: 1px solid #F1F1F1
-                            cursor: pointer
-                    .SelectedPy
-                        background-color: rgb(66, 133, 244,.1)
-                        border: 1px solid #4285F4
-                        &:hover
+                            background: #3F3F3F
+                    .active
+                        background-color:  #4E4E4E
+
+                .menu-open
+                    display: block
+                    opacity: 1
+
+                #startLesson
+
+                    width: 90%
+                    height: 80px
+                    background-color: rgb(66, 133, 244,.1)
+                    border: 1px solid #4285F4
+                    cursor: pointer
+                    color: #4285F4
+                    font-size: 26px
+                    border-radius: 20px
+
+                    &.noActive
+                        background-color: #c4c4c4
+                        border: 1px solid #9C9C9C
+                        cursor: default
+                        user-select: none
+                        color: #9C9C9C
+                        font-size: 26px
+                        border-radius: 20px
+
+                .py-level
+                    width: 100%
+                    height: auto
+                    padding: 15px
+                
+                    &:hover
+                        border-color: #9C9C9C
+                    
+                    .text
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        .textContent
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: $mainColor
+                    .options
+                        padding: 5px 0 5px 0
+                        display: flex
+                        flex-direction: column
+                        gap: 25px
+                        align-items: center
+                        input
+                            display: none
+                        label
+                            width: 80%
+                            height: 45px
+                            display: flex
+                            gap: 20px
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 14px
+                            padding: 5px
+                            border-radius: 10px
+                            transition: .5s all
+                            color: $mainColor
+                        .SelectedPy
+                            background-color: rgb(66, 133, 244,.1)
                             border: 1px solid #4285F4
+                            &:hover
+                                border: 1px solid #4285F4
+    
+@media only screen and (max-width: 766px) and (min-width: 401px)
+    html
+        .getDiv
+            width: 100%
+            height: calc(100vh - 100px)
+            display: flex
+            justify-content: center
+            align-items: center 
+            flex-direction: column
+            gap: 20px
+            .headText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+
+            .personalInfo
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 25px
+
+                .dropdown-education
+                    width: 300px
+                    height: 80px
+                    position: relative
+                    .select
+                        height: 100%
+                        background: #fff 
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        border: 1px solid #cbcbcb
+                        border-radius: 10px
+                        padding: 15px
+                        cursor: pointer
+                        transition: .5s all
+                        position: relative
+                        .select-texts
+                            #infoSelect
+                                position: absolute
+                                top: 15px
+                                left: 1em
+                                letter-spacing: .5px
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                font-size: 16px
+                        .selected
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 15px
+                            position: absolute
+                            bottom: 15px
+                            left: 1.5em
+                            letter-spacing: .5px
+                            color: #A0A0A0
+                        &:hover
+                            border: 1px solid #9C9C9C
+                        .caret-rotate
+                            transform: rotate(180deg)
+                
+                .menu
+                    list-style: none
+                    padding: .2em .5em
+                    background: #E4E4E4
+                    border: 1px solid #cbcbcb
+                    position: absolute
+                    top: 90px
+                    left: 50%
+                    width: 100%
+                    transform: translateX(-50%)
+                    opacity: 0
+                    display: none
+                    transition: .2s
+                    z-index: 1
+                    border-radius: 10px
+                    border: 1px solid #cbcbcb
+                    transition: .5s all
+                    li
+                        padding: .7em .5em
+                        margin: .3em 0
+                        border-radius: .5em
+                        cursor: pointer
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        transition: .5s all
+                        &:hover
+                            background: #F2F2F2
+                    .active
+                        background-color:  #fff
+
+                .menu-open
+                    display: block
+                    opacity: 1
+
+                #startLesson
+
+                    width: 300px
+                    height: 80px
+                    background-color: rgb(66, 133, 244,.1)
+                    border: 1px solid #4285F4
+                    cursor: pointer
+                    color: #4285F4
+                    font-size: 26px
+                    border-radius: 20px
+
+                    &.noActive
+                        background-color: #c4c4c4
+                        border: 1px solid #9C9C9C
+                        cursor: default
+                        user-select: none
+                        color: #9C9C9C
+                        font-size: 26px
+                        border-radius: 20px
+
+                .py-level
+                    width: 350px
+                    height: 275px
+                    border: 1px solid #cbcbcb
+                    border-radius: 10px
+                    padding: 15px
+                
+                    &:hover
+                        border-color: #9C9C9C
+                    
+                    .text
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        .textContent
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                    .options
+                        padding: 5px 0 5px 0
+                        display: flex
+                        flex-direction: column
+                        gap: 25px
+                        align-items: center
+                        input
+                            display: none
+                        label
+                            width: 80%
+                            height: 45px
+                            display: flex
+                            gap: 20px
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 14px
+                            padding: 5px
+                            border-radius: 10px
+                            transition: .5s all
+                            
+                        .SelectedPy
+                            background-color: rgb(66, 133, 244,.1)
+                            border: 1px solid #4285F4
+                            &:hover
+                                border: 1px solid #4285F4
+    html[data-theme="dark"]
+        background: #232323
+        .getDiv
+            width: 100%
+            height: calc(100vh - 100px)
+            display: flex
+            justify-content: center
+            align-items: center 
+            flex-direction: column
+            gap: 20px
+            .headText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+                color: $mainColor
+            .personalInfo
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 25px
+
+                .dropdown-education
+                    width: 300px
+                    height: 80px
+                    position: relative
+                    .select
+                        height: 100%
+                        background: #232323 
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        border: 1px solid #cbcbcb
+                        border-radius: 10px
+                        padding: 15px
+                        cursor: pointer
+                        transition: .5s all
+                        position: relative
+                        .select-texts
+                            #infoSelect
+                                position: absolute
+                                top: 15px
+                                left: 1em
+                                letter-spacing: .5px
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                font-size: 16px
+                                color: $mainColor
+                        .selected
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 15px
+                            position: absolute
+                            bottom: 15px
+                            left: 1.5em
+                            letter-spacing: .5px
+                            color: #A0A0A0
+                        &:hover
+                            border: 1px solid #9C9C9C
+                        .caret-rotate
+                            transform: rotate(180deg)
+                
+                .menu
+                    list-style: none
+                    padding: .2em .5em
+                    background: #232323
+                    border: 1px solid #cbcbcb
+                    position: absolute
+                    top: 90px
+                    left: 50%
+                    width: 100%
+                    transform: translateX(-50%)
+                    opacity: 0
+                    display: none
+                    transition: .2s
+                    z-index: 1
+                    border-radius: 10px
+                    border: 1px solid #cbcbcb
+                    transition: .5s all
+                    li
+                        padding: .7em .5em
+                        margin: .3em 0
+                        border-radius: .5em
+                        cursor: pointer
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        transition: .5s all
+                        color: $mainColor
+                        &:hover
+                            background: #3f3f3f
+                    .active
+                        background-color:  #4e4e4e
+
+                .menu-open
+                    display: block
+                    opacity: 1
+
+                #startLesson
+
+                    width: 300px
+                    height: 80px
+                    background-color: rgb(66, 133, 244,.1)
+                    border: 1px solid #4285F4
+                    cursor: pointer
+                    color: #4285F4
+                    font-size: 26px
+                    border-radius: 20px
+
+                    &.noActive
+                        background-color: #c4c4c4
+                        border: 1px solid #9C9C9C
+                        cursor: default
+                        user-select: none
+                        color: #9C9C9C
+                        font-size: 26px
+                        border-radius: 20px
+
+                .py-level
+                    width: 350px
+                    height: 275px
+                    border: 1px solid #cbcbcb
+                    border-radius: 10px
+                    padding: 15px
+                
+                    &:hover
+                        border-color: #9C9C9C
+                    
+                    .text
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        .textContent
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: $mainColor
+                    .options
+                        padding: 5px 0 5px 0
+                        display: flex
+                        flex-direction: column
+                        gap: 25px
+                        align-items: center
+                        input
+                            display: none
+                        label
+                            width: 80%
+                            height: 45px
+                            display: flex
+                            gap: 20px
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 14px
+                            padding: 5px
+                            border-radius: 10px
+                            transition: .5s all
+                            color: $mainColor
+                        .SelectedPy
+                            background-color: rgb(66, 133, 244,.1)
+                            border: 1px solid #4285F4
+                            &:hover
+                                border: 1px solid #4285F4
+    
+@media only screen and (max-width: 1919px) and (min-width: 767px)
+    html
+        .getDiv
+            width: 100%
+            height: calc(100vh - 100px)
+            display: flex
+            justify-content: center
+            align-items: center 
+            flex-direction: column
+            gap: 20px
+            .headText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+
+            .personalInfo
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 25px
+
+                .dropdown-education
+                    width: 300px
+                    height: 80px
+                    position: relative
+                    .select
+                        height: 100%
+                        background: #fff 
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        border: 1px solid #cbcbcb
+                        border-radius: 10px
+                        padding: 15px
+                        cursor: pointer
+                        transition: .5s all
+                        position: relative
+                        .select-texts
+                            #infoSelect
+                                position: absolute
+                                top: 15px
+                                left: 1em
+                                letter-spacing: .5px
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                font-size: 16px
+                        .selected
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 15px
+                            position: absolute
+                            bottom: 15px
+                            left: 1.5em
+                            letter-spacing: .5px
+                            color: #A0A0A0
+                        &:hover
+                            border: 1px solid #9C9C9C
+                        .caret-rotate
+                            transform: rotate(180deg)
+                
+                .menu
+                    list-style: none
+                    padding: .2em .5em
+                    background: #E4E4E4
+                    border: 1px solid #cbcbcb
+                    position: absolute
+                    top: 90px
+                    left: 50%
+                    width: 100%
+                    transform: translateX(-50%)
+                    opacity: 0
+                    display: none
+                    transition: .2s
+                    z-index: 1
+                    border-radius: 10px
+                    border: 1px solid #cbcbcb
+                    li
+                        padding: .7em .5em
+                        margin: .3em 0
+                        border-radius: .5em
+                        cursor: pointer
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        &:hover
+                            background: #F2F2F2
+                    .active
+                        background-color:  #fff
+
+                .menu-open
+                    display: block
+                    opacity: 1
+
+                #startLesson
+
+                    width: 300px
+                    height: 80px
+                    background-color: rgb(66, 133, 244,.1)
+                    border: 1px solid #4285F4
+                    cursor: pointer
+                    color: #4285F4
+                    font-size: 26px
+                    border-radius: 20px
+                
+                    &.noActive
+                        background-color: #c4c4c4
+                        border: 1px solid #9C9C9C
+                        cursor: default
+                        user-select: none
+                        color: #9C9C9C
+                        font-size: 26px
+                        border-radius: 20px
+
+                .py-level
+                    width: 350px
+                    height: 275px
+                    border: 1px solid #cbcbcb
+                    border-radius: 10px
+                    padding: 15px
+
+                    &:hover
+                        border-color: #9C9C9C
+                    
+                    .text
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        .textContent
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                    .options
+                        padding: 5px 0 5px 0
+                        display: flex
+                        flex-direction: column
+                        gap: 25px
+                        align-items: center
+                        input
+                            display: none
+                        label
+                            width: 80%
+                            height: 45px
+                            display: flex
+                            gap: 20px
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 14px
+                            padding: 5px
+                            border-radius: 10px
+                            &:hover
+                                border: 1px solid #F1F1F1
+                                cursor: pointer
+                        .SelectedPy
+                            background-color: rgb(66, 133, 244,.1)
+                            border: 1px solid #4285F4
+                            &:hover
+                                border: 1px solid #4285F4
+    html[data-theme="dark"]
+        background: #232323
+        .getDiv
+            width: 100%
+            height: calc(100vh - 100px)
+            display: flex
+            justify-content: center
+            align-items: center 
+            flex-direction: column
+            gap: 20px
+            .headText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+                color: $mainColor
+            .personalInfo
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 25px
+
+                .dropdown-education
+                    width: 300px
+                    height: 80px
+                    position: relative
+                    .select
+                        height: 100%
+                        background: #232323 
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        border: 1px solid #cbcbcb
+                        border-radius: 10px
+                        padding: 15px
+                        cursor: pointer
+                        transition: .5s all
+                        position: relative
+                        .select-texts
+                            #infoSelect
+                                position: absolute
+                                top: 15px
+                                left: 1em
+                                letter-spacing: .5px
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                font-size: 16px
+                                color: $mainColor
+                        .selected
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 15px
+                            position: absolute
+                            bottom: 15px
+                            left: 1.5em
+                            letter-spacing: .5px
+                            color: #A0A0A0
+                        &:hover
+                            border: 1px solid #9C9C9C
+                        .caret-rotate
+                            transform: rotate(180deg)
+                
+                .menu
+                    list-style: none
+                    padding: .2em .5em
+                    background: #232323
+                    border: 1px solid #cbcbcb
+                    position: absolute
+                    top: 90px
+                    left: 50%
+                    width: 100%
+                    transform: translateX(-50%)
+                    opacity: 0
+                    display: none
+                    transition: .2s
+                    z-index: 1
+                    border-radius: 10px
+                    border: 1px solid #cbcbcb
+                    li
+                        padding: .7em .5em
+                        margin: .3em 0
+                        border-radius: .5em
+                        cursor: pointer
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        color: $mainColor
+                        &:hover
+                            background: #3F3F3F
+                    .active
+                        background-color:  #4E4E4E
+
+                .menu-open
+                    display: block
+                    opacity: 1
+
+                #startLesson
+
+                    width: 300px
+                    height: 80px
+                    background-color: rgb(66, 133, 244,.1)
+                    border: 1px solid #4285F4
+                    cursor: pointer
+                    color: #4285F4
+                    font-size: 26px
+                    border-radius: 20px
+                
+                    &.noActive
+                        background-color: #c4c4c4
+                        border: 1px solid #9C9C9C
+                        cursor: default
+                        user-select: none
+                        color: #9C9C9C
+                        font-size: 26px
+                        border-radius: 20px
+
+                .py-level
+                    width: 350px
+                    height: 275px
+                    border: 1px solid #cbcbcb
+                    border-radius: 10px
+                    padding: 15px
+
+                    &:hover
+                        border-color: #9C9C9C
+                    
+                    .text
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        .textContent
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            color: $mainColor
+                    .options
+                        padding: 5px 0 5px 0
+                        display: flex
+                        flex-direction: column
+                        gap: 25px
+                        align-items: center
+                        input
+                            display: none
+                        label
+                            width: 80%
+                            height: 45px
+                            display: flex
+                            gap: 20px
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 14px
+                            padding: 5px
+                            border-radius: 10px
+                            color: $mainColor
+                            &:hover
+                                border: 1px solid #F1F1F1
+                                cursor: pointer
+                        .SelectedPy
+                            background-color: rgb(66, 133, 244,.1)
+                            border: 1px solid #4285F4
+                            &:hover
+                                border: 1px solid #4285F4
+    
 @media only screen and (min-width: 1920px)
-    .getDiv
-        width: 100%
-        height: calc(100vh - 100px)
-        display: flex
-        justify-content: center
-        align-items: center 
-        flex-direction: column
-        gap: 20px
-        .headText
-            font-family: 'Montserrat', sans-serif
-            font-weight: 500
-            text-align: center
-
-        .personalInfo
+    html
+        .getDiv
+            width: 100%
+            height: calc(100vh - 100px)
             display: flex
+            justify-content: center
+            align-items: center 
             flex-direction: column
-            align-items: center
-            gap: 25px
+            gap: 20px
+            .headText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
 
-            .dropdown-education
-                width: 300px
-                height: 80px
-                position: relative
-                .select
-                    height: 100%
-                    background: #fff 
-                    display: flex
-                    justify-content: space-between
-                    align-items: center
+            .personalInfo
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 25px
+
+                .dropdown-education
+                    width: 300px
+                    height: 80px
+                    position: relative
+                    .select
+                        height: 100%
+                        background: #fff 
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        border: 1px solid #cbcbcb
+                        border-radius: 10px
+                        padding: 15px
+                        cursor: pointer
+                        transition: .5s all
+                        position: relative
+                        .select-texts
+                            #infoSelect
+                                position: absolute
+                                top: 15px
+                                left: 1em
+                                letter-spacing: .5px
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                font-size: 16px
+                        .selected
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 15px
+                            position: absolute
+                            bottom: 15px
+                            left: 1.5em
+                            letter-spacing: .5px
+                            color: #A0A0A0
+                        &:hover
+                            border: 1px solid #9C9C9C
+                        .caret-rotate
+                            transform: rotate(180deg)
+                
+                .menu
+                    list-style: none
+                    padding: .2em .5em
+                    background: #E4E4E4
+                    border: 1px solid #cbcbcb
+                    position: absolute
+                    top: 90px
+                    left: 50%
+                    width: 100%
+                    transform: translateX(-50%)
+                    opacity: 0
+                    display: none
+                    transition: .2s
+                    z-index: 1
+                    border-radius: 10px
+                    border: 1px solid #cbcbcb
+                    li
+                        padding: .7em .5em
+                        margin: .3em 0
+                        border-radius: .5em
+                        cursor: pointer
+                        font-family: 'Montserrat', sans-serif
+                        font-weight: 500
+                        &:hover
+                            background: #F2F2F2
+                    .active
+                        background-color:  #fff
+
+                .menu-open
+                    display: block
+                    opacity: 1
+
+                #startLesson
+
+                    width: 300px
+                    height: 80px
+                    background-color: rgb(66, 133, 244,.1)
+                    border: 1px solid #4285F4
+                    cursor: pointer
+                    color: #4285F4
+                    font-size: 26px
+                    border-radius: 20px
+                
+                    &.noActive
+                        background-color: #c4c4c4
+                        border: 1px solid #9C9C9C
+                        cursor: default
+                        user-select: none
+                        color: #9C9C9C
+                        font-size: 26px
+                        border-radius: 20px
+
+                .py-level
+                    width: 350px
+                    height: 275px
                     border: 1px solid #cbcbcb
                     border-radius: 10px
                     padding: 15px
-                    cursor: pointer
-                    transition: .5s all
-                    position: relative
-                    .select-texts
-                        #infoSelect
-                            position: absolute
-                            top: 15px
-                            left: 1em
-                            letter-spacing: .5px
+
+                    &:hover
+                        border-color: #9C9C9C
+                    
+                    .text
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        .textContent
                             font-family: 'Montserrat', sans-serif
                             font-weight: 500
-                            font-size: 16px
-                    .selected
+                    .options
+                        padding: 5px 0 5px 0
+                        display: flex
+                        flex-direction: column
+                        gap: 25px
+                        align-items: center
+                        input
+                            display: none
+                        label
+                            width: 80%
+                            height: 45px
+                            display: flex
+                            gap: 20px
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 14px
+                            padding: 5px
+                            border-radius: 10px
+                            &:hover
+                                border: 1px solid #F1F1F1
+                                cursor: pointer
+                        .SelectedPy
+                            background-color: rgb(66, 133, 244,.1)
+                            border: 1px solid #4285F4
+                            &:hover
+                                border: 1px solid #4285F4
+
+    html[data-theme="dark"]
+        background: #232323
+        .getDiv
+            width: 100%
+            height: calc(100vh - 100px)
+            display: flex
+            justify-content: center
+            align-items: center 
+            flex-direction: column
+            gap: 20px
+            .headText
+                font-family: 'Montserrat', sans-serif
+                font-weight: 500
+                text-align: center
+                color: #fff
+            .personalInfo
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 25px
+
+                .dropdown-education
+                    width: 300px
+                    height: 80px
+                    position: relative
+                    .select
+                        height: 100%
+                        background: #232323 
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        border: 1px solid #cbcbcb
+                        border-radius: 10px
+                        padding: 15px
+                        cursor: pointer
+                        transition: .5s all
+                        position: relative
+                        .select-texts
+                            #infoSelect
+                                position: absolute
+                                top: 15px
+                                left: 1em
+                                letter-spacing: .5px
+                                font-family: 'Montserrat', sans-serif
+                                font-weight: 500
+                                color: #fff
+                                font-size: 16px
+                        .selected
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 15px
+                            position: absolute
+                            bottom: 15px
+                            left: 1.5em
+                            letter-spacing: .5px
+                            color: #A0A0A0
+                        &:hover
+                            border: 1px solid #9C9C9C
+                        .caret-rotate
+                            transform: rotate(180deg)
+                
+                .menu
+                    list-style: none
+                    padding: .2em .5em
+                    background: #232323
+                    border: 1px solid #cbcbcb
+                    position: absolute
+                    top: 90px
+                    left: 50%
+                    width: 100%
+                    transform: translateX(-50%)
+                    opacity: 0
+                    display: none
+                    transition: .2s
+                    z-index: 1
+                    border-radius: 10px
+                    border: 1px solid #cbcbcb
+                    li
+                        padding: .7em .5em
+                        margin: .3em 0
+                        border-radius: .5em
+                        cursor: pointer
                         font-family: 'Montserrat', sans-serif
                         font-weight: 500
-                        font-size: 15px
-                        position: absolute
-                        bottom: 15px
-                        left: 1.5em
-                        letter-spacing: .5px
-                        color: #A0A0A0
-                    &:hover
-                        border: 1px solid #9C9C9C
-                    .caret-rotate
-                        transform: rotate(180deg)
-            
-            .menu
-                list-style: none
-                padding: .2em .5em
-                background: #E4E4E4
-                border: 1px solid #cbcbcb
-                position: absolute
-                top: 90px
-                left: 50%
-                width: 100%
-                transform: translateX(-50%)
-                opacity: 0
-                display: none
-                transition: .2s
-                z-index: 1
-                border-radius: 10px
-                border: 1px solid #cbcbcb
-                li
-                    padding: .7em .5em
-                    margin: .3em 0
-                    border-radius: .5em
+                        color: #fff
+                        &:hover
+                            background: #3F3F3F
+                    .active
+                        background-color:  #4E4E4E
+
+                .menu-open
+                    display: block
+                    opacity: 1
+
+                #startLesson
+
+                    width: 300px
+                    height: 80px
+                    background-color: rgb(66, 133, 244,.1)
+                    border: 1px solid #4285F4
                     cursor: pointer
-                    font-family: 'Montserrat', sans-serif
-                    font-weight: 500
-                    &:hover
-                        background: #F2F2F2
-                .active
-                    background-color:  #fff
-
-            .menu-open
-                display: block
-                opacity: 1
-
-            #startLesson
-
-                width: 300px
-                height: 80px
-                background-color: rgb(66, 133, 244,.1)
-                border: 1px solid #4285F4
-                cursor: pointer
-                color: #4285F4
-                font-size: 26px
-                border-radius: 20px
-            
-                &.noActive
-                    background-color: #c4c4c4
-                    border: 1px solid #9C9C9C
-                    cursor: default
-                    user-select: none
-                    color: #9C9C9C
+                    color: #4285F4
                     font-size: 26px
                     border-radius: 20px
-
-            .py-level
-                width: 350px
-                height: 275px
-                border: 1px solid #cbcbcb
-                border-radius: 10px
-                padding: 15px
-
-                &:hover
-                    border-color: #9C9C9C
                 
-                .text
-                    display: flex
-                    justify-content: space-around
-                    align-items: center
-                    .textContent
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
-                .options
-                    padding: 5px 0 5px 0
-                    display: flex
-                    flex-direction: column
-                    gap: 25px
-                    align-items: center
-                    input
-                        display: none
-                    label
-                        width: 80%
-                        height: 45px
+                    &.noActive
+                        background-color: #c4c4c4
+                        border: 1px solid #9C9C9C
+                        cursor: default
+                        user-select: none
+                        color: #9C9C9C
+                        font-size: 26px
+                        border-radius: 20px
+
+                .py-level
+                    width: 350px
+                    height: 275px
+                    border: 1px solid #cbcbcb
+                    border-radius: 10px
+                    padding: 15px
+                    color: #fff
+                    &:hover
+                        border-color: #9C9C9C
+                    
+                    .text
                         display: flex
-                        gap: 20px
+                        justify-content: space-around
                         align-items: center
-                        font-family: 'Montserrat', sans-serif
-                        font-weight: 500
-                        font-size: 14px
-                        padding: 5px
-                        border-radius: 10px
-                        &:hover
-                            border: 1px solid #F1F1F1
-                            cursor: pointer
-                    .SelectedPy
-                        background-color: rgb(66, 133, 244,.1)
-                        border: 1px solid #4285F4
-                        &:hover
+                        .textContent
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                    .options
+                        padding: 5px 0 5px 0
+                        display: flex
+                        flex-direction: column
+                        gap: 25px
+                        align-items: center
+                        input
+                            display: none
+                        label
+                            width: 80%
+                            height: 45px
+                            display: flex
+                            gap: 20px
+                            align-items: center
+                            font-family: 'Montserrat', sans-serif
+                            font-weight: 500
+                            font-size: 14px
+                            padding: 5px
+                            border-radius: 10px
+                            &:hover
+                                border: 1px solid #F1F1F1
+                                cursor: pointer
+                        .SelectedPy
+                            background-color: rgb(66, 133, 244,.1)
                             border: 1px solid #4285F4
+                            &:hover
+                                border: 1px solid #4285F4

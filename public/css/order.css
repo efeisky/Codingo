@@ -1,6 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+html[data-theme=dark] .OrderHeader {
+  color: #fff;
+}
+html[data-theme=dark] #subjectOrder {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+html[data-theme=dark] #orderName {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+html[data-theme=dark] #orderScore {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+html[data-theme=dark] #orderOrder {
+  width: 35px;
+}
+
 .orderPanel {
   width: 80%;
+  background: #fff;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -35,235 +59,481 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .OrderHeader {
+  html .OrderHeader {
     padding: 10px 0 0 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
-  .orderPanel {
+  html .orderPanel {
     width: 100%;
     padding: 20px 0 0 0;
   }
-  .orderPanel .orderSection {
+  html .orderPanel .orderSection {
     height: 90%;
   }
-  .orderPanel .orderSection::-webkit-scrollbar {
+  html .orderPanel .orderSection::-webkit-scrollbar {
     width: 12px;
   }
-  .orderPanel .orderSection::-webkit-scrollbar-track {
+  html .orderPanel .orderSection::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .orderPanel .orderSection::-webkit-scrollbar-thumb {
+  html .orderPanel .orderSection::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .orderPanel .orderSection #orderData, .orderPanel .orderSection #orderMy {
+  html .orderPanel .orderSection #orderData, html .orderPanel .orderSection #orderMy {
     padding: 0 10px 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  .orderPanel .orderSection #orderData #userOrderNamePicture, .orderPanel .orderSection #orderMy #userOrderNamePicture {
+  html .orderPanel .orderSection #orderData #userOrderNamePicture, html .orderPanel .orderSection #orderMy #userOrderNamePicture {
     display: flex;
     gap: 20px;
     align-items: center;
     width: 85%;
   }
-  .orderPanel .orderSection #orderData #orderPicture, .orderPanel .orderSection #orderMy #orderPicture {
+  html .orderPanel .orderSection #orderData #orderPicture, html .orderPanel .orderSection #orderMy #orderPicture {
     width: 35px;
   }
-  .orderPanel .orderSection #orderData #orderFinalist, .orderPanel .orderSection #orderMy #orderFinalist {
+  html .orderPanel .orderSection #orderData #orderFinalist, html .orderPanel .orderSection #orderMy #orderFinalist {
     width: 35px;
   }
-  .orderPanel .orderSection #orderData #orderScore, .orderPanel .orderSection #orderMy #orderScore {
+  html .orderPanel .orderSection #orderData #orderScore, html .orderPanel .orderSection #orderMy #orderScore {
     width: 15%;
     font-size: 16px;
     text-align: end;
   }
-  .orderPanel .orderSection #orderData #orderOrder, .orderPanel .orderSection #orderMy #orderOrder {
+  html .orderPanel .orderSection #orderData #orderOrder, html .orderPanel .orderSection #orderMy #orderOrder {
     width: 50px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
   }
-}
-@media only screen and (max-width: 766px) and (min-width: 401px) {
-  .OrderHeader {
-    padding: 20px 0 0 10%;
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .OrderHeader {
+    padding: 10px 0 0 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    color: #fff;
   }
-  .orderPanel {
+  html[data-theme=dark] .orderPanel {
     width: 100%;
     padding: 20px 0 0 0;
+    background: none;
   }
-  .orderPanel .orderSection {
+  html[data-theme=dark] .orderPanel .orderSection {
     height: 90%;
   }
-  .orderPanel .orderSection::-webkit-scrollbar {
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar {
     width: 12px;
   }
-  .orderPanel .orderSection::-webkit-scrollbar-track {
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .orderPanel .orderSection::-webkit-scrollbar-thumb {
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .orderPanel .orderSection #orderData, .orderPanel .orderSection #orderMy {
+  html[data-theme=dark] .orderPanel .orderSection #orderData, html[data-theme=dark] .orderPanel .orderSection #orderMy {
     padding: 0 10px 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  .orderPanel .orderSection #orderData #userOrderNamePicture, .orderPanel .orderSection #orderMy #userOrderNamePicture {
+  html[data-theme=dark] .orderPanel .orderSection #orderData #userOrderNamePicture, html[data-theme=dark] .orderPanel .orderSection #orderMy #userOrderNamePicture {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 85%;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderPicture, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderPicture {
+    width: 35px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderFinalist, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderFinalist {
+    width: 35px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderScore, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderScore {
+    width: 15%;
+    font-size: 16px;
+    text-align: end;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderOrder, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderOrder {
+    width: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 766px) and (min-width: 401px) {
+  html .OrderHeader {
+    padding: 20px 0 0 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  html .orderPanel {
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+  html .orderPanel .orderSection {
+    height: 90%;
+  }
+  html .orderPanel .orderSection::-webkit-scrollbar {
+    width: 12px;
+  }
+  html .orderPanel .orderSection::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html .orderPanel .orderSection::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html .orderPanel .orderSection #orderData, html .orderPanel .orderSection #orderMy {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html .orderPanel .orderSection #orderData #userOrderNamePicture, html .orderPanel .orderSection #orderMy #userOrderNamePicture {
     display: flex;
     gap: 20px;
     align-items: center;
     width: 70%;
   }
-  .orderPanel .orderSection #orderData #orderPicture, .orderPanel .orderSection #orderMy #orderPicture {
+  html .orderPanel .orderSection #orderData #orderPicture, html .orderPanel .orderSection #orderMy #orderPicture {
     width: 35px;
   }
-  .orderPanel .orderSection #orderData #orderFinalist, .orderPanel .orderSection #orderMy #orderFinalist {
+  html .orderPanel .orderSection #orderData #orderFinalist, html .orderPanel .orderSection #orderMy #orderFinalist {
     width: 35px;
   }
-  .orderPanel .orderSection #orderData #orderScore, .orderPanel .orderSection #orderMy #orderScore {
+  html .orderPanel .orderSection #orderData #orderScore, html .orderPanel .orderSection #orderMy #orderScore {
     width: 30%;
     font-size: 16px;
     text-align: end;
   }
-  .orderPanel .orderSection #orderData #orderOrder, .orderPanel .orderSection #orderMy #orderOrder {
+  html .orderPanel .orderSection #orderData #orderOrder, html .orderPanel .orderSection #orderMy #orderOrder {
     width: 50px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
   }
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .OrderHeader {
+    padding: 20px 0 0 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+  html[data-theme=dark] .orderPanel {
+    width: 100%;
+    padding: 20px 0 0 0;
+    background: none;
+  }
+  html[data-theme=dark] .orderPanel .orderSection {
+    height: 90%;
+  }
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData, html[data-theme=dark] .orderPanel .orderSection #orderMy {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #userOrderNamePicture, html[data-theme=dark] .orderPanel .orderSection #orderMy #userOrderNamePicture {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 70%;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderPicture, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderPicture {
+    width: 35px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderFinalist, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderFinalist {
+    width: 35px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderScore, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderScore {
+    width: 30%;
+    font-size: 16px;
+    text-align: end;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderOrder, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderOrder {
+    width: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+  }
 }
 @media only screen and (max-width: 1919px) and (min-width: 767px) {
-  .OrderHeader {
+  html .OrderHeader {
     padding: 2.5% 0 0 10%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
   }
-  .orderPanel {
+  html .orderPanel {
     margin: 5% auto 0px auto;
     height: 600px;
     border: 1px solid #DBDBDB;
     border-radius: 20px;
     padding: 20px 0 20px 0;
   }
-  .orderPanel .orderSection {
+  html .orderPanel .orderSection {
     overflow: auto;
     height: 90%;
   }
-  .orderPanel .orderSection::-webkit-scrollbar {
+  html .orderPanel .orderSection::-webkit-scrollbar {
     width: 12px;
   }
-  .orderPanel .orderSection::-webkit-scrollbar-track {
+  html .orderPanel .orderSection::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .orderPanel .orderSection::-webkit-scrollbar-thumb {
+  html .orderPanel .orderSection::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .orderPanel .orderSection #orderData, .orderPanel .orderSection #orderMy {
+  html .orderPanel .orderSection #orderData, html .orderPanel .orderSection #orderMy {
     padding: 0 25px 0 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  .orderPanel .orderSection #orderData #userOrderNamePicture, .orderPanel .orderSection #orderMy #userOrderNamePicture {
+  html .orderPanel .orderSection #orderData #userOrderNamePicture, html .orderPanel .orderSection #orderMy #userOrderNamePicture {
     display: flex;
     gap: 50px;
     align-items: center;
     width: 50%;
   }
-  .orderPanel .orderSection #orderData #orderPicture, .orderPanel .orderSection #orderMy #orderPicture {
+  html .orderPanel .orderSection #orderData #orderPicture, html .orderPanel .orderSection #orderMy #orderPicture {
     width: 50px;
   }
-  .orderPanel .orderSection #orderData #orderFinalist, .orderPanel .orderSection #orderMy #orderFinalist {
+  html .orderPanel .orderSection #orderData #orderFinalist, html .orderPanel .orderSection #orderMy #orderFinalist {
     width: 50px;
   }
-  .orderPanel .orderSection #orderData #orderScore, .orderPanel .orderSection #orderMy #orderScore {
+  html .orderPanel .orderSection #orderData #orderScore, html .orderPanel .orderSection #orderMy #orderScore {
     padding-right: 50px;
     width: 50%;
     font-size: 16px;
     text-align: end;
   }
-  .orderPanel .orderSection #orderData #orderOrder, .orderPanel .orderSection #orderMy #orderOrder {
+  html .orderPanel .orderSection #orderData #orderOrder, html .orderPanel .orderSection #orderMy #orderOrder {
     width: 50px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
   }
-}
-@media only screen and (min-width: 1920px) {
-  .OrderHeader {
+  html[data-theme=dark] {
+    background: #232323;
+  }
+  html[data-theme=dark] .OrderHeader {
     padding: 2.5% 0 0 10%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 18px;
+    color: #fff;
   }
-  .orderPanel {
+  html[data-theme=dark] .orderPanel {
     margin: 5% auto 0px auto;
     height: 600px;
     border: 1px solid #DBDBDB;
     border-radius: 20px;
     padding: 20px 0 20px 0;
+    background: none;
   }
-  .orderPanel .orderSection {
+  html[data-theme=dark] .orderPanel .orderSection {
     overflow: auto;
     height: 90%;
   }
-  .orderPanel .orderSection::-webkit-scrollbar {
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar {
     width: 12px;
   }
-  .orderPanel .orderSection::-webkit-scrollbar-track {
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #DDDDDD;
   }
-  .orderPanel .orderSection::-webkit-scrollbar-thumb {
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #cbcbcb;
   }
-  .orderPanel .orderSection #orderData, .orderPanel .orderSection #orderMy {
+  html[data-theme=dark] .orderPanel .orderSection #orderData, html[data-theme=dark] .orderPanel .orderSection #orderMy {
     padding: 0 25px 0 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  .orderPanel .orderSection #orderData #userOrderNamePicture, .orderPanel .orderSection #orderMy #userOrderNamePicture {
+  html[data-theme=dark] .orderPanel .orderSection #orderData #userOrderNamePicture, html[data-theme=dark] .orderPanel .orderSection #orderMy #userOrderNamePicture {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 50%;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderPicture, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderPicture {
+    width: 50px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderFinalist, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderFinalist {
+    width: 50px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderScore, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderScore {
+    padding-right: 50px;
+    width: 50%;
+    font-size: 16px;
+    text-align: end;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderOrder, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderOrder {
+    width: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  html .OrderHeader {
+    padding: 2.5% 0 0 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+  }
+  html .orderPanel {
+    margin: 5% auto 0px auto;
+    height: 600px;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    padding: 20px 0 20px 0;
+    background: none;
+  }
+  html .orderPanel .orderSection {
+    overflow: auto;
+    height: 90%;
+  }
+  html .orderPanel .orderSection::-webkit-scrollbar {
+    width: 12px;
+  }
+  html .orderPanel .orderSection::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html .orderPanel .orderSection::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html .orderPanel .orderSection #orderData, html .orderPanel .orderSection #orderMy {
+    padding: 0 25px 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html .orderPanel .orderSection #orderData #userOrderNamePicture, html .orderPanel .orderSection #orderMy #userOrderNamePicture {
     display: flex;
     gap: 50px;
     padding: 50px;
     align-items: center;
     width: 50%;
   }
-  .orderPanel .orderSection #orderData #orderPicture, .orderPanel .orderSection #orderMy #orderPicture {
+  html .orderPanel .orderSection #orderData #orderPicture, html .orderPanel .orderSection #orderMy #orderPicture {
     width: 50px;
   }
-  .orderPanel .orderSection #orderData #orderFinalist, .orderPanel .orderSection #orderMy #orderFinalist {
+  html .orderPanel .orderSection #orderData #orderFinalist, html .orderPanel .orderSection #orderMy #orderFinalist {
     width: 50px;
   }
-  .orderPanel .orderSection #orderData #orderScore, .orderPanel .orderSection #orderMy #orderScore {
+  html .orderPanel .orderSection #orderData #orderScore, html .orderPanel .orderSection #orderMy #orderScore {
     padding-right: 50px;
     width: 50%;
     font-size: 16px;
     text-align: end;
   }
-  .orderPanel .orderSection #orderData #orderOrder, .orderPanel .orderSection #orderMy #orderOrder {
+  html .orderPanel .orderSection #orderData #orderOrder, html .orderPanel .orderSection #orderMy #orderOrder {
     width: 50px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: center;
+  }
+  html[data-theme=dark] .OrderHeader {
+    padding: 2.5% 0 0 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+  }
+  html[data-theme=dark] .orderPanel {
+    margin: 5% auto 0px auto;
+    height: 600px;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    padding: 20px 0 20px 0;
+    background: none;
+  }
+  html[data-theme=dark] .orderPanel .orderSection {
+    overflow: auto;
+    height: 90%;
+  }
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar {
+    width: 12px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #DDDDDD;
+  }
+  html[data-theme=dark] .orderPanel .orderSection::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #cbcbcb;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData, html[data-theme=dark] .orderPanel .orderSection #orderMy {
+    padding: 0 25px 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #userOrderNamePicture, html[data-theme=dark] .orderPanel .orderSection #orderMy #userOrderNamePicture {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+    width: 50%;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderPicture, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderPicture {
+    width: 50px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderFinalist, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderFinalist {
+    width: 50px;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderScore, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderScore {
+    padding-right: 50px;
+    width: 50%;
+    font-size: 16px;
+    text-align: end;
+  }
+  html[data-theme=dark] .orderPanel .orderSection #orderData #orderOrder, html[data-theme=dark] .orderPanel .orderSection #orderMy #orderOrder {
+    width: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
   }
 }/*# sourceMappingURL=order.css.map */

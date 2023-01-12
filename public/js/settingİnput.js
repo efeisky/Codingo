@@ -20,19 +20,21 @@ $(".show svg").on("click",()=>{
         $("#hide").css("display","block")
     }
 })
-//newPasword
-$("#showSvgNew").css("display","none")
+
+//Password New
+$("#showSvgNew ").css("display","none")
+
 $(".showNew svg").on("click",()=>{
     if($(".newPassword").attr("type") === "text"){
         $(".newPassword").attr("type","password")
 
-        $("#hideSvgNew").css("display","none")
-        $("#showSvgNew").css("display","block")
+        $(".showNew #hideSvgNew").css("display","none")
+        $(".showNew #showSvgNew").css("display","block")
     }else{
         $(".newPassword").attr("type","text")
         
-        $("#showSvgNew").css("display","none")
-        $("#hideSvgNew").css("display","block")
+        $(".showNew #showSvgNew").css("display","none")
+        $(".showNew #hideSvgNew").css("display","block")
     }
 })
 
